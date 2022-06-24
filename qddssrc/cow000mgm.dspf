@@ -1,0 +1,42 @@
+     A*%%TS  SD  20160202  114516  INF1FER3    REL-V7R1M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A          R COW000CA
+     A*%%TS  SD  20160202  114029  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      KEEP
+     A                                      ASSUME
+     A                                      OVERLAY
+     A                                  1  4' '
+     A          R COW00001
+     A*%%TS  SD  20160202  114516  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      CF12
+     A                                      CF01
+     A                                      OVERLAY
+     A                                      WINDOW(4 6 14 66)
+     A                                 13 54'F12=Volver'
+     A                                      DSPATR(UL)
+     A                                  4  1'Propuesta :'
+     A                                  5  1'Productor :'
+     A            X1SOLN    R        O  4 13REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            PENIVT    R        O  5 13REFFLD(REFER/NIVT *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            PENIVC    R        O  5 15REFFLD(REFER/NIVC *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            X1NOMB    R        O  5 21REFFLD(REFER/NOMB *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                  1 19'Mensaje de Cotización/Propuesta'
+     A                                      DSPATR(RI)
+     A                                  3  1'Cotización:'
+     A            PENCTW    R        O  3 13REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X2TXMG       198A  B  8  1DSPATR(HI)
+     A                                      CNTFLD(066)
+     A                                      CHECK(LC)
+     A  05                                  DSPATR(PR)
+     A  50                                  ERRMSG('Debe ingresar un mensaje')
+     A                                 13  4'F1=Continuar'
+     A                                      DSPATR(UL)

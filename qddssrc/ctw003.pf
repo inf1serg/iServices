@@ -1,0 +1,63 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1W003
+                  W3EMPR    R               REFFLD(EMPR)
+                  W3SUCU    R               REFFLD(SUCU)
+                  W3NIVT    R               REFFLD(NIVT)
+                  W3NIVC    R               REFFLD(NIVC)
+                  W3NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  W3NASE    R               REFFLD(ASEN)
+                  W3ASEN    R               REFFLD(ASEN)
+                  W3TISO    R               REFFLD(TISO)
+                  W3NOMB    R               REFFLD(NOMB)
+                  W3FNAC    R               REFFLD(FER8)
+                                            COLHDG('FECHA' 'DE' 'NACIMIENTO')
+                  W3CSEX    R               REFFLD(CSEX)
+                  W3CESC    R               REFFLD(CESC)
+                  W3TIDO    R               REFFLD(TIDO)
+                  W3NRDO    R               REFFLD(NRDO)
+                  W3CUIT    R               REFFLD(CUIT)
+                  W3NJUB    R               REFFLD(NJUB)
+                  W3DOMI    R               REFFLD(DOMI)
+                  W3COPO    R               REFFLD(COPO)
+                  W3COPS    R               REFFLD(COPS)
+                  W3RPRO    R               REFFLD(RPRO)
+                  W3AGRE    R               REFFLD(MARP)
+                                            COLHDG('AGENTE' 'DE' 'RETENCION')
+                  W3CIVA    R               REFFLD(CIVA)
+                  W3TELP    R               REFFLD(NTEL)
+                                            COLHDG('NRO' 'TELEFONO' 'PART.')
+                  W3TELC    R               REFFLD(NTEL)
+                                            COLHDG('NRO' 'TELEFONO' 'CEL.')
+                  W3TELT    R               REFFLD(NTEL)
+                                            COLHDG('NRO' 'TELEFONO' 'TRABAJO')
+                  W3NACO    R               REFFLD(NACI)
+                                            COLHDG('CAMPO' 'OBSOLETO')
+                  W3FEIN    R               REFFLD(FER8)
+                                            COLHDG('FECHA' 'DE' 'INSCRIPCION')
+                  W3NRIN    R               REFFLD(NRII)
+                                            COLHDG('NRO.' 'DE' 'INSCRIPCION')
+                  W3FECO    R               REFFLD(FER8)
+                                            COLHDG('FECHA' 'DE' 'CONTRATO')
+                  W3RAAE    R               REFFLD(RAAE)
+                  W3CPRF    R               REFFLD(CPRF)
+                  W3CTCU    R               REFFLD(CTCU)
+                  W3NRTC    R               REFFLD(NRTC)
+                  W3FFTA    R               REFFLD(FFTA)
+                  W3FFTM    R               REFFLD(FFTM)
+                  W3NCBU        22  0
+                                            COLHDG('NRO CBU' 'PAGO')
+                  W3CBUS        22  0
+                                            COLHDG('NRO CBU' 'SINIESTRO')
+                  W3RUTA    R               REFFLD(RUTA)
+                  W3PAIN    R               REFFLD(PAIN)
+                  W3CNAC    R               REFFLD(SSPO)
+                                            COLHDG('CODIGO' 'DE' 'NACIONALIDAD')
+                K W3EMPR
+                K W3SUCU
+                K W3NIVT
+                K W3NIVC
+                K W3NCTW
+                K W3NASE
+                K W3ASEN

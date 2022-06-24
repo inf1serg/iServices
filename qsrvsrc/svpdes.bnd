@@ -1,0 +1,71 @@
+STRPGMEXP SIGNATURE('SVPDES000000001')
+
+ export symbol(SVPDES_articulo)
+ export symbol(SVPDES_moneda)
+ export symbol(SVPDES_tipoDeOperacion)
+ export symbol(SVPDES_estadoCot)
+ export symbol(SVPDES_codigoIva)
+ export symbol(SVPDES_localidad)
+ export symbol(SVPDES_formaPago)
+ export symbol(SVPDES_codRiesgo)
+ export symbol(SVPDES_cobCorto)
+ export symbol(SVPDES_cobLargo)
+ export symbol(SVPDES_codCaracteristica)
+ export symbol(SVPDES_codBonificacion)
+ export symbol(SVPDES_codBonificacionRV)
+
+ export symbol(SVPDES_nacionalidad)
+ export symbol(SVPDES_paisDeNac)
+ export symbol(SVPDES_profesion)
+ export symbol(SVPDES_tipoDocumento)
+ export symbol(SVPDES_tipoSociedad)
+
+ export symbol(SVPDES_provinciaInder)
+ export symbol(SVPDES_producto)
+ export symbol(SVPDES_clasificacionRiesgo)
+ export symbol(SVPDES_agravioRiesgo)
+ export symbol(SVPDES_tarifaRv)
+ export symbol(SVPDES_actividad)
+ export symbol(SVPDES_sexo)
+ export symbol(SVPDES_estadoCivil)
+
+ export symbol(SVPDES_getTipoDeVehiculo)
+ export symbol(SVPDES_coberturaVehiculo)
+ export symbol(SVPDES_TipoDeTelefono)
+ export symbol(SVPDES_getMail)
+
+ export symbol(SVPDES_monedaAbreviada)
+ export symbol(SVPDES_banco)
+ export symbol(SVPDES_sucursalBanco)
+
+ export symbol(SVPDES_planDePago)
+
+ export symbol(SVPDES_cuestionario)
+ export symbol(SVPDES_pregunta)
+
+ export symbol(SVPDES_Rama)
+
+ export symbol(SVPDES_marca)
+ export symbol(SVPDES_modelo)
+
+  export symbol(SVPDES_tipoDeMascota)
+  export symbol(SVPDES_razaDeMascota)
+
+ export symbol(SVPDES_estadoDeFactura)
+
+ export symbol(SVPDES_estadoOrdenDePago)
+ export symbol(SVPDES_tipoDePersona)
+
+ export symbol(SVPDES_estadoDelTiempo)
+ export symbol(SVPDES_getProvinciaPorLocalidad)
+ export symbol(SVPDES_relacionConAsegurado)
+ export symbol(SVPDES_usoDelVehiculo)
+
+ export symbol(SVPDES_nombCortoEmpTdc)
+
+ export symbol(SVPDES_capituloVariante)
+ export symbol(SVPDES_tarifaDiferencial)
+ export symbol(SVPDES_end)
+ export symbol(SVPDES_inz)
+
+endpgmexp

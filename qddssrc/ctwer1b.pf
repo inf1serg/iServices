@@ -1,0 +1,45 @@
+     A                                      REF(REFERENCIA)
+     A                                      UNIQUE
+     A          R C1WER1B
+     A            B1EMPR    R               REFFLD(EMPR)
+     A            B1SUCU    R               REFFLD(SUCU)
+     A            B1NIVT    R               REFFLD(NIVT)
+     A            B1NIVC    R               REFFLD(NIVC)
+     A            B1NCTW    R               REFFLD(NRES)
+     A                                      COLHDG('NRO.' 'DE' 'COTIZACION')
+     A            B1RAMA    R               REFFLD(RAMA)
+     A            B1ARSE    R               REFFLD(ARSE)
+     A            B1POCO    R               REFFLD(POCO)
+     A            B1RIEC    R               REFFLD(RIEC)
+     A            B1XCOB    R               REFFLD(XCOB)
+     A            B1SECU         2  0       COLHDG('SECUENCIA' 'PERSONA')
+     A            B1SEBE         2  0       COLHDG('SECUENCIA' 'BENEFICIARIO')
+     A            B1NOMB    R               REFFLD(NOMB)
+     A            B1TIDO    R               REFFLD(TIDO)
+     A            B1NRDO    R               REFFLD(NRDO)
+     A            B1MAR1    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            B1MAR2    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            B1MAR3    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            B1MAR4    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            B1MAR5    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            B1USER    R               REFFLD(USER)
+     A            B1TIME    R               REFFLD(TIME)
+     A            B1DATE    R               REFFLD(FER8)
+     A** - ------------------------------- *
+     A          K B1EMPR
+     A          K B1SUCU
+     A          K B1NIVT
+     A          K B1NIVC
+     A          K B1NCTW
+     A          K B1RAMA
+     A          K B1ARSE
+     A          K B1POCO
+     A          K B1RIEC
+     A          K B1XCOB
+     A          K B1SECU
+     A          K B1SEBE

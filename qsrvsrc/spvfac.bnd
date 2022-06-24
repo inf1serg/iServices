@@ -1,0 +1,21 @@
+STRPGMEXP  SIGNATURE('SPVFAC0000000001')
+
+ export symbol(SPVFAC_setFac)
+ export symbol(SPVFAC_updFac)
+ export symbol(SPVFAC_getEstFac)
+ export symbol(SPVFAC_chkDispFac)
+ export symbol(SPVFAC_getSec)
+ export symbol(SPVFAC_chkFac)
+ export symbol(SPVFAC_updOdpFac)
+ export symbol(SPVFAC_getValSini)
+ export symbol(SPVFAC_getValAdmi)
+ export symbol(SPVFAC_getValLega)
+ export symbol(SPVFAC_Inz)
+ export symbol(SPVFAC_End)
+ export symbol(SPVFAC_Error)
+ export symbol(SPVFAC_updFacPacp)
+
+ export symbol(SPVFAC_valRelAnulacion)
+ export symbol(SPVFAC_getFac)
+
+endpgmexp

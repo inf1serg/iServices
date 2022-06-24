@@ -1,0 +1,15 @@
+STRPGMEXP  SIGNATURE('SVPFMA0000000001')
+
+ export symbol(SVPFMA_Inz)
+ export symbol(SVPFMA_End)
+ export symbol(SVPFMA_Error)
+ export symbol(SVPFMA_antiguedad)
+ export symbol(SVPFMA_marcaModelo)
+ export symbol(SVPFMA_getDescripcion)
+ export symbol(SVPFMA_getEquivalente)
+ export symbol(SVPFMA_tarifaDesdeMarMo)
+ export symbol(SVPFMA_tarifaDesdeAntig)
+ export symbol(SVPFMA_getAplicadoA)
+ export symbol(SVPFMA_visualizarWeb)
+
+endpgmexp

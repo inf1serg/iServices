@@ -1,0 +1,14 @@
+STRPGMEXP SIGNATURE('SVPEMP0000000001')
+
+ export symbol(SVPEMP_getDatosDeEmpresa)
+ export symbol(SVPEMP_getLocalidadDeEmpresa)
+ export symbol(SVPEMP_Inz)
+ export symbol(SVPEMP_End)
+ export symbol(SVPEMP_Error)
+ export symbol(SVPEMP_getNombre)
+ export symbol(SVPEMP_getPais)
+
+ export symbol(SVPEMP_getCompaniaSSN)
+ export symbol(SVPEMP_getCUIT)
+
+endpgmexp

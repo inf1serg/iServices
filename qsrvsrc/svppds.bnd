@@ -1,0 +1,21 @@
+STRPGMEXP SIGNATURE('SVPPDS0000000001')
+
+ export symbol(SVPPDS_SetPreDen)
+ export symbol(SVPPDS_UpdPreDen)
+ export symbol(SVPPDS_ChkPreDenuSin)
+ export symbol(SVPPDS_setFotoPDS)
+ export symbol(SVPPDS_chkFotoPDS)
+ export symbol(SVPPDS_dltFotoPDS)
+ export symbol(SVPPDS_inz)
+ export symbol(SVPPDS_End)
+ export symbol(SVPPDS_Error)
+
+ export symbol(SVPPDS_SetPreDenWeb)
+
+ export symbol(SVPPDS_getNroPredenuncia)
+ export symbol(SVPPDS_SetPreDen2)
+ export symbol(SVPPDS_ChkPreDenuncia)
+
+ export symbol(SVPPDS_setTipoDeVoucher)
+
+endpgmexp

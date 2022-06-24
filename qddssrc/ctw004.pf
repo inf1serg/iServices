@@ -1,0 +1,23 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1W004
+                  W4EMPR    R               REFFLD(EMPR)
+                  W4SUCU    R               REFFLD(SUCU)
+                  W4NIVT    R               REFFLD(NIVT)
+                  W4NIVC    R               REFFLD(NIVC)
+                  W4NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  W4NASE    R               REFFLD(ASEN)
+                  W4ASEN    R               REFFLD(ASEN)
+                  W4CTCE    R               REFFLD(RAMA)
+                                            COLHDG('TIPO' 'DE' 'CORREO')
+                  W4MAIL    R               REFFLD(MAIL)
+                K W4EMPR
+                K W4SUCU
+                K W4NIVT
+                K W4NIVC
+                K W4NCTW
+                K W4NASE
+                K W4ASEN
+                K W4CTCE
+                K W4MAIL

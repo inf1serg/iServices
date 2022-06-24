@@ -1,0 +1,26 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WMSG
+                  MSEMPR    R               REFFLD(EMPR)
+                  MSSUCU    R               REFFLD(SUCU)
+                  MSNIVT    R               REFFLD(NIVT)
+                  MSNIVC    R               REFFLD(NIVC)
+                  MSNCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  MSIVSE    R               REFFLD(IVSE)
+                  MSCPGM    R               REFFLD(CPGM)
+                  MSTXMG    R               REFFLD(TXMG)
+                  MSMAR1    R               REFFLD(MARP)
+                  MSMAR2    R               REFFLD(MARP)
+                  MSMAR3    R               REFFLD(MARP)
+                  MSMAR4    R               REFFLD(MARP)
+                  MSMAR5    R               REFFLD(MARP)
+                  MSUSER    R               REFFLD(USER)
+                  MSDATE    R               REFFLD(FER8)
+                  MSTIME    R               REFFLD(TIME)
+                K MSEMPR
+                K MSSUCU
+                K MSNIVT
+                K MSNIVC
+                K MSNCTW
+                K MSIVSE

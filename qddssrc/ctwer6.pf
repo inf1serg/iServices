@@ -1,0 +1,36 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WER6
+                  R6EMPR    R               REFFLD(EMPR)
+                  R6SUCU    R               REFFLD(SUCU)
+                  R6NIVT    R               REFFLD(NIVT)
+                  R6NIVC    R               REFFLD(NIVC)
+                  R6NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  R6RAMA    R               REFFLD(RAMA)
+                  R6ARSE    R               REFFLD(ARSE)
+                  R6POCO    R               REFFLD(POCO)
+                  R6CCBA    R               REFFLD(CCBA)
+                  R6MA01    R               REFFLD(MARP)
+                                            COLHDG('VALOR' 'DE LA' +
+                                            'CARACTERISTICA')
+                  R6MA02    R               REFFLD(MARP)
+                                            COLHDG('APLICA' 'BONIFICACION' +
+                                            'RECARGO')
+                  R0MA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R0MA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R0MA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+
+
+                K R6EMPR
+                K R6SUCU
+                K R6NIVT
+                K R6NIVC
+                K R6NCTW
+                K R6RAMA
+                K R6ARSE
+                K R6POCO
+                K R6CCBA

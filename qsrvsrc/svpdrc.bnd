@@ -1,0 +1,13 @@
+STRPGMEXP SIGNATURE('SVPDRC0000000001')
+
+ export symbol(SVPDRC_getDescCob)
+ export symbol(SVPDRC_setDesc)
+ export symbol(SVPDRC_dltDesc)
+ export symbol(SVPDRC_updDesc)
+ export symbol(SVPDRC_updNoDesc)
+ export symbol(SVPDRC_getLcob)
+ export symbol(SVPDRC_chkCob)
+ export symbol(SVPDRC_updDescAnt)
+ export symbol(SVPDRC_chkImpactoDesc)
+
+endpgmexp

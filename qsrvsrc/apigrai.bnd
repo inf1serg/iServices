@@ -1,0 +1,15 @@
+STRPGMEXP SIGNATURE('APIGRAI00000001')
+
+ export symbol(APIGRAI_getNroCotizacion)
+ export symbol(APIGRAI_getNroCotizacionWeb)
+ export symbol(APIGRAI_getPolizasxPropuesta)
+ export symbol(APIGRAI_getParamBase)
+ export symbol(APIGRAI_getCotizacionApixWeb)
+ export symbol(APIGRAI_getCotizacionWebxApi)
+ export symbol(APIGRAI_setNroCotizacionAPI)
+ export symbol(APIGRAI_setCuitIntermediario)
+ export symbol(APIGRAI_setSitemaRemoto)
+ export symbol(APIGRAI_getCondicionesComerciales)
+ export symbol(APIGRAI_sndMail)
+
+endpgmexp

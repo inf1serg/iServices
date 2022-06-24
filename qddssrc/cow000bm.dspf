@@ -1,0 +1,61 @@
+     A*%%TS  SD  20160201  150447  INF1FER3    REL-V7R1M0  5770-WDS
+     A*  91/01/08  18:16:52    SAJP        REL-R02M00  5728-PW1
+     A*-------------------------------------------------------------------------
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A                                      CHECK(AB)
+     A                                      PRINT
+     A          R COW000BCA
+     A*%%TS  SD  20141006  120634  INF1FER3    REL-V5R4M0  5722-WDS
+     A                                      ASSUME
+     A                                      OVERLAY
+     A            XXIDEN         2S 0H
+     A                                  1  2' '
+     A          R COW000BS1                 SFL
+     A*%%TS  SD  20160201  150447  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      TEXT('Subfile 1')
+     A            SFPGMR         2S 0H
+     A            SFOPCI         1Y 0B  6  1TEXT('OPCIONES')
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                      VALUES(0 1 5)
+     A N40                                  DSPATR(UL)
+     A                                      COLOR(WHT)
+     A  40
+     AO 41                                  DSPATR(PR)
+     A                                      CHECK(ER)
+     A            SFDPTR        25A  O  6  3DSPATR(HI)
+     A N40                                  COLOR(WHT)
+     A  40                                  COLOR(BLU)
+     A          R COW000BC1                 SFLCTL(COW000BS1)
+     A*%%TS  SD  20160106  165826  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      SFLSIZ(0020)
+     A                                      SFLPAG(0010)
+     A                                      WINDOW(3 25 17 27)
+     A                                      TEXT('Subfile control 1')
+     A                                      ROLLUP(91)
+     A                                      VLDCMDKEY(29)
+     A                                      CF12(12 'Retornar.')
+     A                                      KEEP
+     A                                      OVERLAY
+     A                                      SFLCSRRRN(&SF1NRR)
+     A  30                                  SFLDSP
+     A  31                                  SFLDSPCTL
+     A  32                                  SFLCLR
+     A  33                                  SFLEND(*MORE)
+     A                                      WDWBORDER((*DSPATR HI))
+     A                                      USRRSTDSP
+     A            SF1NRR         5S 0H
+     A                                  1  1'Menu de Busqueda:          '
+     A                                      DSPATR(UL)
+     A                                      COLOR(BLU)
+     A                                  2  1'Av/Re Pagina'
+     A                                      DSPATR(HI)
+     A                                  4  1'Buscar por:'
+     A                                      TEXT('y')
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)
+     A                                  2 16'F12=Retornar'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)

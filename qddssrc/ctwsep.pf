@@ -1,0 +1,39 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WSEP
+                  EPEMPR    R               REFFLD(EMPR)
+                  EPSUCU    R               REFFLD(SUCU)
+                  EPNIVT    R               REFFLD(NIVT)
+                  EPNIVC    R               REFFLD(NIVC)
+                  EPNCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  EPRAMA    R               REFFLD(RAMA)
+                  EPARSE    R               REFFLD(ARSE)
+                  EPPACO    R               REFFLD(PACO)
+                  EPXPRO    R               REFFLD(XPRO)
+                  EPCANT    R    6  0       REFFLD(POCO)
+                  EPRAED         2  0
+                                            COLHDG('RANGO DE' 'EDAD')
+                                            TEXT('RANGO DE EDAD')
+                  EPMAR1    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  EPMAR2    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  EPMAR3    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  EPMAR4    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  EPMAR5    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  EPSTRG    R               REFFLD(STRG)
+                                            COLHDG('MARCA' 'LIBRE')
+                  EPUSER    R               REFFLD(USER)
+                  EPTIME    R               REFFLD(TIME)
+                  EPDATE    R               REFFLD(FER8)
+                K EPEMPR
+                K EPSUCU
+                K EPNIVT
+                K EPNIVC
+                K EPNCTW
+                K EPRAMA
+                K EPARSE

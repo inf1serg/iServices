@@ -1,0 +1,135 @@
+     A*%%TS  SD  20200129  151139  INF1SER1    REL-V7R1M0  5770-WDS
+     A*SLU 16/03/2004 - Este fuente contiene instrucciones para la conversión
+     A*Webfacing marcadas con "*%%WB", rogamos usar CODE Designer para cambiar
+     A*este fuente y no SDA, muchas gracias.
+     A*%%EC
+     A*%%FD ARTICULOS: Vista Prima/Premio PAHED0     AXA.PGMR
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A                                      PRINT
+     A                                      CF12(12 'Volver')
+     A          R COW122CCA
+     A*%%TS  SD  20200129  094404  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                      ASSUME
+     A                                  6  3' '
+     A                                  1  3'COW121'
+     A                                  1 13USER
+     A                                  1 29'   MODULO WEB DE GAUS   '
+     A                                      DSPATR(RI)
+     A                                      COLOR(GRN)
+     A                                  1 60DATE
+     A                                      EDTCDE(Y)
+     A                                  1 72TIME
+     A                                  2  3'                 Consulta Cotizaci-
+     A                                      on Poliza de Vehiculo              -
+     A                                              '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  3  3'Prod'
+     A            XXNIVT         1S 0O  3  8COLOR(BLU)
+     A            XXNIVC         5Y 0O  3 10EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            XXPROD        40A  O  3 16COLOR(TRQ)
+     A                                  3 57'N.Cot'
+     A            XXNCTW         7S 0O  3 63COLOR(BLU)
+     A                                  4  3'Rama'
+     A            XXRAMA         2Y 0O  4  8EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A*%%GP SCREEN1    01
+     A            XXDRAM        30A  O  4 11COLOR(TRQ)
+     A                                  4 42'Art'
+     A            XXARCD         6  0O  4 46COLOR(BLU)
+     A            XXARNO        23   O  4 53COLOR(TRQ)
+     A          R COW122CWA
+     A*%%TS  SD  20200129  151139  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                      WINDOW(2 2 20 74)
+     A                                      CF08
+     A                                      CF09
+     A                                      KEEP
+     A                                      OVERLAY
+     A                                      WDWBORDER((*DSPATR HI))
+     A            X1OPER         7S 0H
+     A                                  1  1'Detalle de Coberturas'
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)
+     A                                  1 65'F12=Volver'
+     A                                      COLOR(BLU)
+     A                                  2  2'Prod'
+     A            XXNIVT         1S 0O  2  7COLOR(PNK)
+     A            XXNIVC         5Y 0O  2  9EDTCDE(Z)
+     A                                      COLOR(PNK)
+     A            XXPROD        40A  O  2 15COLOR(TRQ)
+     A                                  2 56'Cot'
+     A            XXNCTW         7S 0O  2 60COLOR(PNK)
+     A                                  3  2'Rama'
+     A            XXRAMA         2S 0O  3  7COLOR(PNK)
+     A                                  4  2'Cob'
+     A            XXCOBL         2A  O  4  7COLOR(PNK)
+     A                                  4 41'Limite Responsabilidad Civil'
+     A                                      COLOR(PNK)
+     A                                      DSPATR(UL)
+     A                                  5  2'Imp.Franquicia'
+     A            XXIFRA        15Y 2O  5 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  5 41'Lesiones '
+     A            XXRCLE        15Y 2O  5 54COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  6  2'Prima Tarifa'
+     A            XXPRIM        15Y 2O  6 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  6 41'Cosas   '
+     A            XXRCCO        15Y 2O  6 54COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  7  2'Sellado Riego'
+     A            XXSERI        15Y 2O  7 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  7 41'Acontecim.'
+     A            XXRCAC        15Y 2O  7 54COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  8  2'Sellado Empr.'
+     A            XXSEEM        15Y 2O  8 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  8 41'Exterior '
+     A            XXLRCE        15Y 2O  8 54COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  9  2'Impto Internos'
+     A            XXIMPI        15Y 2O  9 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                  9 41'% Ajuste Aut'
+     A            XXCLAJ         3Y 0O  9 71COLOR(BLU)
+     A                                      EDTWRD(' 0 ')
+     A                                 10  2'Serv.Sociales '
+     A            XXSERS        15Y 2O 10 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 11  2'Tas.Sup.Seg.Nac'
+     A            XXTSSN        15Y 2O 11 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 12  2'Impto IVA     '
+     A            XXIPR1        15Y 2O 12 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 13  2'Iva-Res.No Inc.'
+     A            XXIPR4        15Y 2O 13 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 14  2'Iva-Imp Percep'
+     A            XXIPR3        15Y 2O 14 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 15  2'Comp. Premio 6'
+     A            XXIPR6        15Y 2O 15 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 16  2'Comp. Premio 7'
+     A            XXIPR7        15Y 2O 16 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 17  2'Comp. Premio 8'
+     A            XXIPR8        15Y 2O 17 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 18  2'Comp. Premio 9'
+     A            XXIPR9        15Y 2O 18 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A                                 19  2'Premio Bruto  '
+     A            XXPREM        15Y 2O 19 18COLOR(BLU)
+     A                                      EDTWRD(' .   .   .   . 0 ,  ')
+     A            XXDRAM        30A  O  3 10COLOR(TRQ)
+     A                                  3 41'Art'
+     A            XXARCD         6Y 0O  3 45COLOR(BLU)
+     A                                      EDTCDE(Z)
+     A            XXARNO        23A  O  3 52COLOR(TRQ)

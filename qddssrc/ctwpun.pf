@@ -1,0 +1,14 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WPUN
+                  W0EMPR    R               REFFLD(EMPR)
+                  W0SUCU    R               REFFLD(SUCU)
+                  W0NIVT    R               REFFLD(NIVT)
+                  W0NIVC    R               REFFLD(NIVC)
+                  W0NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                K W0EMPR
+                K W0SUCU
+                K W0NIVT
+                K W0NIVC
+                K W0NCTW

@@ -1,0 +1,44 @@
+STRPGMEXP SIGNATURE('SVPART000000001')
+
+export     symbol(SVPART_Inz)
+export     symbol(SVPART_End)
+export     symbol(SVPART_Error)
+
+export     symbol(SVPART_chkArticulo)
+export     symbol(SVPART_getArticulo)
+export     symbol(SVPART_SetArticulo)
+export     symbol(SVPART_updArticulo)
+export     symbol(SVPART_delArticulo)
+
+export     symbol(SVPART_chkParametria)
+export     symbol(SVPART_getParametria)
+export     symbol(SVPART_SetParametria)
+export     symbol(SVPART_updParametria)
+export     symbol(SVPART_delParametria)
+
+export     symbol(SVPART_chkParametriaWeb)
+export     symbol(SVPART_getParametriaWeb)
+export     symbol(SVPART_SetParametriaWeb)
+export     symbol(SVPART_updParametriaWeb)
+export     symbol(SVPART_delParametriaWeb)
+
+export     symbol(SVPART_chkBloqueo)
+
+export     symbol(SVPART_chkArticuloRama)
+export     symbol(SVPART_getArticuloRama)
+export     symbol(SVPART_getArticulos)
+export     symbol(SVPART_getArticulosWeb)
+export     symbol(SVPART_chkScoring)
+export     symbol(SVPART_getGrupo)
+export     symbol(SVPART_getParametriaWeb2)
+export     symbol(SVPART_getGrupoArticulos)
+
+export     symbol(SVPART_getGrupo2)
+
+export     symbol(SVPART_getExt625)
+
+export     symbol(SVPART_isMensual)
+
+export     symbol(SVPART_getNumeroProveido)
+
+endpgmexp

@@ -1,0 +1,22 @@
+STRPGMEXP SIGNATURE('SVPDAU0000000001')
+
+ export symbol(SVPDAU_chkDescxEquivalente)
+ export symbol(SVPDAU_inz)
+ export symbol(SVPDAU_end)
+ export symbol(SVPDAU_error)
+ export symbol(SVPDAU_getDescxEquivalente)
+
+ export symbol(SVPDAU_isVigente)
+ export symbol(SVPDAU_getCodigoEquivalente)
+
+ export symbol(SVPDAU_getXCodDescuento)
+
+ export symbol(SVPDAU_setDescuento)
+ export symbol(SVPDAU_getPermiteCero)
+ export symbol(SVPDAU_getPorcentajeBonif)
+ export symbol(SVPDAU_getPermiteCambioPorc)
+
+ export symbol(SVPDAU_visualizarWeb)
+ export symbol(SVPDAU_getXCodDescuento2)
+
+endpgmexp

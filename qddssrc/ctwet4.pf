@@ -1,0 +1,35 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WET4
+                  T4EMPR    R               REFFLD(EMPR)
+                  T4SUCU    R               REFFLD(SUCU)
+                  T4NIVT    R               REFFLD(NIVT)
+                  T4NIVC    R               REFFLD(NIVC)
+                  T4NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  T4RAMA    R               REFFLD(RAMA)
+                  T4ARSE    R               REFFLD(ARSE)
+                  T4POCO    R               REFFLD(POCO)
+                  T4COBL    R               REFFLD(COBL)
+                  T4CCBP    R               REFFLD(CCBP)
+                  T4PCBP    R               REFFLD(PCBP)
+                  T4MA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T4MA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T4MA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T4MA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T4MA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                K T4EMPR
+                K T4SUCU
+                K T4NIVT
+                K T4NIVC
+                K T4NCTW
+                K T4RAMA
+                K T4ARSE
+                K T4POCO
+                K T4COBL
+                K T4CCBP

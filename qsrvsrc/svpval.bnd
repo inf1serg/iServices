@@ -1,0 +1,134 @@
+STRPGMEXP SIGNATURE('SVPVAL0000000001')
+
+ export symbol(SVPVAL_articulo)
+ export symbol(SVPVAL_articuloWeb)
+ export symbol(SVPVAL_moneda)
+ export symbol(SVPVAL_monedaWeb)
+ export symbol(SVPVAL_tipoDeOperacion)
+ export symbol(SVPVAL_tipoDeOperacionWeb)
+ export symbol(SVPVAL_nombreCliente)
+ export symbol(SVPVAL_iva)
+ export symbol(SVPVAL_ivaWeb)
+ export symbol(SVPVAL_codigoPostal)
+ export symbol(SVPVAL_codigoPostalWeb)
+ export symbol(SVPVAL_tipoPersona)
+ export symbol(SVPVAL_error)
+ export symbol(SVPVAL_spolRenovacion)
+ export symbol(SVPVAL_chkDeleteBienAsegurado)
+ export symbol(SVPVAL_rama)
+ export symbol(SVPVAL_ramaWeb)
+ export symbol(SVPVAL_sumaAsegurada)
+ export symbol(SVPVAL_sumaGnc)
+ export symbol(SVPVAL_sumaGncWeb)
+ export symbol(SVPVAL_zonaDeRiego)
+ export symbol(SVPVAL_clienteIntegral)
+ export symbol(SVPVAL_formaDePago)
+ export symbol(SVPVAL_formaDePagoWeb)
+ export symbol(SVPVAL_tarifa)
+ export symbol(SVPVAL_coberturaWeb)
+ export symbol(SVPVAL_estadoCotizacion)
+ export symbol(SVPVAL_chkReCotizacion)
+ export symbol(SVPVAL_tipoDeDocumento)
+ export symbol(SVPVAL_chkBlkDocumento)
+ export symbol(SVPVAL_chkBlkCuit)
+ export symbol(SVPVAL_ramaRiesgo)
+ export symbol(SVPVAL_ramaCobertura)
+ export symbol(SVPVAL_ramaRiesgoCob)
+ export symbol(SVPVAL_marcaGNC)
+ export symbol(SVPVAL_CuitCuil)
+
+ export symbol(SVPVAL_chkCodBuenR)
+ export symbol(SVPVAL_chkRamaPlan)
+ export symbol(SVPVAL_chkCaracBien)
+ export symbol(SVPVAL_chkCobPrima)
+ export symbol(SVPVAL_chkCobSumMaxMin)
+
+ export symbol(SVPVAL_chkProfesion)
+ export symbol(SVPVAL_chkProfesionWeb)
+ export symbol(SVPVAL_chkSexo)
+ export symbol(SVPVAL_chkSexoWeb)
+ export symbol(SVPVAL_chkEdoCivil)
+ export symbol(SVPVAL_chkEdoCivilWeb)
+ export symbol(SVPVAL_chkRamaActE)
+ export symbol(SVPVAL_chkRamaActEWeb)
+ export symbol(SVPVAL_chkPaisNac)
+
+ export symbol(SVPVAL_chkAsegurado)
+
+ export symbol(SVPVAL_chkTipoPersona)
+ export symbol(SVPVAL_chkNroDeRuta)
+ export symbol(SVPVAL_urlIsValid)
+
+ export symbol(SVPVAL_nivelProductor)
+ export symbol(SVPVAL_chkCondCarac)
+
+ export symbol(SVPVAL_arcdRamaArse)
+
+ export symbol(SVPVAL_empresa)
+ export symbol(SVPVAL_sucursal)
+
+ export symbol(SVPVAL_chkProvinciaInder)
+ export symbol(SVPVAL_domiCliente)
+ export symbol(SVPVAL_nroDeDocumento)
+ export symbol(SVPVAL_tipoMail)
+ export symbol(SVPVAL_nacionalidad)
+
+ export symbol(SVPVAL_articuloRenovacion)
+ export symbol(SVPVAL_productorRenoAutomatica)
+ export symbol(SVPVAL_productorCbaMza)
+ export symbol(SVPVAL_productorBloqueado)
+ export symbol(SVPVAL_codigoDeAjuste)
+ export symbol(SVPVAL_aseguradoCbaMza)
+
+ export symbol(SVPVAL_chkPlanCerrado)
+
+ export symbol(SVPVAL_chkInfoAutoWeb)
+ export symbol(SVPVAL_chkClienteIntegral)
+
+ export symbol(SVPVAL_chkProductorAsegurado)
+
+ export symbol(SVPVAL_chkAseguradoProdAs1)
+
+ export symbol(SVPVAL_chkTipoDocHabWeb)
+ export symbol(SVPVAL_chkCodIvaHabWeb)
+
+ export symbol(SVPVAL_chkEdadVida)
+
+ export symbol(SVPVAL_chkPlanesHabilWeb)
+ export symbol(SVPVAL_productorRenoAutomatica2)
+
+ export symbol(SVPVAL_chkMayorAuxiliar)
+
+ export symbol(SVPVAL_monedaV2)
+
+ export symbol(SVPVAL_chkCapituloTarifa)
+ export symbol(SVPVAL_chkCapituloTarifaArticulo)
+ export symbol(SVPVAL_chkCapituloTarifaPlan)
+ export symbol(SVPVAL_chkCapituloTarifaWeb)
+
+ export symbol(SVPVAL_chkCapituloVariante)
+ export symbol(SVPVAL_chkTarifaDiferencial)
+ export symbol(SVPVAL_end)
+ export symbol(SVPVAL_inz)
+
+ export symbol(SVPVAL_productoWeb)
+ export symbol(SVPVAL_planDePagoWeb)
+
+ export symbol(SVPVAL_hechoGenerador)
+ export symbol(SVPVAL_tipoDeLesiones)
+ export symbol(SVPVAL_tipoDeCambio)
+
+ export symbol(SVPVAL_causaSiniestro)
+ export symbol(SVPVAL_lugarPrisma)
+ export symbol(SVPVAL_estadoDelTiempo)
+ export symbol(SVPVAL_tipoDeAccidente)
+ export symbol(SVPVAL_colisionCon)
+ export symbol(SVPVAL_lugarNoPrisma)
+ export symbol(SVPVAL_relacionAsegurado)
+ export symbol(SVPVAL_HechoGenCob)
+ export symbol(SVPVAL_EstadoSin)
+
+ export symbol(SVPVAL_chkCiaCoaseg)
+ export symbol(SVPVAL_chkCobAfec)
+
+endpgmexp

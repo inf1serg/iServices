@@ -1,0 +1,34 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WET7
+                  T7EMPR    R               REFFLD(EMPR)
+                  T7SUCU    R               REFFLD(SUCU)
+                  T7NIVT    R               REFFLD(NIVT)
+                  T7NIVC    R               REFFLD(NIVC)
+                  T7NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  T7RAMA    R               REFFLD(RAMA)
+                  T7ARSE    R               REFFLD(ARSE)
+                  T7POCO    R               REFFLD(POCO)
+                  T7COBL    R               REFFLD(COBL)
+                  T7CCOE    R               REFFLD(CCBP)
+                                            COLHDG('CODIGO' 'DE' 'COEFICIENTE')
+                  T7COEF    R               REFFLD(COVT)
+                                            COLHDG('COEFICIENTE' 'APLICADO')
+                  T7MAR2    R               REFFLD(MARP)
+                                            COLHDG('APLICA A' 'RC' 'CAS/AMBOS')
+                  T7DATE    R               REFFLD(FER8)
+                                            COLHDG('FECHA' 'DE' 'GENERACION')
+                  T7TIME    R               REFFLD(TIME)
+                                            COLHDG('HORA' 'DE' 'GENERACION')
+                  T7USER    R               REFFLD(USER)
+                K T7EMPR
+                K T7SUCU
+                K T7NIVT
+                K T7NIVC
+                K T7NCTW
+                K T7RAMA
+                K T7ARSE
+                K T7POCO
+                K T7COBL
+                K T7CCOE

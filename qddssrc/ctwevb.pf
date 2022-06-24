@@ -1,0 +1,40 @@
+     A                                      REF(REFERENCIA)
+     A                                      UNIQUE
+     A          R C1WEVB
+     A            V0EMPR    R               REFFLD(EMPR)
+     A            V0SUCU    R               REFFLD(SUCU)
+     A            V0NIVT    R               REFFLD(NIVT)
+     A            V0NIVC    R               REFFLD(NIVC)
+     A            V0NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+     A            V0RAMA    R               REFFLD(RAMA)
+     A            V0ARSE    R               REFFLD(ARSE)
+     A            V0SECU    R               REFFLD(RAMA)
+                                            COLHDG('SECUENCIA')
+     A            V0NOMB    R               REFFLD(NOMB)
+     A            V0CUIT    R               REFFLD(CUIT)
+                                            COLHDG('CUIT/CUIL')
+     A            V0MAR1    R               REFFLD(MARP)
+     A                                      COLHDG('CLAUSULA' 'NO' 'REPETICION')
+     A            V0MAR2    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0MAR3    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0MAR4    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0MAR5    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0USER    R               REFFLD(USER)
+     A            V0TIME    R               REFFLD(TIME)
+     A            V0DATE    R               REFFLD(FER8)
+     A            V0TIDO    R               REFFLD(TIDO)
+     A            V0NRDO    R               REFFLD(NRDO)
+     A** - ------------------------------- *
+     A          K V0EMPR
+     A          K V0SUCU
+     A          K V0NIVT
+     A          K V0NIVC
+     A          K V0NCTW
+     A          K V0RAMA
+     A          K V0ARSE
+     A          K V0SECU

@@ -1,0 +1,89 @@
+STRPGMEXP  SIGNATURE('SVPTAB0000000001')
+
+ export symbol(SVPTAB_Inz)
+ export symbol(SVPTAB_End)
+ export symbol(SVPTAB_Error)
+ export symbol(SVPTAB_getCuestionario)
+ export symbol(SVPTAB_getPregunta)
+ export symbol(SVPTAB_getCuestionarios)
+ export symbol(SVPTAB_getPreguntas)
+ export symbol(SVPTAB_chkCuestionario)
+ export symbol(SVPTAB_getPreguntaExcluyente)
+ export symbol(SVPTAB_getItemsExcluyentes)
+ export symbol(SVPTAB_getItemsObligatorio)
+
+ export symbol(SVPTAB_cotizaMoneda)
+
+ export symbol(SVPTAB_getTipoMascotas)
+ export symbol(SVPTAB_getRazaMascotas)
+ export symbol(SVPTAB_getRelaMascotas)
+ export symbol(SVPTAB_getTipoMascotasWeb)
+ export symbol(SVPTAB_getRelaMascotasWeb)
+
+ export symbol(SVPTAB_getParentescoVida)
+
+ export symbol(SVPTAB_getFormasDePago)
+ export symbol(SVPTAB_getCombinacionFormaDePago)
+
+ export symbol(SVPTAB_getResBcoXCodCobW)
+
+ export symbol(SVPTAB_getCntcfp)
+ export symbol(SVPTAB_getCntnau)
+ export symbol(SVPTAB_chkAgente)
+ export symbol(SVPTAB_chkCntcfp02)
+
+ export symbol(SVPTAB_getTipoDePersona)
+
+ export symbol(SVPTAB_getPremioProd)
+ export symbol(SVPTAB_getRequiereAPRC)
+ export symbol(SVPTAB_getProvincia)
+
+ export symbol(SVPTAB_getSet001)
+
+ export symbol(SVPTAB_getLugarPRISMA)
+ export symbol(SVPTAB_getCausas)
+ export symbol(SVPTAB_getEstados)
+ export symbol(SVPTAB_getEstadoTiempo)
+ export symbol(SVPTAB_getRelacionAseg)
+ export symbol(SVPTAB_listaTipoAccidente)
+
+ export symbol(SVPTAB_listaRamas)
+ export symbol(SVPTAB_listaSexos)
+ export symbol(SVPTAB_listaEstadoCivil)
+ export symbol(SVPTAB_listaPaises)
+ export symbol(SVPTAB_listaVehiculos)
+ export symbol(SVPTAB_listaCarrocerias)
+ export symbol(SVPTAB_listaTipoDeVehiculos)
+ export symbol(SVPTAB_listaUsos)
+ export symbol(SVPTAB_listaCompanias)
+ export symbol(SVPTAB_listaCuentasContables)
+ export symbol(SVPTAB_listaMonedas)
+ export symbol(SVPTAB_listaImpuestos)
+ export symbol(SVPTAB_listaCoberturas)
+ export symbol(SVPTAB_listaHechosGeneradores)
+ export symbol(SVPTAB_relacionCoberturaYHechoGen)
+ export symbol(SVPTAB_listaProveedores)
+ export symbol(SVPTAB_getCntnap)
+ export symbol(SVPTAB_getGntpro)
+ export symbol(SVPTAB_getCntcau)
+ export symbol(SVPTAB_getGntloc)
+
+ export symbol(SVPTAB_chkSet001)
+
+ export symbol(SVPTAB_getGntmon)
+ export symbol(SVPTAB_getGntlo1)
+ export symbol(SVPTAB_listaTipoColision)
+ export symbol(SVPTAB_listaLugarNoPRISMA)
+ export symbol(SVPTAB_listaTipoBeneficiario)
+ export symbol(SVPTAB_listaEdoReclamo)
+ export symbol(SVPTAB_listaTipoDeRecibo)
+ export symbol(SVPTAB_listaTextoPreseteado)
+
+ export symbol(SVPTAB_chkSet426)
+ export symbol(SVPTAB_getNumeradorGenerico)
+ export symbol(SVPTAB_listaFormasDePagos)
+
+ export symbol(SVPTAB_chkTipoProveedor)
+ export symbol(SVPTAB_getTiposComprobanteAfip)
+
+ endpgmexp

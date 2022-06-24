@@ -1,0 +1,6 @@
+STRPGMEXP SIGNATURE('SPCHKUSRV1000000')
+  export symbol('SPCHKUSR_HAVEMSG')
+  export symbol('SPCHKUSR_ALWACT')
+  export symbol('SPCHKUSR_HAVEJOBS')
+  export symbol('SPCHKUSR_ERROR')
+ENDPGMEXP

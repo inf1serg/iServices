@@ -1,0 +1,42 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WSE1
+                  E1EMPR    R               REFFLD(EMPR)
+                  E1SUCU    R               REFFLD(SUCU)
+                  E1NIVT    R               REFFLD(NIVT)
+                  E1NIVC    R               REFFLD(NIVC)
+                  E1NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  E1RAMA    R               REFFLD(RAMA)
+                  E1ARSE    R               REFFLD(ARSE)
+                  E1RIEC    R               REFFLD(RIEC)
+                  E1XCOB    R               REFFLD(XCOB)
+                  E1SACO    R               REFFLD(SACO)
+                  E1PTCO    R               REFFLD(PTCO)
+                  E1XPRI    R               REFFLD(XPRI)
+                  E1PRSA    R               REFFLD(PRSA)
+                  E1ECOB    R               REFFLD(ECOB)
+                  E1MAR1    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  E1MAR2    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  E1MAR3    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  E1MAR4    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  E1MAR5    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  E1STRG    R               REFFLD(STRG)
+                                            COLHDG('MARCA' 'LIBRE')
+                  E1USER    R               REFFLD(USER)
+                  E1TIME    R               REFFLD(TIME)
+                  E1DATE    R               REFFLD(FER8)
+                K E1EMPR
+                K E1SUCU
+                K E1NIVT
+                K E1NIVC
+                K E1NCTW
+                K E1RAMA
+                K E1ARSE
+                K E1RIEC
+                K E1XCOB

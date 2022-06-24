@@ -1,0 +1,60 @@
+     A                                      REF(REFERENCIA)
+     A                                      UNIQUE
+     A          R C1WEVC
+     A            V0EMPR    R               REFFLD(EMPR)
+     A            V0SUCU    R               REFFLD(SUCU)
+     A            V0NIVT    R               REFFLD(NIVT)
+     A            V0NIVC    R               REFFLD(NIVC)
+     A            V0NCTW    R               REFFLD(NRES)
+     A                                      COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+     A            V0RAMA    R               REFFLD(RAMA)
+     A            V0ARSE    R               REFFLD(ARSE)
+     A            V0ACTI    R               REFFLD(ACTA)
+     A                                      COLHDG('ACTIVIDAD')
+     A            V0SECU    R               REFFLD(RAMA)
+     A                                      COLHDG('SECUENCIA')
+     A            V0CATE    R               REFFLD(RAMA)
+     A                                      COLHDG('CATEGORIA')
+     A            V0CANT    R               REFFLD(RAMA)
+     A                                      COLHDG('CANTIDAD')
+     A            V0SUAS    R               REFFLD(SUAS)
+     A            V0PRIM    R               REFFLD(PRIM)
+     A            V0SERI    R               REFFLD(SERI)
+     A            V0SEEM    R               REFFLD(SEEM)
+     A            V0IMPI    R               REFFLD(IMPI)
+     A            V0SERS    R               REFFLD(SERS)
+     A            V0TSSN    R               REFFLD(TSSN)
+     A            V0IPR1    R               REFFLD(IPR1)
+     A            V0IPR4    R               REFFLD(IPR4)
+     A            V0IPR3    R               REFFLD(IPR3)
+     A            V0IPR6    R               REFFLD(IPR6)
+     A            V0IPR7    R               REFFLD(IPR7)
+     A            V0IPR8    R               REFFLD(IPR8)
+     A            V0IPR9    R               REFFLD(IPR9)
+     A            V0PREM    R               REFFLD(PREM)
+     A            V0MAR1    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0MAR2    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0MAR3    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0MAR4    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0MAR5    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V0USER    R               REFFLD(USER)
+     A            V0TIME    R               REFFLD(TIME)
+     A            V0DATE    R               REFFLD(DATE)
+     A            V0RAED         2  0
+     A                                      COLHDG('RANGO DE' 'EDAD')
+     A                                      TEXT('RANGO DE EDAD')
+     A** - ------------------------------- *
+     A          K V0EMPR
+     A          K V0SUCU
+     A          K V0NIVT
+     A          K V0NIVC
+     A          K V0NCTW
+     A          K V0RAMA
+     A          K V0ARSE
+     A          K V0ACTI
+     A          K V0SECU

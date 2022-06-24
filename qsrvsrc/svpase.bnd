@@ -1,0 +1,27 @@
+STRPGMEXP SIGNATURE('SVPASE0000000001')
+
+ export symbol(SVPASE_chkAse)
+ export symbol(SVPASE_getIva)
+ export symbol(SVPASE_getTipoSociedad)
+ export symbol(SVPASE_getCodBloqueo)
+ export symbol(SVPASE_getCuit)
+ export symbol(SVPASE_getTipoDoc)
+ export symbol(SVPASE_getNroDoc)
+ export symbol(SVPASE_getFecNac)
+ export symbol(SVPASE_getNombre)
+ export symbol(SVPASE_inz)
+ export symbol(SVPASE_end)
+ export symbol(SVPASE_error)
+
+ export symbol(SVPASE_getBloqueoActual)
+
+ export symbol(SVPASE_getAsegurado)
+ export symbol(SVPASE_getProductorAsegurado)
+
+ export symbol(SVPASE_isAseguradoHdi)
+
+ export symbol(SVPASE_getSehase01)
+ export symbol(SVPASE_infoAsegurado)
+ export symbol(SVPASE_isAseguradoBco)
+
+endpgmexp

@@ -1,0 +1,22 @@
+STRPGMEXP SIGNATURE('SVPWEB0000000001')
+
+ export symbol(SVPWEB_chkArt)
+ export symbol(SVPWEB_getDescArt)
+ export symbol(SVPWEB_setPar)
+ export symbol(SVPWEB_getPar)
+ export symbol(SVPWEB_inz)
+ export symbol(SVPWEB_end)
+ export symbol(SVPWEB_error)
+
+ export symbol(SVPWEB_getParametrosWeb)
+ export symbol(SVPWEB_getCalculoFechaHasta)
+
+ export symbol(SVPWEB_getTopeVigenciaHasta)
+ export symbol(SVPWEB_getConvertirArticuloRamaEmision)
+ export symbol(SVPWEB_okWeb)
+ export symbol(SVPWEB_chkPar)
+
+ export symbol(SVPWEB_setParametrosWeb)
+ export symbol(SVPWEB_getParametrosWeb2)
+
+endpgmexp

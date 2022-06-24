@@ -1,0 +1,14 @@
+STRPGMEXP  SIGNATURE('SVPRVS0000000001')
+
+ export symbol(SVPRVS_chkRamaAuto)
+ export symbol(SVPRVS_chkTipoBenef)
+ export symbol(SVPRVS_chkFecEnvio)
+ export symbol(SVPRVS_getFranquicia)
+ export symbol(SVPRVS_chkTopeImp)
+ export symbol(SVPRVS_chkAjustarRva)
+ export symbol(SVPRVS_chkImporte)
+ export symbol(SVPRVS_inz)
+ export symbol(SVPRVS_end)
+ export symbol(SVPRVS_error)
+
+endpgmexp

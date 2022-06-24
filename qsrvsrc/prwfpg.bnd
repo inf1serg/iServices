@@ -1,0 +1,8 @@
+strpgmexp signature('PRWFPGV1M0R00000')
+
+    export symbol(prwfpg_inz)
+    export symbol(prwfpg_end)
+    export symbol(prwfpg_error)
+    export symbol(prwfpg_insertformadepago)
+
+endpgmexp

@@ -1,0 +1,42 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WTIM
+                  W0EMPR    R               REFFLD(EMPR)
+                  W0SUCU    R               REFFLD(SUCU)
+                  W0NIVT    R               REFFLD(NIVT)
+                  W0NIVC    R               REFFLD(NIVC)
+                  W0NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  W0NIT1    R               REFFLD(NIVT)
+                  W0NIV1    R               REFFLD(NIVC)
+                  W0HCCT    R               REFFLD(TIME)
+                                            TEXT('HORA CREACION DE COTIZACION')
+                                            COLHDG('HORA' 'CREACION' 'COTIZACI-
+                                            ON')
+                                            EDTWRD('  :  :  ')
+                  W0FCOT    R               REFFLD(FER8)
+                                            TEXT('FECHA DE COTIZACION')
+                                            COLHDG('FECHA' 'DE' 'COTIZACION')
+                                            EDTWRD('    /  /  ')
+                  W0HCOT    R               REFFLD(TIME)
+                                            TEXT('HORA DE COTIZACION')
+                                            COLHDG('HORA' 'DE' 'COTIZACION')
+                                            EDTWRD('  :  :  ')
+                  W0FRCT    R               REFFLD(FER8)
+                                            TEXT('FECHA DE RECOTIZACION')
+                                            COLHDG('FECHA' 'DE' 'RECOTIZACION')
+                                            EDTWRD('    /  /  ')
+                  W0HRCT    R               REFFLD(TIME)
+                                            TEXT('HORA DE RECOTIZACION')
+                                            COLHDG('HORA' 'DE' 'RECOTIZACION')
+                                            EDTWRD('  :  :  ')
+                  W0HPRO    R               REFFLD(TIME)
+                                            TEXT('HORA DE ENVIO A PROPUESTA')
+                                            COLHDG('HORA' 'ENVIO' 'PROPUESTA')
+                                            EDTWRD('  :  :  ')
+
+                K W0EMPR
+                K W0SUCU
+                K W0NIVT
+                K W0NIVC
+                K W0NCTW

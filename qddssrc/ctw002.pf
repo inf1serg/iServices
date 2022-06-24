@@ -1,0 +1,34 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1W002
+                  W2EMPR    R               REFFLD(EMPR)
+                  W2SUCU    R               REFFLD(SUCU)
+                  W2NIVT    R               REFFLD(NIVT)
+                  W2NIVC    R               REFFLD(NIVC)
+                  W2NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  W2RAMA    R               REFFLD(RAMA)
+                  W2ARSE    R               REFFLD(ARSE)
+                  W2POCO    R               REFFLD(POCO)
+                  W2SERI    R               REFFLD(SERI)
+                  W2SEEM    R               REFFLD(SEEM)
+                  W2IMPI    R               REFFLD(IMPI)
+                  W2SERS    R               REFFLD(SERS)
+                  W2TSSN    R               REFFLD(TSSN)
+                  W2IPR1    R               REFFLD(IPR1)
+                  W2IPR2    R               REFFLD(IPR2)
+                  W2IPR3    R               REFFLD(IPR3)
+                  W2IPR4    R               REFFLD(IPR4)
+                  W2IPR5    R               REFFLD(IPR5)
+                  W2IPR6    R               REFFLD(IPR6)
+                  W2IPR7    R               REFFLD(IPR7)
+                  W2IPR8    R               REFFLD(IPR8)
+                  W2IPR9    R               REFFLD(IPR9)
+                K W2EMPR
+                K W2SUCU
+                K W2NIVT
+                K W2NIVC
+                K W2NCTW
+                K W2RAMA
+                K W2ARSE
+                K W2POCO

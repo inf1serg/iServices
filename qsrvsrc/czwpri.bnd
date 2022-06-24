@@ -1,0 +1,11 @@
+strpgmexp signature('CZWPRI V1R1M0   ')
+   export symbol(czwpri_inz)
+   export symbol(czwpri_end)
+   export symbol(czwpri_error)
+   export symbol(czwpri_calcoba)
+   export symbol(czwpri_calcobb)
+   export symbol(czwpri_calcobc)
+   export symbol(czwpri_calcobc1)
+   export symbol(czwpri_calcobd)
+   export symbol(czwpri_getPrimaMinima)
+endpgmexp

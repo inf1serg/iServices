@@ -1,0 +1,72 @@
+     A                                      REF(REFERENCIA)
+     A                                      UNIQUE
+     A          R C1WET3
+     A            T3EMPR    R               REFFLD(EMPR)
+     A            T3SUCU    R               REFFLD(SUCU)
+     A            T3NIVT    R               REFFLD(NIVT)
+     A            T3NIVC    R               REFFLD(NIVC)
+     A            T3NCTW    R               REFFLD(NRES)
+     A                                      COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+     A            T3RAMA    R               REFFLD(RAMA)
+     A            T3ARSE    R               REFFLD(ARSE)
+     A            T3POCO    R               REFFLD(POCO)
+     A            T3TAAJ    R               REFFLD(TARC)
+     A                                      TEXT('COD. TABLA AJUSTE')
+     A                                      COLHDG('COD' 'TABLA' 'AJUSTE')
+     A            T3COSG    R               REFFLD(CDGN)
+     A                                      TEXT('ITEM DE SCORING')
+     A                                      COLHDG('ITEM' 'DE' 'SCORING')
+     A* Aplicación del Item
+     A* C=Coeficiente P=Porcentaje
+     A            T3TIAJ    R               REFFLD(MARP)
+     A                                      TEXT('TIPO DE AJUSTE')
+     A                                      COLHDG('TIPO' 'DE' 'AJUSTE')
+     A* Obtención del recargo/bonificación
+     A* A=Acumulativo B=Siempre sobre la misma base
+     A            T3TIAC    R               REFFLD(MARP)
+     A                                      TEXT('FORMA DE APLICAR AJUSTE')
+     A                                      COLHDG('FORMA' 'APLIC' 'AJUSTE')
+     A* 1=Verdadero (Si) 0=Falso (No)...
+     A            T3VEFA    R               REFFLD(MARP)
+     A                                      TEXT('VERDADERO/FALSO')
+     A                                      COLHDG('VERDADERO' 'FALSO')
+     A* Coeficientes o porcentajes de ajuste...
+     A            T3CORC    R               REFFLD(COVT)
+     A                                      TEXT('COEF/PORCEN. AJUSTE RC')
+     A                                      COLHDG('COEF/%' 'AJUSTE' 'RC')
+     A            T3COCA    R               REFFLD(COVT)
+     A                                      TEXT('COEF/PORCEN. AJUSTE CASCO')
+     A                                      COLHDG('COEF/%' 'AJUSTE' 'CASCO')
+     A**************************************
+     A* Marcas de estados.                 *
+     A**************************************
+     A*- Libre.
+     A            T3MAR1    R               REFFLD(MARP)
+     A*- Libre.
+     A            T3MAR2    R               REFFLD(MARP)
+     A*- Libre.
+     A            T3MAR3    R               REFFLD(MARP)
+     A*- Libre.
+     A            T3MAR4    R               REFFLD(MARP)
+     A*- Libre.
+     A            T3MAR5    R               REFFLD(MARP)
+     A*- Libre.
+     A            T3STRG    R               REFFLD(STRG)
+     A**************************************
+     A* Identificaciones.                  *
+     A**************************************
+     A            T3USER    R               REFFLD(USER)
+     A            T3TIME    R               REFFLD(TIME)
+     A            T3DATE    R               REFFLD(FER8)
+     A            T3CANT    R    2  0       REFFLD(CANT)
+     A*- --------------------------------- *
+     A          K T3EMPR
+     A          K T3SUCU
+     A          K T3NIVT
+     A          K T3NIVC
+     A          K T3NCTW
+     A          K T3RAMA
+     A          K T3ARSE
+     A          K T3POCO
+     A          K T3TAAJ
+     A          K T3COSG

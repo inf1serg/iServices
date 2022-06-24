@@ -1,0 +1,21 @@
+STRPGMEXP SIGNATURE('COWSEP0000000001')
+
+ export symbol(COWSEP_inz)
+ export symbol(COWSEP_end)
+ export symbol(COWSEP_error)
+ export symbol(COWSEP_cotizarWeb)
+ export symbol(COWSEP_chkCotizar)
+ export symbol(COWSEP_delCabeceraSepelio)
+ export symbol(COWSEP_delCoberturasSepelio)
+ export symbol(COWSEP_chkCotizar)
+ export symbol(COWSEP_saveCabecera)
+ export symbol(COWSEP_saveCoberturas)
+ export symbol(COWSEP_RecuperaTasaSumAseg)
+ export symbol(COWSEP_SetPormilajePrima)
+ export symbol(COWSEP_planesCerrados)
+ export symbol(COWSEP_getPremio)
+ export symbol(COWSEP_getCoberturas)
+ export symbol(COWSEP_getCabecera)
+ export symbol(COWSEP_reCotizarWeb)
+
+endpgmexp

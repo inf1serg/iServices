@@ -1,0 +1,35 @@
+strpgmexp signature('PRWBIENV1R0M0000')
+
+    export symbol(prwbien_inz)
+    export symbol(prwbien_end)
+    export symbol(prwbien_error)
+
+    export symbol(prwbien_setvehiculo)
+    export symbol(prwbien_clearinspeccion)
+    export symbol(prwbien_clearrastreador)
+    export symbol(prwbien_setubicacion)
+    export symbol(prwbien_setaccesorionotar)
+    export symbol(prwbien_dltaccesorionotar)
+    export symbol(prwbien_setobjetoasegurado)
+    export symbol(prwbien_dltobjetoasegurado)
+
+    export symbol(prwbien_insertAsegurado)
+    export symbol(prwbien_insertBeneficiario)
+    export symbol(prwbien_dltAsegurado)
+    export symbol(prwbien_dltBeneficiario)
+
+    export symbol(prwbien_insertAseguradoV)
+    export symbol(prwbien_dltAseguradoV)
+
+    export symbol(prwbien_setvehiculo2)
+    export symbol(prwbien_setubicacion2)
+
+    export symbol(prwbien_setubicacion3)
+
+    export symbol(prwbien_setMascotaAsegurada)
+    export symbol(prwbien_dltMascotaAsegurada)
+    export symbol(prwbien_copiaPoliza)
+
+    export symbol(prwbien_insertaAseguradoSepelio)
+
+endpgmexp

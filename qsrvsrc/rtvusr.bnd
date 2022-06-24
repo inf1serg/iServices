@@ -1,0 +1,5 @@
+strpgmexp signature('RTVUSRSPGMV10000')
+ export symbol(rtvusr_inz)
+ export symbol(rtvusr_chk)
+ export symbol(rtvusr_error)
+endpgmexp

@@ -1,0 +1,21 @@
+STRPGMEXP SIGNATURE('SVPISO0000000001')
+
+ export symbol(SVPISO_getCoberturaIsol)
+ export symbol(SVPISO_getProductoIsol)
+ export symbol(SVPISO_getPaisIsol)
+ export symbol(SVPISO_getSolicitudIsol)
+ export symbol(SVPISO_setSolicitudIsol)
+ export symbol(SVPISO_updSolicitudIsol)
+ export symbol(SVPISO_inz)
+ export symbol(SVPISO_end)
+ export symbol(SVPISO_getFormaPagoIsol)
+ export symbol(SVPISO_getCodigoIvaIsol)
+ export symbol(SVPISO_getTipoDocumIsol)
+ export symbol(SVPISO_getSexoIsol)
+ export symbol(SVPISO_getEstCivilIsol)
+ export symbol(SVPISO_getProvinciaIsol)
+ export symbol(SVPISO_getCodTarjCredIsol)
+ export symbol(SVPISO_getPlanesIsol)
+ export symbol(SVPISO_getMotivoAnulacionIsol)
+
+endpgmexp

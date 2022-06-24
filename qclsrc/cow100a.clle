@@ -1,0 +1,8 @@
+ INICIO:     PGM        PARM(&TSBS)
+             DCL        VAR(&TSBS) TYPE(*DEC) LEN(2 0)
+
+             ?          COW100CMD
+
+             MONMSG     MSGID(CPF0000) EXEC(GOTO CMDLBL(FINAL))
+
+ FINAL:      ENDPGM

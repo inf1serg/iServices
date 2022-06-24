@@ -1,0 +1,47 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WER7
+                  R7EMPR    R               REFFLD(EMPR)
+                  R7SUCU    R               REFFLD(SUCU)
+                  R7NIVT    R               REFFLD(NIVT)
+                  R7NIVC    R               REFFLD(NIVC)
+                  R7NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  R7RAMA    R               REFFLD(RAMA)
+                  R7ARSE    R               REFFLD(ARSE)
+                  R7POCO    R               REFFLD(POCO)
+                  R7RIEC    R               REFFLD(RIEC)
+                  R7XCOB    R               REFFLD(XCOB)
+                  R7OSEC         9  0
+                  R7OBJE        74A
+                  R7MARC        45A
+                  R7MODE        45A
+                  R7NSER        45A
+                  R7SUAS        15  2
+                  R7DET1        74A
+                  R7DET2        74A
+                  R7DET3        74A
+                  R7DET4        74A
+                  R7DET5        74A
+                  R7DET6        74A
+                  R7MA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R7MA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R7MA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R7MA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R7MA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                K R7EMPR
+                K R7SUCU
+                K R7NIVT
+                K R7NIVC
+                K R7NCTW
+                K R7RAMA
+                K R7ARSE
+                K R7POCO
+                K R7RIEC
+                K R7XCOB
+                K R7OSEC

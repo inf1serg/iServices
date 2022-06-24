@@ -1,0 +1,18 @@
+STRPGMEXP SIGNATURE('SVPVIV0000000001')
+
+ export symbol(SVPVIV_chkViv)
+ export symbol(SVPVIV_getDescViv)
+ export symbol(SVPVIV_chkBloqViv)
+ export symbol(SVPVIV_chkWebViv)
+ export symbol(SVPVIV_setViv)
+ export symbol(SVPVIV_updViv)
+ export symbol(SVPVIV_webViv)
+ export symbol(SVPVIV_dltViv)
+ export symbol(SVPVIV_Inz)
+ export symbol(SVPVIV_End)
+ export symbol(SVPVIV_Error)
+
+ export symbol(SVPVIV_chkVivProducto)
+ export symbol(SVPVIV_getVivProducto)
+
+endpgmexp

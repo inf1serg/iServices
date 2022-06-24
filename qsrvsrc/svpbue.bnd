@@ -1,0 +1,10 @@
+STRPGMEXP  SIGNATURE('SVPBUE0000000001')
+
+ export symbol(SVPBUE_chkProductorEspecial)
+ export symbol(SVPBUE_inz)
+ export symbol(SVPBUE_End)
+ export symbol(SVPBUE_getListaBuenResultado)
+
+ export symbol(SVPBUE_getPorceBuenResultado)
+
+endpgmexp

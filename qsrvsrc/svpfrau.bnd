@@ -1,0 +1,14 @@
+STRPGMEXP  SIGNATURE('SVPFRAU000000001')
+
+ export symbol(SVPFRAU_OkxFEmi)
+ export symbol(SVPFRAU_OkxFVig)
+ export symbol(SVPFRAU_OkxFItm)
+ export symbol(SVPFRAU_OkxSuma)
+ export symbol(SVPFRAU_OkxAver)
+ export symbol(SVPFRAU_OkxCob)
+ export symbol(SVPFRAU_OkxCuo)
+ export symbol(SVPFRAU_DifDias)
+ export symbol(SVPFRAU_inz)
+ export symbol(SVPFRAU_End)
+ export symbol(SVPFRAU_Error)
+endpgmexp

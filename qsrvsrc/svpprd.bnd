@@ -1,0 +1,10 @@
+strpgmexp signature('SVPPRD V1R1M0   ')
+
+   export symbol(svpprd_inz)
+   export symbol(svpprd_end)
+   export symbol(svpprd_error)
+
+   export symbol(svpprd_planesporproductor)
+   export symbol(svpprd_chkplanporproductor)
+
+endpgmexp

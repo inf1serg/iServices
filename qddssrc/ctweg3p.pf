@@ -1,0 +1,51 @@
+                                            REF(*LIBL/REFERENCIA)
+                                            UNIQUE
+                R C1WEG3P
+                  GP3EMPR   R               REFFLD(EMPR)
+                  GP3SUCU   R               REFFLD(SUCU)
+                  GP3NIVT   R               REFFLD(NIVT)
+                  GP3NIVC   R               REFFLD(NIVC)
+                  GP3NCTW   R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  GP3RAMA   R               REFFLD(RAMA)
+                  GP3ARSE   R               REFFLD(ARSE)
+                  GP3RPRO   R               REFFLD(RPRO)
+                  GP3MONE   R               REFFLD(MONE)
+                  GP3COME   R               REFFLD(COME)
+      * Sumas Aseguradas...
+                  GP3SUAS   R               REFFLD(SUAS)
+                  GP3SACA   R               REFFLD(SACA)
+                  GP3SACR   R               REFFLD(SACR)
+                  GP3SAST   R               REFFLD(SAST)
+      * Base imponiPble de impuestos...
+                  GP3PRIM   R               REFFLD(PRIM)
+                  GP3BPRI   R               REFFLD(BPRI)
+                  GP3REFI   R               REFFLD(REFI)
+                  GP3READ   R               REFFLD(READ)
+                  GP3DERE   R               REFFLD(DERE)
+                  GP3SERI   R               REFFLD(SERI)
+                  GP3SEEM   R               REFFLD(SEEM)
+                  GP3IPR6   R               REFFLD(IPR6)
+                  GP3IPR7   R               REFFLD(IPR7)
+                  GP3IPR8   R               REFFLD(IPR8)
+                  GP3PREM   R               REFFLD(PREM)
+      * Base imponible de impuestos...
+                  GP3MAR1   R               REFFLD(MARP)
+                  GP3MAR2   R               REFFLD(MARP)
+                  GP3MAR3   R               REFFLD(MARP)
+                  GP3MAR4   R               REFFLD(MARP)
+                  GP3MAR5   R               REFFLD(MARP)
+                  GP3STRG   R               REFFLD(STRG)
+                  GP3IPR1   R               REFFLD(IPR1)
+                  GP3IPR3   R               REFFLD(IPR3)
+                  GP3IPR4   R               REFFLD(IPR4)
+                  GP3SEFR   R               REFFLD(SEFR)
+                  GP3SEFE   R               REFFLD(SEFE)
+                K GP3EMPR
+                K GP3SUCU
+                K GP3NIVT
+                K GP3NIVC
+                K GP3NCTW
+                K GP3RAMA
+                K GP3ARSE
+                K GP3RPRO

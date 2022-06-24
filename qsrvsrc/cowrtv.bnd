@@ -1,0 +1,55 @@
+STRPGMEXP SIGNATURE('COWRTV000000001')
+
+ export symbol(COWRTV_getCabecera)
+ export symbol(COWRTV_getVehiculos)
+ export symbol(COWRTV_getVehiculo)
+ export symbol(COWRTV_getUbicaciones)
+ export symbol(COWRTV_getUbicacion)
+ export symbol(COWRTV_getCobVehiculo)
+ export symbol(COWRTV_getCobUbicacion)
+ export symbol(COWRTV_getCarUbicacion)
+ export symbol(COWRTV_getBonUbicacion)
+ export symbol(COWRTV_getDatCobFijos)
+ export symbol(COWRTV_getDatCarFijos)
+ export symbol(COWRTV_getBonFijos)
+ export symbol(COWRTV_getPrimaTot)
+ export symbol(COWRTV_getOperacion)
+ export symbol(COWRTV_getImpuestos)
+ export symbol(COWRTV_getBonVehiculo)
+ export symbol(COWRTV_inz)
+ export symbol(COWRTV_end)
+
+ export symbol(COWRTV_getCondComerciales)
+
+ export symbol(COWRTV_getComponenteVida)
+ export symbol(COWRTV_getComponentesVida)
+ export symbol(COWRTV_getCoberturasVida)
+
+ export symbol(COWRTV_getCabeceraCotizacion)
+ export symbol(COWRTV_getComponentesVid2)
+
+ export symbol(COWRTV_getVehiculos2)
+ export symbol(COWRTV_getVehiculo2)
+ export symbol(COWRTV_getCobVehiculo2)
+
+ export symbol(COWRTV_getComponentesVid3)
+ export symbol(COWRTV_getCoberturasVida2)
+ export symbol(COWRTV_getAsegurado)
+
+ export symbol(COWRTV_getComponentesHogar)
+
+ export symbol(COWRTV_getVehiculos3)
+ export symbol(COWRTV_getVehiculo3)
+
+ export symbol(COWRTV_getScoring)
+
+ export symbol(COWRTV_getComponentesRGV)
+
+ export symbol(COWRTV_getComponentesSepelio)
+ export symbol(COWRTV_getClienteCotizacion)
+
+ export symbol(COWRTV_getComponentesRGV2)
+
+ export symbol(COWRTV_getVehiculos4)
+
+endpgmexp

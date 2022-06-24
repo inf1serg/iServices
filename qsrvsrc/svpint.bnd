@@ -1,0 +1,32 @@
+STRPGMEXP SIGNATURE('SVPINT000000001')
+
+ export symbol(SVPINT_GetNombre)
+ export symbol(SVPINT_GetCadena)
+ export symbol(SVPINT_GetCuit)
+
+ export symbol(SVPINT_getIntermediario)
+ export symbol(SVPINT_getNroDaf)
+
+ export symbol(SVPINT_getTelefonos)
+ export symbol(SVPINT_getTelefonosWeb)
+
+ export symbol(SVPINT_setMostrarDatosContacto)
+ export symbol(SVPINT_setMostrarTelefonos)
+ export symbol(SVPINT_setMostrarMails)
+ export symbol(SVPINT_isMostrarTelefonos)
+ export symbol(SVPINT_isMostrarMails)
+
+ export symbol(SVPINT_getMailWeb)
+
+ export symbol(SVPINT_chkDescuentoWeb)
+ export symbol(SVPINT_getDescuentoWeb)
+
+ export symbol(SVPINT_isCabeceraEspecial)
+
+ export symbol(SVPINT_getMatricula)
+
+ export symbol(SVPINT_bloquearVoucher)
+
+ export symbol(SVPINT_getMayorAuxiliar)
+
+endpgmexp

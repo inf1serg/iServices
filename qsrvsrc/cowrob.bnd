@@ -1,0 +1,6 @@
+STRPGMEXP SIGNATURE('COWROB0000000001')
+
+ export symbol(COWROB_cotizarWeb)
+ export symbol(COWROB_chkRenovacion)
+
+endpgmexp

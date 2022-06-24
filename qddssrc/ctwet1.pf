@@ -1,0 +1,38 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WET1
+                  T1EMPR    R               REFFLD(EMPR)
+                  T1SUCU    R               REFFLD(SUCU)
+                  T1NIVT    R               REFFLD(NIVT)
+                  T1NIVC    R               REFFLD(NIVC)
+                  T1NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  T1RAMA    R               REFFLD(RAMA)
+                  T1ARSE    R               REFFLD(ARSE)
+                  T1POCO    R               REFFLD(POCO)
+                  T1SECU    R               REFFLD(SECU)
+                                            COLHDG('SECUENCIA' 'DE' 'ACCESORIO')
+                  T1ACCD    R               REFFLD(ACCD)
+                  T1ACCV    R               REFFLD(ACCV)
+                  T1MAR1    R               REFFLD(MARP)
+                                            COLHDG('1=TARIFABLE' +
+                                            '2=NO TARIFABLE')
+                  T1MA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T1MA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T1MA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T1MA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  T1MA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                K T1EMPR
+                K T1SUCU
+                K T1NIVT
+                K T1NIVC
+                K T1NCTW
+                K T1RAMA
+                K T1ARSE
+                K T1POCO
+                K T1SECU

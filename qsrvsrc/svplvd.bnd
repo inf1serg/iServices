@@ -1,0 +1,30 @@
+STRPGMEXP SIGNATURE('SVPLVD0000000001')
+
+ export symbol(SVPLVD_setCliente)
+ export symbol(SVPLVD_setPolizas)
+ export symbol(SVPLVD_setOperacionEmision)
+ export symbol(SVPLVD_setOperacionCobranza)
+ export symbol(SVPLVD_setOperacionSiniestroPago)
+ export symbol(SVPLVD_setOperacionSiniestroEstimacion)
+ export symbol(SVPLVD_setSiniestroDenuncia)
+ export symbol(SVPLVD_inz)
+ export symbol(SVPLVD_End)
+ export symbol(SVPLVD_delCliente)
+
+ export symbol(SVPLVD_getConfiguracion)
+ export symbol(SVPLVD_getConfiguracionPorFecha)
+ export symbol(SVPLVD_getConfiguracionExacta)
+ export symbol(SVPLVD_getLlamada)
+ export symbol(SVPLVD_setEstadoInicio)
+ export symbol(SVPLVD_setEstadoFin)
+ export symbol(SVPLVD_getEstadoControl)
+ export symbol(SVPLVD_updEstadoControl)
+ export symbol(SVPLVD_setEstadoControl)
+ export symbol(SVPLVD_setBienesAseguradosAuto)
+ export symbol(SVPLVD_setBienesAseguradosRV)
+ export symbol(SVPLVD_setBienesAseguradosVida)
+ export symbol(SVPLVD_chkNominaExterna)
+
+ export symbol(SVPLVD_setPagosTesoreria)
+
+endpgmexp

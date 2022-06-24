@@ -1,0 +1,9 @@
+strpgmexp signature('REASEGU V1000000')
+  export symbol(reasegu_inz)
+  export symbol(reasegu_getlstcont)
+  export symbol(reasegu_getlstcontram)
+  export symbol(reasegu_getciadesc)
+  export symbol(reasegu_end)
+  export symbol(reasegu_getdescclf)
+  export symbol(reasegu_getdescagr)
+endpgmexp

@@ -1,0 +1,8 @@
+strpgmexp signature('SVPMAILV1R1M0000')
+   export symbol(svpmail_inz)
+   export symbol(svpmail_end)
+   export symbol(svpmail_error)
+   export symbol(svpmail_xnrdaf)
+   export symbol(svpmail_xnivc)
+   export symbol(svpmail_xprov)
+endpgmexp

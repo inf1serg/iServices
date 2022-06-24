@@ -1,0 +1,236 @@
+     A*%%TS  SD  20160428  153604  INF1SERG    REL-V7R1M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A*****************************************************************
+     A* Cabecera                                                      *
+     A*****************************************************************
+     A          R COW0002CA
+     A*%%TS  SD  20160422  180101  INF1LUIS    REL-V7R1M0  5770-WDS
+     A                                      CLRL(*END)
+     A                                      OVERLAY
+     A                                  1 14USER
+     A                                  1 29'   MODULO WEB DE GAUS   '
+     A                                      DSPATR(RI)
+     A                                  1 59DATE
+     A                                      EDTCDE(Y)
+     A                                  1 69TIME
+     A                                  2  2'                      Datos de Ase-
+     A                                      gurados - Cotizacion WEB           -
+     A                                               '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            XXPGM         10A  O  1  2
+     A*****************************************************************
+     A* Subfile                                                       *
+     A*****************************************************************
+     A          R COW0002SF1                SFL
+     A            X1ASEG        40A  O  9 13
+     A            X1TASE        10A  O  9 54
+     A            X1OPCI         1Y 0B  9 10EDTCDE(Z)
+     A                                      VALUES(0 5)
+     A                                      DSPATR(HI)
+     A            H1NASE         7  0H
+     A            H1ASEN         7  0H
+     A*****************************************************************
+     A* Subfile de control                                            *
+     A*****************************************************************
+     A          R COW0002SC1                SFLCTL(COW0002SF1)
+     A                                      SFLSIZ(0011)
+     A                                      SFLPAG(0010)
+     A                                      CF12(12 'Anterior')
+     A                                      OVERLAY
+     A                                      PROTECT
+     A  30                                  SFLDSP
+     A  31                                  SFLDSPCTL
+     A N30                                  SFLCLR
+     A  32                                  SFLEND(*MORE)
+     A                                  4  2'Intermediario:'
+     A                                      DSPATR(HI)
+     A                                  5  2'Cotización...:'
+     A                                      DSPATR(HI)
+     A            X1NIVT         1S 0O  4 17
+     A            X1NIVC         5S 0O  4 19
+     A            X1NCTW         7S 0O  5 17
+     A            X1NOMD        40A  O  4 25
+     A                                  7  9'5=Detalle'
+     A                                      COLOR(BLU)
+     A                                  8 13'Asegurado'
+     A                                      DSPATR(HI)
+     A                                  8 54'Tipo'
+     A                                      DSPATR(HI)
+     A                                  8  9'Opc'
+     A                                      DSPATR(HI)
+     A*****************************************************************
+     A* No hay Datos para mostrar                                     *
+     A*****************************************************************
+     A          R COW0002NE
+     A                                      OVERLAY
+     A                                 12 15'No se visualizan registros para es-
+     A                                      ta selección'
+     A                                      DSPATR(HI)
+     A*****************************************************************
+     A* Funciones Subfile                                             *
+     A*****************************************************************
+     A          R COW0002P1
+     A*%%TS  SD  20160422  153145  INF1LUIS    REL-V7R1M0  5770-WDS
+     A                                      OVERLAY
+     A            XXEMSU        80A  O 22  1DSPATR(UL)
+     A                                      DSPATR(HI)
+     A                                 23 31'F12=Retornar'
+     A                                      COLOR(TRQ)
+     A*****************************************************************
+     A* Detalle del Asegurado                                         *
+     A*****************************************************************
+     A          R COW000202
+     A*%%TS  SD  20160426  150303  INF1LUIS    REL-V7R1M0  5770-WDS
+     A                                      CF12(12 'Retornar')
+     A                                      CF11(11 'Mail')
+     A                                      OVERLAY
+     A                                  3  2'Intermediario:'
+     A                                      DSPATR(HI)
+     A                                  4  2'Cotización...:'
+     A                                      DSPATR(HI)
+     A            X2NIVT         1Y 0O  3 17EDTCDE(Z)
+     A            X2NCTW         7Y 0O  4 17EDTCDE(Z)
+     A            X2NIVC         5Y 0O  3 19EDTCDE(Z)
+     A            X2NOMD        40A  O  3 25
+     A                                  6  2'Nro Aseg.....:'
+     A                                      DSPATR(HI)
+     A            X2ASEN         7Y 0O  6 17EDTCDE(Z)
+     A                                 15  2'Tipo Soc.....:'
+     A                                      DSPATR(HI)
+     A            X2TISO         2Y 0O 15 17EDTCDE(Z)
+     A                                  7  2'Nom Aseg.....:'
+     A                                      DSPATR(HI)
+     A            X2NOMB        35A  O  7 17
+     A                                  8 30'Fec.Nac.'
+     A                                      DSPATR(HI)
+     A            X2FNAC         8Y 0O  8 39EDTWRD('  /  /    ')
+     A                                  9  2'Sexo.........:'
+     A                                      DSPATR(HI)
+     A            X2SEXO        10A  O  9 17
+     A                                  9 28'Estado Civil:'
+     A                                      DSPATR(HI)
+     A            X2ESTC        30A  O  9 42
+     A                                  8  2'Documento....:'
+     A                                      DSPATR(HI)
+     A            X2TIDO         3A  O  8 17
+     A            X2NRDO         8Y 0O  8 21EDTCDE(Z)
+     A                                  7 53'Cuil:'
+     A                                      DSPATR(HI)
+     A            X2CUIT        11Y 0O  7 59EDTWRD('0 -        - ')
+     A                                 17 31'Nro.Ins.Jub.:'
+     A                                      DSPATR(HI)
+     A            X2NJUB        11Y 0O 17 45EDTWRD('  -        - ')
+     A                                 13  2'Domicilio....:'
+     A                                      DSPATR(HI)
+     A            X2DOMI        40A  O 13 17
+     A                                 12  2'Cod. Postal..:'
+     A                                      DSPATR(HI)
+     A            X2COPO         5Y 0O 12 17EDTCDE(Z)
+     A            X2COPS         1Y 0O 12 23
+     A                                 12 25'Provincia:'
+     A                                      DSPATR(HI)
+     A            X2PROV        20A  O 12 36
+     A                                 16  2'Agen. Reten..:'
+     A                                      DSPATR(HI)
+     A            X2AGRE        10A  O 16 17
+     A                                 16 28'Cod. IVA:'
+     A                                      DSPATR(HI)
+     A            X2CIVA        30A  O 16 38
+     A                                 20  2'Tel.Part.....:'
+     A                                      DSPATR(HI)
+     A                                 20 38'Tel.Celular.....:'
+     A                                      DSPATR(HI)
+     A                                 21  2'Tel.Trab.....:'
+     A                                      DSPATR(HI)
+     A            X2TELP        20A  O 20 17
+     A            X2TELC        20A  O 20 56
+     A            X2TELT        20A  O 21 17
+     A                                  8 50'Naci.:'
+     A                                      DSPATR(HI)
+     A            X2NACO        15A  O  8 57
+     A                                 15 46'Fecha Inscrip:'
+     A                                      DSPATR(HI)
+     A            X2FEIN         8Y 0O 15 61EDTWRD('  /  /    ')
+     A                                 17  2'Nro Inscrip..:'
+     A                                      DSPATR(HI)
+     A            X2NRIN        13Y 0O 17 17EDTCDE(Z)
+     A                                 15 20'Fec. Contrato:'
+     A                                      DSPATR(HI)
+     A            X2FECO         8Y 0O 15 35EDTWRD('  /  /    ')
+     A                                  6 25'Actividad:'
+     A                                      DSPATR(HI)
+     A            X2RAAE        30A  O  6 36
+     A                                 19  2'Teléfonos'
+     A                                      DSPATR(HI)
+     A                                      COLOR(PNK)
+     A                                 14  2'Información General'
+     A                                      COLOR(PNK)
+     A                                 11  2'Ubicación'
+     A                                      COLOR(PNK)
+     A                                  5  2'Datos Personales'
+     A                                      COLOR(PNK)
+     A                                 10  2'Profesión....:'
+     A                                      DSPATR(HI)
+     A            X2CPRF        25A  O 10 17
+     A                                 18  2'C.B.U.pago...:'
+     A                                      DSPATR(HI)
+     A            X2NCBU        22S 0O 18 17
+     A                                 18 40'C.B.U Sini:'
+     A                                      DSPATR(HI)
+     A            X2CBUS        22S 0O 18 52
+     A                                 17 59'Ruta:'
+     A                                      DSPATR(HI)
+     A            X2RUTA        16Y 0O 17 65EDTCDE(Z)
+     A*****************************************************************
+     A* Funciones de Detalle del Asegurado                            *
+     A*****************************************************************
+     A          R COW0002P2
+     A*%%TS  SD  20160426  150403  INF1LUIS    REL-V7R1M0  5770-WDS
+     A                                      CLRL(*NO)
+     A                                 23  2'                                  -
+     A                                                                         -
+     A                                               '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                 24 68'F12=Anterior'
+     A                                      COLOR(TRQ)
+     A                                 24 59'F11=Mail'
+     A                                      COLOR(BLU)
+     A*****************************************************************
+     A*                                                               *
+     A*****************************************************************
+     A* Subfile.-                                                     *
+     A*****************************************************************
+     A          R COW0002SF2                SFL
+     A            X3DTCE        20A  O  4  1
+     A            X3MAIL        50   O  4 22COLOR(PNK)
+     A*****************************************************************
+     A* Subfile de Control.-                                          *
+     A*****************************************************************
+     A          R COW0002SC2                SFLCTL(COW0002SF2)
+     A*%%TS  SD  20160422  180459  INF1LUIS    REL-V7R1M0  5770-WDS
+     A                                      CF12(12)
+     A                                      OVERLAY
+     A                                      PROTECT
+     A  40                                  SFLDSP
+     A  41                                  SFLDSPCTL
+     A N40                                  SFLCLR
+     A  42                                  SFLEND(*MORE)
+     A                                      SFLSIZ(0006)
+     A                                      SFLPAG(0005)
+     A                                      WINDOW(3 2 11 71 *NOMSGLIN)
+     A                                      RMVWDW
+     A                                  3  1'Tipo'
+     A                                      DSPATR(HI)
+     A                                  3 22'Mail'
+     A                                      DSPATR(HI)
+     A                                  1  1'                         Direccion-
+     A                                      es de Correos                      -
+     A                                        '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(UL)
+     A                                  2 60'F12=Anterior'
+     A                                      COLOR(TRQ)

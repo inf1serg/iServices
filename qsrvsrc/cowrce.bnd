@@ -1,0 +1,6 @@
+STRPGMEXP SIGNATURE('COWRCE0000000001')
+
+ export symbol(COWRCE_cotizarWeb)
+ export symbol(COWRCE_chkRenovacion)
+
+endpgmexp

@@ -1,0 +1,6 @@
+strpgmexp signature('CZWIMP V1R1M0   ')
+   export symbol(czwimp_inz)
+   export symbol(czwimp_end)
+   export symbol(czwimp_error)
+   export symbol(czwimp_calcimpuestos)
+endpgmexp

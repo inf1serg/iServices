@@ -1,0 +1,202 @@
+     A*%%TS  SD  20210809  094825  INF1RUBE    REL-V7R1M0  5770-WDS
+     A* -------------------------------------------------------------
+     A* SISTEMA     : Web Consulta
+     A* MODULO      : COTIZACION DE POLIZAS DE HOGAR
+     A* ORIGEN      : SOFTWARE LOCAL
+     A* -------------------------------------------------------------
+     A* FUENTE      : COW131FM
+     A* DESCRIPCION : Consulta Cotizacion de Poliza
+     A* AUTOR       : Sergio Luis Puentes Valladares
+     A* FECHA       : 2020/01/20
+     A* -------------------------------------------------------------
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      INDARA
+     A                                      PRINT
+     A                                      CF12(12 'Volver')
+     A          R COW131CCA
+     A*%%TS  SD  20200317  082003  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                  1  3'COW131'
+     A                                  1 13USER
+     A                                  1 29'   MODULO WEB DE GAUS   '
+     A                                      DSPATR(RI)
+     A                                      COLOR(GRN)
+     A                                  1 60DATE
+     A                                      EDTCDE(Y)
+     A                                  1 72TIME
+     A                                  2  3'                 Consulta Cotizaci-
+     A                                      on Poliza de Riesgos Varios        -
+     A                                              '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  3  3'Prod'
+     A            XXNIVT         1S 0O  3  8COLOR(BLU)
+     A            XXNIVC         5Y 0O  3 10EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            XXPROD        40A  O  3 16COLOR(TRQ)
+     A                                  3 57'N.Cot'
+     A            XXNCTW         7S 0O  3 63COLOR(BLU)
+     A                                  4  3'Rama'
+     A            XXRAMA         2Y 0O  4  8EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            XXDRAM        30A  O  4 11COLOR(TRQ)
+     A                                  4 42'Art'
+     A            XXARCD         6Y 0O  4 46COLOR(BLU)
+     A                                      EDTCDE(Z)
+     A            XXARNO        27A  O  4 53COLOR(TRQ)
+     A          R COW131CS1                 SFL
+     A*%%TS  SD  20200123  110319  INF1SER1    REL-V7R1M0  5770-WDS
+     A            X1EMPR         1A  H
+     A            X1SUCU         2A  H
+     A            X1RAMA         2S 0H
+     A            X1ARSE         2S 0H
+     A            X1NIVT         1S 0H
+     A            X1NIVC         5S 0H
+     A            X1OPCI         1Y 0B  9 10DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            X1POCO         4Y 0O  9 15COLOR(PNK)
+     A                                      EDTCDE(Z)
+     A            X1RDES        40A  O  9 28COLOR(TRQ)
+     A          R COW131CC1                 SFLCTL(COW131CS1)
+     A*%%TS  SD  20200129  090807  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                      SFLSIZ(0100)
+     A                                      SFLPAG(0012)
+     A  30                                  SFLDSP
+     A  30                                  SFLDSPCTL
+     A  31                                  SFLCLR
+     A  32                                  SFLEND(*MORE)
+     A                                      OVERLAY
+     A            NRSFL          4S 0H      SFLRCDNBR(CURSOR)
+     A                                  5  8'5=Consultar'
+     A                                      COLOR(BLU)
+     A                                  6  9'OP'
+     A                                      DSPATR(RI)
+     A                                      DSPATR(UL)
+     A                                  6 15'Componente'
+     A                                      DSPATR(RI)
+     A                                      DSPATR(UL)
+     A                                  6 28'Ubicacion del Riesgo              -
+     A                                            '
+     A                                      DSPATR(RI)
+     A                                      DSPATR(UL)
+     A            XXPOCO         4Y 0B  7 15EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A                                      CHECK(RZ)
+     A          R COW131CS2                 SFL
+     A*%%TS  SD  20210809  094825  INF1RUBE    REL-V7R1M0  5770-WDS
+     A            X1EMPR         1A  H
+     A            X1SUCU         2A  H
+     A            X1NIVT         1S 0H
+     A            X1NIVC         5S 0H
+     A            X1NCTW         7S 0H
+     A            X1RAMA         2S 0H
+     A            X1ARSE         2S 0H
+     A            X1POCO         4S 0H
+     A            X1OPCI         1Y 0B 16  6DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A  40                                  DSPATR(ND)
+     A  40                                  DSPATR(PR)
+     A            X1RIEC         3A  O 16 10COLOR(BLU)
+     A  40                                  DSPATR(ND)
+     A            X1XCOB         3S 0O 16 14COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A            X1DXCO        20A  O 16 18COLOR(TRQ)
+     A  40                                  DSPATR(ND)
+     A            X1SACO        13Y 2O 16 39COLOR(RED)
+     A                                      EDTWRD('     .   . 0 ,  ')
+     A            X1PTCO        11  2O 16 56EDTWRD('   .   . 0 ,  ')
+     A                                      COLOR(RED)
+     A            X1XPRI         9  6O 16 71EDTWRD(' 0 ,      ')
+     A                                      COLOR(RED)
+     A          R COW131CC2                 SFLCTL(COW131CS2)
+     A*%%TS  SD  20210809  094825  INF1RUBE    REL-V7R1M0  5770-WDS
+     A                                      SFLSIZ(0100)
+     A                                      SFLPAG(0005)
+     A  30                                  SFLDSP
+     A  30                                  SFLDSPCTL
+     A  34                                  SFLCLR
+     A  35                                  SFLEND(*MORE)
+     A                                      OVERLAY
+     A            RRSFL          4S 0H      SFLRCDNBR(CURSOR)
+     A                                  5  5'Componente'
+     A            XXPOCO         4Y 0O  5 16COLOR(BLU)
+     A                                      EDTWRD('  0 ')
+     A                                  5 22'Producto'
+     A            XXXPRO         3S 0O  5 31COLOR(BLU)
+     A            XXDXPR        24A  O  5 36COLOR(TRQ)
+     A                                  6  5'Ubicacion '
+     A            XXRDES        30A  O  6 17COLOR(BLU)
+     A                                  6 49'Nro.Domicilio'
+     A            XXNRDM         5Y 0O  6 64COLOR(BLU)
+     A                                      EDTWRD('   0 ')
+     A                                  7  5'Block Inder'
+     A            XXRPRO         2S 0O  7 17COLOR(BLU)
+     A            XXRDEP         2S 0O  7 20COLOR(BLU)
+     A            XXRLOC         2S 0O  7 23COLOR(BLU)
+     A            XXBLCK        10A  O  7 26COLOR(BLU)
+     A                                  7 37'Cod.Postal'
+     A            XXCOPO         5Y 0O  7 48COLOR(BLU)
+     A                                      EDTWRD('   0 ')
+     A            XXCOPS         1S 0O  7 54COLOR(BLU)
+     A            XXDCOP        24A  O  7 56COLOR(TRQ)
+     A                                  8  5'Suma Asegurada'
+     A                                  9 14'Total'
+     A            XXSUAS        13Y 0O  9 23COLOR(BLU)
+     A                                      EDTWRD(' .   .   . 0 .   ')
+     A                                  9 42'Operacion'
+     A            XXSAMO        13Y 0O  9 52COLOR(BLU)
+     A                                      EDTWRD(' .   .   . 0 .   ')
+     A                                 10  5'Vivienda'
+     A            XXCVIV         3S 0O 10 14COLOR(BLU)
+     A            XXDCVI        24A  O 10 18COLOR(TRQ)
+     A                                 10 43'Clas.'
+     A            XXCLFR         4A  O 10 49COLOR(BLU)
+     A                                 10 55'Agravacion Riesgo'
+     A            XXCAGR         2S 0O 10 73COLOR(BLU)
+     A                                 11  9'Cap.Tarifa'
+     A            XXCTAR         4S 0O 11 25COLOR(BLU)
+     A            XXDCTA        24A  O 11 30COLOR(TRQ)
+     A                                 12  9'Tarifa Inciso 1'
+     A            XXCTA1         2A  O 12 25COLOR(BLU)
+     A            XXDCT1        24A  O 12 30COLOR(TRQ)
+     A                                 13  9'Tarifa Inciso 2'
+     A            XXCTA2         2A  O 13 25COLOR(BLU)
+     A            XXDCT2        24A  O 13 30COLOR(TRQ)
+     A                                 14  5'OP 1=Descuentos 2=Objetos Asegurad-
+     A                                      os'
+     A                                      COLOR(RED)
+     A                                 15  5'OP '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A                                      DSPATR(UL)
+     A                                 15  9'Ries'
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A                                      DSPATR(UL)
+     A                                 15 14'Cobertura              '
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A                                      DSPATR(UL)
+     A                                 15 41'Suma Asegurada'
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                 15 57'Prima Cobert.'
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                 15 71'Porm.Prima'
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                      DSPATR(UL)
+     A          R COW131CP1
+     A*%%TS  SD  20200122  083603  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                      OVERLAY
+     A            WMSG          78A  O 22  2DSPATR(BL)
+     A                                      COLOR(RED)
+     A                                 23  2'HDI SEGUROS S.A.                  -
+     A                                                     HDI SEGUROS S.A.    -
+     A                                               '
+     A                                      DSPATR(UL)
+     A                                 24 70'F12=Volver'
+     A                                      COLOR(BLU)

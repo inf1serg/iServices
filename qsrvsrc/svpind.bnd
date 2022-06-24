@@ -1,0 +1,10 @@
+STRPGMEXP SIGNATURE('SVPIND0000000001')
+
+ export symbol(SVPIND_inz)
+ export symbol(SVPIND_end)
+ export symbol(SVPIND_chkIndice)
+ export symbol(SVPIND_getIndice)
+ export symbol(SVPIND_getCoefIndice)
+ export symbol(SVPIND_error)
+
+endpgmexp

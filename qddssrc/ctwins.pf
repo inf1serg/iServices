@@ -1,0 +1,65 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WINS
+                  INEMPR    R               REFFLD(EMPR)
+                  INSUCU    R               REFFLD(SUCU)
+                  INNIVT    R               REFFLD(NIVT)
+                  INNIVC    R               REFFLD(NIVC)
+                  INNCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  INRAMA    R               REFFLD(RAMA)
+                  INARSE    R               REFFLD(ARSE)
+                  INPOCO    R               REFFLD(POCO)
+      * Tipo:
+      *       "I" = Inspección
+      *       "R" = Rastreador
+                  INTIPO    R               REFFLD(MARP)
+                                            COLHDG('INSPECCION' 'O' 'RAST.')
+                  INRAST    R               REFFLD(TIOU)
+                                            COLHDG('COD' 'DEL' 'RASTREADOR')
+                  INMARC    R   40          REFFLD(DSOP)
+                                            COLHDG('TIPO' 'DE' 'INSPECCION')
+                  INNOMB    R               REFFLD(NOMB)
+                  INDOMI    R               REFFLD(DOMI)
+                  INNDOM    R               REFFLD(NDOM)
+                  INNTEL    R               REFFLD(NTEL)
+                  INNTE1    R               REFFLD(NTEL)
+                  INMAIL    R               REFFLD(MAIL)
+                  INHDES    R               REFFLD(TIME)
+                  INHHAS    R               REFFLD(TIME)
+                  INNRIN    R               REFFLD(LOCA)
+                                            COLHDG('NUMERO' 'DE' 'INSPECCION')
+                  INCTRO    R   50A         REFFLD(DCFG)
+                                            COLHDG('CENTRO' 'DE' 'INSPECCION')
+                  INCOME    R  512A         REFFLD(DCFG)
+                                            COLHDG('COMENTARIOS')
+                  INMA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  INMA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  INMA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  INMA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  INMA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  INCRAS    R               REFFLD(CCBP)
+                                            COLHDG('CODIGO' 'DE' +
+                                            'RASTREADOR')
+      * Esta descripción es por si el Rastreador es "OTROS"
+                  INDRAS    R               REFFLD(NOMB)
+                                            COLHDG('DESCR.' 'DE' +
+                                            'RASTREADOR')
+                  INFINS    R               REFFLD(FER8)
+                                            COLHDG('FECHA' 'DE' +
+                                            'INSPECCION')
+                                            TEXT('FECHA DE INSPECCION')
+                K INEMPR
+                K INSUCU
+                K INNIVT
+                K INNIVC
+                K INNCTW
+                K INTIPO
+                K INRAMA
+                K INPOCO
+                K INARSE

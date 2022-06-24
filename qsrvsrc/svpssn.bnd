@@ -1,0 +1,11 @@
+STRPGMEXP  SIGNATURE('SVPSSN0000000001')
+
+ export symbol(SVPSSN_Inz)
+ export symbol(SVPSSN_End)
+ export symbol(SVPSSN_Error)
+ export symbol(SVPSSN_getRamo)
+ export symbol(SVPSSN_getSubramo)
+ export symbol(SVPSSN_getProvincia)
+ export symbol(SVPSSN_getMoneda)
+
+ endpgmexp

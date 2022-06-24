@@ -1,0 +1,151 @@
+STRPGMEXP  SIGNATURE('SPVSPO0000000001')
+
+ export symbol(SPVSPO_chkSpol)
+ export symbol(SPVSPO_chkSspo)
+ export symbol(SPVSPO_getStatusIng)
+ export symbol(SPVSPO_getSuspEsp)
+ export symbol(SPVSPO_getSaldo)
+ export symbol(SPVSPO_getPremio)
+ export symbol(SPVSPO_getCuotas)
+ export symbol(SPVSPO_chkCuotasPend)
+ export symbol(SPVSPO_chkCuotasPreli)
+ export symbol(SPVSPO_chkPenSpwy)
+ export symbol(SPVSPO_chkSaldo)
+ export symbol(SPVSPO_Inz)
+ export symbol(SPVSPO_End)
+ export symbol(SPVSPO_Error)
+ export symbol(SPVSPO_chkSaldoSupAnt)
+ export symbol(SPVSPO_chkAsen)
+ export symbol(SPVSPO_chkAnulada)
+ export symbol(SPVSPO_getHastaFac)
+ export symbol(SPVSPO_getSpol)
+ export symbol(SPVSPO_chkSpolEnProc)
+ export symbol(SPVSPO_getFdp)
+ export symbol(SPVSPO_getAsen)
+ export symbol(SPVSPO_chkVig)
+ export symbol(SPVSPO_getFecEmi)
+ export symbol(SPVSPO_chkWeb)
+ export symbol(SPVSPO_getParWeb)
+ export symbol(SPVSPO_getFecVig)
+
+ export symbol(SPVSPO_getProducto)
+
+ export symbol(SPVSPO_getRama)
+ export symbol(SPVSPO_getPoliza)
+ export symbol(SPVSPO_getProductor)
+ export symbol(SPVSPO_getMone)
+ export symbol(SPVSPO_getPolizaAnterior)
+ export symbol(SPVSPO_getSumaAsegurada)
+ export symbol(SPVSPO_getPrima)
+
+ export symbol(SPVSPO_chkSpolRenovada)
+ export symbol(SPVSPO_chkSpolSuspendida)
+ export symbol(SPVSPO_chkPenSpeedway)
+ export symbol(SPVSPO_getFormaDePago)
+ export symbol(SPVSPO_getRecAdministrativo)
+
+ export symbol(SPVSPO_getSumaAseguradaEnPesos)
+ export symbol(SPVSPO_getHastaFacturado)
+
+ export symbol(SPVSPO_getCodigoIva)
+
+ export symbol(SPVSPO_getDiasFacturacionEndoso)
+
+ export symbol(SPVSPO_getTipoOperacion)
+
+ export symbol(SPVSPO_getPlanDePago)
+ export symbol(SPVSPO_getCodPlanDePago)
+ export symbol(SPVSPO_getPolizaAbierta)
+
+ export symbol(SPVSPO_getCuotasEmitidas)
+ export symbol(SPVSPO_getCantidadCuotasEmitidas)
+ export symbol(SPVSPO_chkCuotaPaga)
+ export symbol(SPVSPO_chkCuotaPermiteRecibo)
+ export symbol(SPVSPO_chkAnuladaV2)
+
+ export symbol(SPVSPO_chkCuotasPendientes)
+
+ export symbol(SPVSPO_getCuotasImpagas)
+
+ export symbol(SPVSPO_getCuotasImpagasMes)
+
+ export symbol(SPVSPO_chkSuspEsp)
+ export symbol(SPVSPO_getCabeceraSuplemento)
+ export symbol(SPVSPO_chkBloqueo)
+ export symbol(SPVSPO_getNuevoSuplemento)
+ export symbol(SPVSPO_setCabeceraSuplemento)
+
+ export symbol(SPVSPO_chkCabecera)
+ export symbol(SPVSPO_getCabecera)
+ export symbol(SPVSPO_setCabecera)
+
+ export symbol(SPVSPO_chkComisionCobranza)
+ export symbol(SPVSPO_getComisionCobranza)
+ export symbol(SPVSPO_setComisionCobranza)
+
+ export symbol(SPVSPO_chkPlanDePago)
+ export symbol(SPVSPO_setPlanDePago)
+
+ export symbol(SPVSPO_chkReferencias)
+ export symbol(SPVSPO_setReferencias)
+ export symbol(SPVSPO_getReferencias)
+
+ export symbol(SPVSPO_chkBeneficiario)
+ export symbol(SPVSPO_getBeneficiarios)
+ export symbol(SPVSPO_setBeneficiarios)
+ export symbol(SPVSPO_chkAsegurado)
+
+ export symbol(SPVSPO_setPrimaxProvincia)
+ export symbol(SPVSPO_chkPrimaxProvincia)
+ export symbol(SPVSPO_dltPrimaxProvincia)
+
+ export symbol(SPVSPO_setPrimxProvRegSimp)
+ export symbol(SPVSPO_chkPrimxProvRegSimp)
+ export symbol(SPVSPO_dltPrimxProvRegSimp)
+ export symbol(SPVSPO_getPlanDePagoV2)
+
+ export symbol(SPVSPO_getUltimoSuplemento)
+ export symbol(SPVSPO_getDatosProgramasInternacionales)
+
+ export symbol(SPVSPO_isNominaExterna)
+
+ export symbol(SPVSPO_getCadenaComercial)
+
+ export symbol(SPVSPO_getPahec0c)
+ export symbol(SPVSPO_getSuperpolizaAnterior)
+ export symbol(SPVSPO_getSuperpolizaPosterior)
+
+ export symbol(SPVSPO_isNueva)
+ export symbol(SPVSPO_isRenovacion)
+ export symbol(SPVSPO_isWeb)
+ export symbol(SPVSPO_getUltimoPeriodoCurso)
+
+ export symbol(SPVSPO_updPlanDePago)
+
+ export symbol(SPVSPO_getPahcd6)
+ export symbol(SPVSPO_chkPahcd6)
+ export symbol(SPVSPO_setPahcd6)
+ export symbol(SPVSPO_getUltSecuncia)
+ export symbol(SPVSPO_getPahcc2)
+ export symbol(SPVSPO_chkPahcc3)
+ export symbol(SPVSPO_setPahcc3)
+ export symbol(SPVSPO_chkPahcd7)
+ export symbol(SPVSPO_setPahcd7)
+ export symbol(SPVSPO_UltSecCobPagoProc)
+ export symbol(SPVSPO_UltSecuenciaPagos)
+ export symbol(SPVSPO_UltSecCobranza)
+ export symbol(SPVSPO_getDiferenciaGA)
+ export symbol(SPVSPO_UltSecCobrProc)
+ export symbol(SPVSPO_updPahcd5)
+ export symbol(SPVSPO_updPahcc2)
+ export symbol(SPVSPO_getFechaAnualidad)
+ export symbol(SPVSPO_getPahcc2V2)
+
+ export symbol(SPVSPO_anulaArrepEnProceso)
+
+ export symbol(SPVSPO_getNroExpediente)
+ export symbol(SPVSPO_setSsnp04)
+
+ export symbol(SPVSPO_getIntermediario)
+
+endpgmexp

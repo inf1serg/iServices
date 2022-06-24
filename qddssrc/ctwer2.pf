@@ -1,0 +1,40 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WER2
+                  R2EMPR    R               REFFLD(EMPR)
+                  R2SUCU    R               REFFLD(SUCU)
+                  R2NIVT    R               REFFLD(NIVT)
+                  R2NIVC    R               REFFLD(NIVC)
+                  R2NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  R2RAMA    R               REFFLD(RAMA)
+                  R2ARSE    R               REFFLD(ARSE)
+                  R2POCO    R               REFFLD(POCO)
+                  R2RIEC    R               REFFLD(RIEC)
+                  R2XCOB    R               REFFLD(XCOB)
+                  R2SACO    R               REFFLD(SACO)
+                  R2PTCO    R               REFFLD(PTCO)
+                  R2XPRI    R               REFFLD(XPRI)
+                  R2PRSA    R               REFFLD(PRSA)
+                  R2PTCA    R               REFFLD(PTCO)
+                  R2XPRA    R               REFFLD(XPRI)
+                  R2MA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R2MA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R2MA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R2MA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R2MA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                K R2EMPR
+                K R2SUCU
+                K R2NIVT
+                K R2NIVC
+                K R2NCTW
+                K R2RAMA
+                K R2ARSE
+                K R2POCO
+                K R2RIEC
+                K R2XCOB

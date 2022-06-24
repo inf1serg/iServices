@@ -1,0 +1,45 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1W001
+                  W1EMPR    R               REFFLD(EMPR)
+                  W1SUCU    R               REFFLD(SUCU)
+                  W1NIVT    R               REFFLD(NIVT)
+                  W1NIVC    R               REFFLD(NIVC)
+                  W1NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  W1RAMA    R               REFFLD(RAMA)
+                  W1DERE    R               REFFLD(DERE)
+                  W1XREF    R               REFFLD(XREF)
+                  W1REFI    R               REFFLD(REFI)
+                  W1SERI    R               REFFLD(SERI)
+                  W1SEEM    R               REFFLD(SEEM)
+                  W1PIMI    R               REFFLD(PIMI)
+                  W1IMPI    R               REFFLD(IMPI)
+                  W1PSSO    R               REFFLD(PSSO)
+                  W1SERS    R               REFFLD(SERS)
+                  W1PSSN    R               REFFLD(PSSN)
+                  W1TSSN    R               REFFLD(TSSN)
+                  W1PIVI    R               REFFLD(PIVI)
+                  W1IPR1    R               REFFLD(IPR1)
+                  W1PIVN    R               REFFLD(PIVN)
+                  W1IPR4    R               REFFLD(IPR4)
+                  W1PIVR    R               REFFLD(PIVR)
+                  W1IPR3    R               REFFLD(IPR3)
+                  W1IPR6    R               REFFLD(IPR6)
+                  W1IPR7    R               REFFLD(IPR7)
+                  W1IPR8    R               REFFLD(IPR8)
+                  W1IPR9    R               REFFLD(IPR9)
+                  W1IPR2    R               REFFLD(IPR2)
+                  W1IPR5    R               REFFLD(IPR5)
+                  W1PREM    R               REFFLD(PREM)
+                  W1VACC    R               TEXT('VALOR A APLICAR EXTRA COMISIO-
+                                            N')
+                                            REFFLD(REFER/PRIM)
+                                            COLHDG('VALOR A' 'APLICAR DE' 'EXTR-
+                                            A COMISION')
+                K W1EMPR
+                K W1SUCU
+                K W1NIVT
+                K W1NIVC
+                K W1NCTW
+                K W1RAMA

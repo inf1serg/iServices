@@ -1,0 +1,13 @@
+STRPGMEXP  SIGNATURE('SVPREST V1      ')
+   export     symbol(SVPREST_inz)
+   export     symbol(SVPREST_end)
+   export     symbol(SVPREST_error)
+   export     symbol(SVPREST_chkBase)
+
+   export     symbol(SVPREST_editFecha)
+   export     symbol(SVPREST_editImporte)
+
+   export     symbol(SVPREST_chkCliente)
+   export     symbol(SVPREST_chkPolizaCliente)
+
+ENDPGMEXP

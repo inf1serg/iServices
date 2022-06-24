@@ -1,0 +1,10 @@
+STRPGMEXP  SIGNATURE('SVPMPO0000000001')
+
+ export symbol(SVPMPO_Inz)
+ export symbol(SVPMPO_End)
+ export symbol(SVPMPO_Error)
+ export symbol(SVPMPO_getPahmpo)
+ export symbol(SVPMPO_setPahmpo)
+ export symbol(SVPMPO_updPahmpo)
+
+endpgmexp

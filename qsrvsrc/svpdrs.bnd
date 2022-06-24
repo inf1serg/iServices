@@ -1,0 +1,29 @@
+STRPGMEXP SIGNATURE('SVPDRS0000000001')
+
+ export symbol(SVPDRS_getDescCob)
+ export symbol(SVPDRS_setDesc)
+ export symbol(SVPDRS_dltDesc)
+ export symbol(SVPDRS_getFec)
+ export symbol(SVPDRS_updDesc)
+ export symbol(SVPDRS_updNoDesc)
+ export symbol(SVPDRS_getLcob)
+ export symbol(SVPDRS_chkCob)
+ export symbol(SVPDRS_updDescAnt)
+ export symbol(SVPDRS_chkDesc)
+ export symbol(SVPDRS_chkImpactoDesc)
+ export symbol(SVPDRS_Inz)
+ export symbol(SVPDRS_End)
+ export symbol(SVPDRS_Error)
+
+ export symbol(SVPDRS_getDescCobDiferencia)
+ export symbol(SVPDRS_getSumaAsegurada)
+ export symbol(SVPDRS_getTasa)
+
+ export symbol(SVPDRS_getCaract)
+ export symbol(SVPDRS_getPrima)
+ export symbol(SVPDRS_chkCambioCaract)
+ export symbol(SVPDRS_chkCaract)
+
+ export symbol(SVPDRS_getPrimaAnterior)
+
+endpgmexp

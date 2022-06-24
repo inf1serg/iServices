@@ -1,0 +1,20 @@
+STRPGMEXP  SIGNATURE('COWREN0000000001')
+
+ export symbol(COWREN_getLlamadas)
+ export symbol(COWREN_getDsLlamadas)
+ export symbol(COWREN_inz)
+ export symbol(COWREN_End)
+ export symbol(COWREN_Error)
+
+ export symbol(COWREN_setLlamadas)
+ export symbol(COWREN_chkGeneral)
+ export symbol(COWREN_chkErrores)
+ export symbol(COWREN_getListaBuenResultado)
+
+ export symbol(COWREN_getListaFormasDePago)
+
+ export symbol(COWREN_getLlamadas2)
+ export symbol(COWREN_getDsLlamadas2)
+ export symbol(COWREN_chkErrores2)
+
+endpgmexp

@@ -1,0 +1,22 @@
+STRPGMEXP  SIGNATURE('SPVCBU0000000001')
+
+ export symbol(SPVCBU_CheckCodBanco)
+ export symbol(SPVCBU_CheckCodSucBanco)
+ export symbol(SPVCBU_CheckTipoCuenta)
+ export symbol(SPVCBU_Check1erDigVerif)
+ export symbol(SPVCBU_Check2doDigVerif)
+ export symbol(SPVCBU_GetDigitosVerif)
+ export symbol(SPVCBU_GetCBUEntero)
+ export symbol(SPVCBU_GetCBUSeparado)
+ export symbol(SPVCBU_SetCBUEntero)
+ export symbol(SPVCBU_Inz)
+ export symbol(SPVCBU_End)
+ export symbol(SPVCBU_Error)
+ export symbol(SPVCBU_GetCuenta)
+
+ export symbol(SPVCBU_setBloqueo)
+
+ export symbol(SPVCBU_enmascararNumero)
+ export symbol(SPVCBU_getCbu25a22)
+
+endpgmexp

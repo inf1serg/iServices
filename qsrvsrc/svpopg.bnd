@@ -1,0 +1,13 @@
+STRPGMEXP  SIGNATURE('SVPOPG0000000001')
+
+ export symbol(SVPOPG_Inz)
+ export symbol(SVPOPG_End)
+ export symbol(SVPOPG_Error)
+ export symbol(SVPOPG_getcnhopa)
+ export symbol(SVPOPG_getEstadoCnhopa)
+ export symbol(SVPOPG_updCnhopa)
+
+ export symbol(SVPOPG_getImportes)
+ export symbol(SVPOPG_getRetencionesDeOrdenPago)
+
+endpgmexp

@@ -1,0 +1,7 @@
+STRPGMEXP SIGNATURE('SVPMOB000000001')
+
+ export symbol(SVPMOB_getAuditoria)
+ export symbol(SVPMOB_setAuditoria)
+ export symbol(SVPMOB_setDataq)
+
+endpgmexp

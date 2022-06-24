@@ -1,0 +1,9 @@
+STRPGMEXP SIGNATURE('SVPASI0000000001')
+
+ export symbol(SVPASI_GetCnhAsi)
+ export symbol(SVPASI_ChkCnhAsi)
+ export symbol(SVPASI_UpdCnhAsi)
+ export symbol(SVPASI_SetCnhAsi)
+ export symbol(SVPASI_BalanceoAsiento)
+
+endpgmexp

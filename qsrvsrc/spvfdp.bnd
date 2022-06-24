@@ -1,0 +1,32 @@
+STRPGMEXP  SIGNATURE('SPVFDP0000000001')
+
+ export symbol(SPVFDP_setCbioTarjCred)
+ export symbol(SPVFDP_setCbioDebitBco)
+ export symbol(SPVFDP_setCbioDebitBcoSe)
+ export symbol(SPVFDP_setCbioCobrador)
+ export symbol(SPVFDP_chkPoliCbio)
+ export symbol(SPVFDP_updEc0)
+ export symbol(SPVFDP_updCc2)
+ export symbol(SPVFDP_updCd5)
+ export symbol(SPVFDP_updCfp)
+ export symbol(SPVFDP_setFdp)
+ export symbol(SPVFDP_Inz)
+ export symbol(SPVFDP_End)
+ export symbol(SPVFDP_Error)
+ export symbol(SPVFDP_chkIntFdpWeb)
+ export symbol(SPVFDP_chkNuevaFDP)
+ export symbol(SPVFDP_setDsTcr)
+ export symbol(SPVFDP_setDsDeb)
+ export symbol(SPVFDP_setDsCob)
+ export symbol(SPVFDP_setCbioTarjCredV2)
+ export symbol(SPVFDP_setCbioDebitBcoV2)
+ export symbol(SPVFDP_setCbioCobradorV2)
+ export symbol(SPVFDP_chkPoliCbioV2)
+
+ export symbol(SPVFDP_chkPlanDePago)
+
+ export symbol(SPVFDP_chkPoliCbioV3)
+ export symbol(SPVFDP_getPlanDePago)
+ export symbol(SPVFDP_getPlanDePagoWeb)
+
+endpgmexp

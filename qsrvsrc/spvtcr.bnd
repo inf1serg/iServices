@@ -1,0 +1,29 @@
+STRPGMEXP  SIGNATURE('SPVTCR0000000001')
+
+ export symbol(SPVTCR_chkEmpresa)
+ export symbol(SPVTCR_getCantDigitos)
+ export symbol(SPVTCR_getMascTc)
+ export symbol(SPVTCR_getNroTcEdit)
+ export symbol(SPVTCR_chkNoCero)
+ export symbol(SPVTCR_chk1erNro)
+ export symbol(SPVTCR_chkNroTcr)
+ export symbol(SPVTCR_chkTcrAsen)
+ export symbol(SPVTCR_chkTcr)
+ export symbol(SPVTCR_setTcr)
+ export symbol(SPVTCR_setBloqTc)
+ export symbol(SPVTCR_Inz)
+ export symbol(SPVTCR_End)
+ export symbol(SPVTCR_Error)
+ export symbol(SPVTCR_getNroTcPant)
+ export symbol(SPVTCR_chkTarjCredito)
+
+ export symbol(SPVTCR_fechaVencimientoTcr)
+ export symbol(SPVTCR_getGnhdtc)
+ export symbol(SPVTCR_getDesbloqueadas)
+ export symbol(SPVTCR_setDesbloqueo)
+ export symbol(SPVTCR_updFechaVencimiento)
+ export symbol(SPVTCR_getNombre)
+
+ export symbol(SPVTCR_enmascararNumero)
+
+endpgmexp

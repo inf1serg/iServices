@@ -1,0 +1,25 @@
+STRPGMEXP SIGNATURE('COWHOG0000000001')
+
+ export symbol(COWHOG_cotizarWeb)
+ export symbol(COWHOG_reCotizarWeb)
+
+ export symbol(COWHOG_caracIsValid)
+ export symbol(COWHOG_GetRequiereInspeccion)
+
+ export symbol(COWHOG_calculaCaracteristicas)
+
+ export symbol(COWHOG_caracIsValid2)
+
+ export symbol(COWHOG_valselcaracplan)
+
+ export symbol(COWHOG_setRequiereInspeccion)
+ export symbol(COWHOG_getInspeccion)
+
+ export symbol(COWHOG_chkRenovacion)
+ export symbol(COWHOG_chkPlanesHabilWeb)
+ export symbol(COWHOG_cantidadUbicacRies)
+ export symbol(COWHOG_getInfoHogar)
+
+ export symbol(COWHOG_cotizarWeb2)
+
+endpgmexp

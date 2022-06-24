@@ -1,0 +1,9 @@
+STRPGMEXP SIGNATURE('APIVEH000000001')
+
+ export symbol(APIVEH_cotizar)
+ export symbol(APIVEH_inz)
+ export symbol(APIVEH_end)
+ export symbol(APIVEH_chk0km)
+ export symbol(APIVEH_cotizar2)
+
+endpgmexp

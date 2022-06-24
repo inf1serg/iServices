@@ -1,0 +1,94 @@
+     A*%%TS  SD  20200129  161121  INF1SER1    REL-V7R1M0  5770-WDS
+     A*SLU 16/03/2004 - Este fuente contiene instrucciones para la conversión
+     A*Webfacing marcadas con "*%%WB", rogamos usar CODE Designer para cambiar
+     A*este fuente y no SDA, muchas gracias.
+     A*%%EC
+     A*%%FD ARTICULOS: Vista Prima/Premio PAHED0     AXA.PGMR
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A                                      PRINT
+     A                                      CF12(12 'Volver')
+     A          R COW123CCA
+     A*%%TS  SD  20200129  094621  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                  1  3'COW121'
+     A                                  1 13USER
+     A                                  1 29'   MODULO WEB DE GAUS   '
+     A                                      DSPATR(RI)
+     A                                      COLOR(GRN)
+     A                                  1 60DATE
+     A                                      EDTCDE(Y)
+     A                                  1 72TIME
+     A                                  2  3'                 Consulta Cotizaci-
+     A                                      on Poliza de Vehiculo              -
+     A                                              '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  3  3'Prod'
+     A            XXNIVT         1S 0O  3  8COLOR(BLU)
+     A            XXNIVC         5Y 0O  3 10EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            XXPROD        40A  O  3 16COLOR(TRQ)
+     A                                  3 57'N.Cot'
+     A            XXNCTW         7S 0O  3 63COLOR(BLU)
+     A                                  4  3'Rama'
+     A            XXRAMA         2Y 0O  4  8EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            XXDRAM        30A  O  4 11COLOR(TRQ)
+     A*%%GP SCREEN1    01
+     A                                  4 42'Art'
+     A            XXARCD         6  0O  4 46COLOR(BLU)
+     A            XXARNO        23   O  4 53COLOR(TRQ)
+     A          R COW123CWA                 SFL
+     A*%%TS  SD  20200129  160529  INF1SER1    REL-V7R1M0  5770-WDS
+     A            X1CCBP         3Y 0O  6  4COLOR(BLU)
+     A                                      EDTCDE(Z)
+     A  40                                  DSPATR(ND)
+     A            X1DCBP        30A  O  6 10COLOR(TRQ)
+     A  40                                  DSPATR(ND)
+     A            X1PCBP         5Y 2O  6 47COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                      EDTWRD(' 0 ,  -')
+     A          R COW123CWB                 SFLCTL(COW123CWA)
+     A*%%TS  SD  20200129  161121  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                      SFLSIZ(0100)
+     A                                      SFLPAG(0010)
+     A                                      WINDOW(2 2 17 74)
+     A  30                                  SFLDSP
+     A  30                                  SFLDSPCTL
+     A  31                                  SFLCLR
+     A  32                                  SFLEND(*MORE)
+     A                                      RMVWDW
+     A                                      OVERLAY
+     A            NRSFL          4S 0H      SFLRCDNBR(CURSOR)
+     A                                  1  1'Detalle de Descuentos/Recargos'
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)
+     A                                  1 65'F12=Volver'
+     A                                      COLOR(BLU)
+     A                                  2  2'Prod'
+     A            XXNIVT         1S 0O  2  7COLOR(PNK)
+     A            XXNIVC         5Y 0O  2  9EDTCDE(Z)
+     A                                      COLOR(PNK)
+     A            XXPROD        40A  O  2 15COLOR(TRQ)
+     A                                  2 56'Cot'
+     A            XXNCTW         7S 0O  2 60COLOR(PNK)
+     A                                  3  2'Rama'
+     A            XXRAMA         2S 0O  3  7COLOR(PNK)
+     A                                  4  2'Comp'
+     A            XXPOCO         4Y 0O  4  7COLOR(PNK)
+     A                                      EDTWRD('  0 ')
+     A                                  5  2'Comp.Bonificado                   -
+     A                                          '
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                  5 47'% Bon'
+     A                                      COLOR(BLU)
+     A                                      DSPATR(RI)
+     A            XXDRAM        30A  O  3 10COLOR(TRQ)
+     A                                  3 41'Art'
+     A            XXARCD         6Y 0O  3 45COLOR(BLU)
+     A                                      EDTCDE(Z)
+     A            XXARNO        23A  O  3 52COLOR(TRQ)
+     A                                  4 13'Cob'
+     A            XXCOBL         2A  O  4 17COLOR(BLU)
+     A            XXDCOB        30A  O  4 20COLOR(TRQ)

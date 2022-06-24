@@ -1,0 +1,16 @@
+STRPGMEXP  SIGNATURE('SVPVID0000000001')
+
+ export symbol(SVPVID_Inz)
+ export symbol(SVPVID_End)
+ export symbol(SVPVID_Error)
+ export symbol(SVPVID_chkComponente)
+ export symbol(SVPVID_getComponentes)
+
+ export symbol(SVPVID_getExtensionVida)
+ export symbol(SVPVID_getEdadMaximaDeVida)
+ export symbol(SVPVID_getEdadMinimaDeVida)
+ export symbol(SVPVID_getPahev1)
+ export symbol(SVPVID_getPahev2)
+ export symbol(SVPVID_getUltCompoVida)
+
+endpgmexp

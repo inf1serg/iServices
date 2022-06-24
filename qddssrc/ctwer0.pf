@@ -1,0 +1,56 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WER0
+                  R0EMPR    R               REFFLD(EMPR)
+                  R0SUCU    R               REFFLD(SUCU)
+                  R0NIVT    R               REFFLD(NIVT)
+                  R0NIVC    R               REFFLD(NIVC)
+                  R0NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  R0RAMA    R               REFFLD(RAMA)
+                  R0ARSE    R               REFFLD(ARSE)
+                  R0POCO    R               REFFLD(POCO)
+                  R0XPRO    R               REFFLD(XPRO)
+                  R0RPRO    R               REFFLD(RPRO)
+                  R0RDEP    R               REFFLD(RDEP)
+                  R0RLOC    R               REFFLD(RLOC)
+                  R0BLCK    R               REFFLD(BLCK)
+                  R0RDES    R               REFFLD(RDES)
+                  R0NRDM    R               REFFLD(NRDM)
+                  R0COPO    R               REFFLD(COPO)
+                  R0COPS    R               REFFLD(COPS)
+                  R0SUAS    R               REFFLD(SUAS)
+                  R0SAMO    R               REFFLD(SAMO)
+                  R0CVIV    R               REFFLD(IVSU)
+                                            COLHDG('CODIGO' 'TIPO DE' +
+                                            'VIVIENDA')
+                  R0CLFR    R               REFFLD(CLFR)
+                  R0CAGR    R               REFFLD(CAGR)
+                  R0PSMP    R               REFFLD(PSMP)
+                  R0CREA    R               REFFLD(CREA)
+                  R0CTAR    R               REFFLD(CTAR)
+                  R0CTA1    R               REFFLD(CTA1)
+                  R0CTA2    R               REFFLD(CTA2)
+                  R0MA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R0MA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R0MA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R0MA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R0MA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R0PRIM    R               REFFLD(PRIM)
+                  R0PREM    R               REFFLD(PREM)
+                  R0SAST    R               REFFLD(SAST)
+                  R0ACRC    R               REFFLD(ACRC)
+                  R0ACRN    R               REFFLD(ACRN)
+                K R0EMPR
+                K R0SUCU
+                K R0NIVT
+                K R0NIVC
+                K R0NCTW
+                K R0RAMA
+                K R0POCO
+                K R0ARSE

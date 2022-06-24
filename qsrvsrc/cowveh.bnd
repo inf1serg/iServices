@@ -1,0 +1,89 @@
+STRPGMEXP SIGNATURE('COWVEH000000001')
+
+ export symbol(COWVEH_cotizarWeb)
+ export symbol(COWVEH_reCotizarWeb)
+ export symbol(COWVEH_selectCobertura)
+ export symbol(COWVEH_detalleCobertura)
+ export symbol(COWVEH_getTablaRc)
+
+ export symbol(COWVEH_saveAccesorios)
+
+ export symbol(COWVEH_setCoberturaPorDefecto)
+
+ export symbol(COWVEH_getCaracteristicas)
+
+ export symbol(COWVEH_getListaBuenResultado)
+
+ export symbol(COWVEH_updInspeccionReno)
+
+ export symbol(COWVEH_setRecargoComercial)
+ export symbol(COWVEH_end)
+
+ export symbol(COWVEH_getSumaMinima)
+ export symbol(COWVEH_getSumaMaxima)
+ export symbol(COWVEH_chkSumaMinima)
+ export symbol(COWVEH_chkSumaMaxima)
+
+ export symbol(COWVEH_codigoZona)
+
+ export symbol(COWVEH_confirmarInspeccion)
+
+ export symbol(COWVEH_saveDescuentos)
+ export symbol(COWVEH_saveDescuentosREC)
+
+ export symbol(COWVEH_cotizarWeb2)
+ export symbol(COWVEH_reCotizarWeb2)
+
+ export symbol(COWVEH_chkEndosoPoliza)
+ export symbol(COWVEH_chkEndosoComponente)
+ export symbol(COWVEH_setEndosoPoliza)
+ export symbol(COWVEH_setEndosoComponente)
+
+ export symbol(COWVEH_cotizador)
+
+ export symbol(COWVEH_deletePocoScoring)
+ export symbol(COWVEH_getCtwet3)
+ export symbol(COWVEH_chkCtwet3)
+ export symbol(COWVEH_setCtwet3)
+ export symbol(COWVEH_updCtwet3)
+
+ export symbol(COWVEH_saveScoring)
+ export symbol(COWVEH_validaPreguntas)
+ export symbol(COWVEH_updScoring)
+ export symbol(COWVEH_getPrimasXCoberturas)
+ export symbol(COWVEH_updPrimasXCoberturas)
+ export symbol(COWVEH_aplicaScoring)
+ export symbol(COWVEH_cotizarWeb3)
+ export symbol(COWVEH_reCotizarWeb3)
+ export symbol(COWVEH_chkScoringEnCotizacion)
+
+ export symbol(COWVEH_getPorcCob2)
+ export symbol(COWVEH_chkEndoso)
+ export symbol(COWVEH_getSumaSiniestrablePoco)
+ export symbol(COWVEH_chkCtwet4)
+ export symbol(COWVEH_getCtwet4)
+ export symbol(COWVEH_setCtwet4)
+ export symbol(COWVEH_updCtwet4)
+ export symbol(COWVEH_chkCtwet0)
+ export symbol(COWVEH_getCtwet0)
+ export symbol(COWVEH_setCtwet0)
+ export symbol(COWVEH_updCtwet0)
+ export symbol(COWVEH_chkCtwetc)
+ export symbol(COWVEH_setCtwetc)
+ export symbol(COWVEH_chkCtwet5)
+ export symbol(COWVEH_setCtwet5)
+ export symbol(COWVEH_getCtwet5)
+ export symbol(COWVEH_updCtwet5)
+
+ export symbol(COWVEH_getPrimas)
+
+ export symbol(COWVEH_deletePocoFactores)
+ export symbol(COWVEH_setCtwEt7)
+ export symbol(COWVEH_aplicaFactores)
+ export symbol(COWVEH_getTarifaUsada)
+ export symbol(COWVEH_getCtwEt7)
+
+ export symbol(COWVEH_cotizarWeb4)
+ export symbol(COWVEH_reCotizarWeb4)
+
+endpgmexp

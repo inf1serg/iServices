@@ -1,0 +1,18 @@
+strpgmexp signature('PRWSNDV1R0M00000')
+
+    export symbol(prwsnd_inz)
+    export symbol(prwsnd_end)
+    export symbol(prwsnd_error)
+    export symbol(prwsnd_sndpropuesta)
+
+    export symbol(prwsnd_calculahasta)
+
+    export symbol(prwsnd_snddtaq)
+
+    export symbol(prwsnd_getNroSolicitud)
+
+    export symbol(prwsnd_sndMail)
+
+    export symbol(prwsnd_sndpropuesta2)
+
+endpgmexp

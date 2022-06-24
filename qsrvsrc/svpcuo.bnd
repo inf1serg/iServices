@@ -1,0 +1,5 @@
+STRPGMEXP SIGNATURE('SVPCUO0000000001')
+
+ export symbol(SVPCUO_GetNumeroAsiento)
+
+endpgmexp

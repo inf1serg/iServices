@@ -1,0 +1,115 @@
+     A*%%TS  SD  20160121  180241  INF1SERG    REL-V7R1M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A          R COW000CA
+     A*%%TS  SD  20160119  182907  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                  1  4'COW000M'
+     A                                  1 24'  QUOM - COTIZACIONES/PROPUESTAS  '
+     A                                      DSPATR(RI)
+     A                                  1 60DATE
+     A                                      EDTCDE(Y)
+     A                                  1 69TIME
+     A                                  1 12USER
+     A                                  2  2'                              Cons-
+     A                                      ulta Mensajes                      -
+     A                                               '
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A          R COW000P1
+     A*%%TS  SD  20160119  182907  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                      OVERLAY
+     A                                 24 37'F3=Salir'
+     A                                      DSPATR(UL)
+     A            XXEMSU        80   O 23  1DSPATR(UL)
+     A                                      DSPATR(HI)
+     A          R COW000S1                  SFL
+     A*%%TS  SD  20160119  182907  INF1SERG    REL-V7R1M0  5770-WDS
+     A            X1OPCI         1Y 0B 11  4DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            X1IVSE    R        O 11  6REFFLD(REFER/IVSE *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X1AUSU    R        O 11 12REFFLD(REFER/AUSU *LIBL/REFERENCIA)
+     A            X1FECH    R        O 11 23REFFLD(REFER/FER8 *LIBL/REFERENCIA)
+     A                                      EDTCDE(Y)
+     A            X1TIME    R        O 11 34REFFLD(REFER/TIME *LIBL/REFERENCIA)
+     A                                      EDTWRD('  :  :  ')
+     A            X@TXMG    R   35   O 11 43REFFLD(REFER/TXMG *LIBL/REFERENCIA)
+     A            X1TXMG       198   H
+     A            X1CPGM        10   H
+     A          R COW000C1                  SFLCTL(COW000S1)
+     A*%%TS  SD  20160121  144529  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                      CF03
+     A                                      PAGEUP(27)
+     A                                      PAGEDOWN(28)
+     A                                      VLDCMDKEY(29)
+     A                                      OVERLAY
+     A  30                                  SFLDSP
+     A  31                                  SFLDSPCTL
+     A N30                                  SFLCLR
+     A  32                                  SFLEND(*MORE)
+     A                                      SFLSIZ(0008)
+     A                                      SFLPAG(0008)
+     A                                  4  3'Cotización:'
+     A                                  5  3'Propuesta :'
+     A                                  6  3'Productor :'
+     A            X1SOLN    R        O  5 15REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            PENCTW    R        O  4 15REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            PENIVT    R        O  6 15REFFLD(REFER/NIVT *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            PENIVC    R        O  6 17REFFLD(REFER/NIVC *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X1NOMB    R        O  6 23REFFLD(REFER/NOMB *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                  8 35'5=Consultar'
+     A                                      COLOR(BLU)
+     A                                  9  4'O'
+     A                                      DSPATR(RI)
+     A                                  9  6'Secu.'
+     A                                      DSPATR(RI)
+     A                                  9 12'Usuario   '
+     A                                      DSPATR(RI)
+     A                                  9 23'Fecha     '
+     A                                      DSPATR(RI)
+     A                                  9 34'Hora    '
+     A                                      DSPATR(RI)
+     A                                  9 43'Mensaje...                        -
+     A                                       '
+     A                                      DSPATR(RI)
+     A          R COW00001
+     A*%%TS  SD  20160119  183822  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                      CF12
+     A                                      OVERLAY
+     A                                      WINDOW(2 6 14 66)
+     A                                 13 29'F12=Volver'
+     A                                      DSPATR(UL)
+     A                                  4  1'Propuesta :'
+     A                                  5  1'Productor :'
+     A            X1SOLN    R        O  4 13REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            PENIVT    R        O  5 13REFFLD(REFER/NIVT *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            PENIVC    R        O  5 15REFFLD(REFER/NIVC *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            X1NOMB    R        O  5 21REFFLD(REFER/NOMB *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                  1 19'Mensaje de Cotización/Propuesta'
+     A                                      DSPATR(RI)
+     A                                  3  1'Cotización:'
+     A            PENCTW    R        O  3 13REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X2TXMG       198A  B  8  1DSPATR(HI)
+     A                                      CNTFLD(066)
+     A                                      CHECK(LC)
+     A                                      DSPATR(PR)
+     A          R COW000NE
+     A*%%TS  SD  20160121  144529  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                      OVERLAY
+     A                                 12 19'No se visualizan mensajes para la -
+     A                                      cotización'

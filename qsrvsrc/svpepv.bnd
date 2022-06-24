@@ -1,0 +1,11 @@
+STRPGMEXP  SIGNATURE('SVPEPV0000000001')
+
+ export symbol(SVPEPV_GETMINMAX)
+ export symbol(SVPEPV_GETLIMITEPRODUCTOR)
+ export symbol(SVPEPV_GETACCION)
+ export symbol(SVPEPV_CHKEPVINGRESADA)
+ export symbol(SVPEPV_inz)
+ export symbol(SVPEPV_end)
+ export symbol(SVPEPV_error)
+
+endpgmexp

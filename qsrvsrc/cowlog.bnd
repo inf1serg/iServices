@@ -1,0 +1,27 @@
+STRPGMEXP SIGNATURE('COWLOG0000000001')
+
+        export symbol(COWLOG_inz)
+        export symbol(COWLOG_end)
+        export symbol(COWLOG_error)
+
+        export symbol(COWLOG_create)
+        export symbol(COWLOG_log)
+
+        export symbol(COWLOG_logcon)
+
+        export symbol(COWLOG_apilog)
+
+        export symbol(COWLOG_logConAutoGestion)
+
+        export symbol(COWLOG_spolog)
+        export symbol(COWLOG_createSPOL)
+
+        export symbol(COWLOG_createPgm)
+        export symbol(COWLOG_pgmLog)
+
+        export symbol(COWLOG_loglin)
+
+        export symbol(COWLOG_setLogppr)
+        export symbol(COWLOG_dltLogppr)
+
+ENDPGMEXP

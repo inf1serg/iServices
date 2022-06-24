@@ -1,0 +1,49 @@
+     A*%%TS  SD  20160121  175750  INF1SERG    REL-V7R1M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A          R COW310CA
+     A*%%TS  SD  20160118  184940  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                      KEEP
+     A                                      ASSUME
+     A                                      OVERLAY
+     A                                  1  4' '
+     A          R COW31001
+     A*%%TS  SD  20160119  154832  INF1SERG    REL-V7R1M0  5770-WDS
+     A                                      WINDOW(2 6 14 66)
+     A                                      CF01
+     A                                      CF12
+     A                                      OVERLAY
+     A                                  1 24'Rechazo Propuesta Web'
+     A                                      DSPATR(RI)
+     A                                  7  1'Ingrese un comentario como motivo -
+     A                                      del rechazo:'
+     A            X1TXMG       198A  B  9  1DSPATR(HI)
+     A                                      CNTFLD(066)
+     A                                      CHECK(LC)
+     A  51                                  ERRMSG('El comentario debe ser mayo-
+     A                                      r a 3 carácteres.')
+     A                                 13  1'F1=Confirma'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                 13 55'F12=Cancelar'
+     A                                      DSPATR(UL)
+     A                                  3  1'Solicitud Web:'
+     A                                  4  1'Productor....:'
+     A                                  5  1'Artículo/SPol:'
+     A            X1SOLN    R        O  3 16REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            X1NIVT    R        O  4 16REFFLD(REFER/NIVT *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X1NIVC    R        O  4 18REFFLD(REFER/NIVC *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            X1NOMB    R        O  4 24REFFLD(REFER/NOMB *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X1ARCD    R        O  5 17REFFLD(REFER/ARCD *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            X1SPOL    R        O  5 24REFFLD(REFER/SPOL *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)

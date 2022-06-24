@@ -1,0 +1,22 @@
+STRPGMEXP SIGNATURE('COWAPE0000000001')
+
+ export symbol(COWAPE_cotizarWeb)
+ export symbol(COWAPE_reCotizarWeb)
+
+ export symbol(COWAPE_listaComPorActi)
+
+ export symbol(COWAPE_cotizarWeb2)
+ export symbol(COWAPE_reCotizarWeb2)
+ export symbol(COWAPE_chkCotizar2)
+ export symbol(COWAPE_cotizador2)
+
+ export symbol(COWAPE_delCotizacion)
+ export symbol(COWAPE_delCobertura)
+ export symbol(COWAPE_delCategoria)
+ export symbol(COWAPE_delCabecera)
+ export symbol(COWAPE_getporcencat)
+
+ export symbol(COWAPE_planesCerrados)
+ export symbol(COWAPE_cargaActividad)
+
+endpgmexp

@@ -1,0 +1,13 @@
+STRPGMEXP  SIGNATURE('SVPAGA0000000001')
+
+ export symbol(SVPAGA_getListaArrepentimiento)
+ export symbol(SVPAGA_inz)
+ export symbol(SVPAGA_End)
+ export symbol(SVPAGA_getListaArrep72hrsXProd)
+ export symbol(SVPAGA_getPahag4)
+ export symbol(SVPAGA_getListaArrepXProductor)
+ export symbol(SVPAGA_chkSolicitudXNres)
+ export symbol(SVPAGA_updEstatusPahag4)
+ export symbol(SVPAGA_updPahtan)
+
+endpgmexp

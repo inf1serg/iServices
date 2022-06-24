@@ -1,0 +1,10 @@
+STRPGMEXP SIGNATURE('SVPVLS0000000001')
+
+ export symbol(SVPVLS_end)
+ export symbol(SVPVLS_getValSys)
+ export symbol(SVPVLS_chkValSys)
+ export symbol(SVPVLS_updValSys)
+ export symbol(SVPVLS_setValSys)
+ export symbol(SVPVLS_dltValSys)
+
+endpgmexp

@@ -1,0 +1,257 @@
+     A*%%TS  SD  20210323  130114  INF1JENN    REL-V7R1M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A          R COW000CCA
+     A*%%TS  SD  20160107  115348  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                  1 13USER
+     A                                  1 29'   MODULO WEB DE GAUS   '
+     A                                      DSPATR(RI)
+     A                                      COLOR(GRN)
+     A                                  1 60DATE
+     A                                      EDTCDE(Y)
+     A                                  1 72TIME
+     A                                  1  3'COW000'
+     A                                  2  2'                       Consulta Ge-
+     A                                      neral de Cotizaciones              -
+     A                                               '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A          R COW000CS1                 SFL
+     A*%%TS  SD  20160202  151609  INF1FER3    REL-V7R1M0  5770-WDS
+     A            X1NIVT    R        O  9 12REFFLD(REFER/NIVT *LIBL/REFERENCIA)
+     A                                      EDTCDE(Z)
+     A  40                                  COLOR(PNK)
+     A            X1NIVC    R        O  9 14REFFLD(REFER/NIVC *LIBL/REFERENCIA)
+     A                                      EDTCDE(Z)
+     A  40                                  COLOR(PNK)
+     A            X1ARCD    R        O  9 28REFFLD(ARCD)
+     A  43                                  COLOR(PNK)
+     A                                      EDTCDE(Z)
+     A            X1SPOL    R        O  9 35REFFLD(SPOL)
+     A  43                                  COLOR(PNK)
+     A                                      EDTCDE(Z)
+     A            X1NCTW    R        O  9 20REFFLD(NRES)
+     A  41                                  COLOR(PNK)
+     A                                      EDTCDE(Z)
+     A            X1SPO1         9S 0H
+     A            X1SSPO         3S 0H
+     A            X1OPCI         1A  B  9  9COLOR(BLU)
+     A                                      VALUES('1' '4' '5' '9' 'V' 'P' 'M' -
+     A                                      ' ' '2' 'E')
+     A            X1CEST         1S 0H
+     A            X1CSES         2S 0H
+     A            X1POLI    R   -2   O  9 45REFFLD(REFER/ACLP *LIBL/REFERENCIA)
+     A            X1SOLN         7S 0H
+     A            X1DEST    R        O  9 53REFFLD(REFER/DSOP *LIBL/REFERENCIA)
+     A          R COW000CC1                 SFLCTL(COW000CS1)
+     A*%%TS  SD  20160201  165455  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      SFLSIZ(0012)
+     A                                      SFLPAG(0012)
+     A                                      CF03
+     A                                      PAGEUP(27)
+     A                                      PAGEDOWN(28)
+     A                                      VLDCMDKEY(29)
+     A                                      CF02
+     A                                      OVERLAY
+     A  30                                  SFLDSP
+     A  31                                  SFLDSPCTL
+     A N30                                  SFLCLR
+     A  32                                  SFLEND(*MORE)
+     A                                  6 14' Cod '
+     A                                      DSPATR(RI)
+     A  40        XXNIVT    R        B  7 12REFFLD(NIVT)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A  40        XXNIVC    R        B  7 14REFFLD(NIVC)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                  6 12'N'
+     A                                      DSPATR(RI)
+     A                                  4  8'1=Trabajar  2=Poliza  4=Rechazar  -
+     A                                      5=Consultar  9=Confirmar'
+     A                                      COLOR(BLU)
+     A                                  6  9'O'
+     A                                      DSPATR(RI)
+     A                                  6 20'Nro Cot'
+     A                                      DSPATR(RI)
+     A  41        XXNCTW    R        B  7 20REFFLD(REFER/NRES *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      EDTCDE(Z)
+     A                                  6 28' Arcd '
+     A                                      DSPATR(RI)
+     A                                  6 35'SuperPoli'
+     A                                      DSPATR(RI)
+     A  43        XXARCD    R        B  7 28REFFLD(REFER/ARCD *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      EDTCDE(Z)
+     A  43        XXSPOL    R        B  7 35REFFLD(REFER/SPOL *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      EDTCDE(Z)
+     A                                  5  8'E=Enviar  M=Mensajes  V=Vencida'
+     A                                      COLOR(BLU)
+     A                                  6 45'Poliza '
+     A                                      DSPATR(RI)
+     A                                  6 53'Estado de Cotizacion'
+     A                                      DSPATR(RI)
+     A          R COW000C01
+     A*%%TS  SD  20210323  130114  INF1JENN    REL-V7R1M0  5770-WDS
+     A                                      CF12
+     A                                      OVERLAY
+     A                                  4  3'Productor..:'
+     A            W0NIVT    R        O  4 16REFFLD(REFER/NIVT *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            W0NIVC    R        O  4 18REFFLD(REFER/NIVC *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                  3  3'Cotizacion.:'
+     A            W0NCTW    R        O  3 16REFFLD(REFER/NRES *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            W0FCTW    R        O  3 24REFFLD(REFER/FER8 *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTWRD('    /  /  ')
+     A                                  3 35'Solicitud..:'
+     A            W0SOLN    R        O  3 48REFFLD(REFER/SOLN *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            W0FPRO    R        O  3 56REFFLD(REFER/FER8 *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTWRD('    /  /  ')
+     A                                  5  3'Articulo...:'
+     A            W0ARCD    R        O  5 17REFFLD(REFER/ARCD *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A            W0ARNO    R        O  5 24REFFLD(REFER/ARNO *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                  8  3'SuperPoliza:'
+     A            W0SPOL    R        O  8 16REFFLD(REFER/SPOL *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                  8 26'Anterior...:'
+     A            W0SPO1    R        O  8 39REFFLD(REFER/SPOL *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                  7  3'Moneda.....:'
+     A            W0MONE    R        O  7 21REFFLD(REFER/MONE *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            W0NOML    R        O  7 24REFFLD(REFER/NMOL *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                  7 55'Cotizacion.:'
+     A            X0COME    R   -6   O  7 68REFFLD(REFER/COME *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(2)
+     A                                  9  3'Persona....:'
+     A                                  9 26'IVA........:'
+     A            W0CIVA    R        O  9 39REFFLD(REFER/CIVA *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            W0NCIL    R        O  9 42REFFLD(REFER/NCIL *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                 10  3'Operacion..:'
+     A            W0TIOU    R        O 10 16REFFLD(REFER/TIOU *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            W0STOU    R        O 10 18REFFLD(REFER/STOU *LIBL/REFERENCIA)
+     A                                      COLOR(WHT)
+     A            W0STOS    R        O 10 21REFFLD(REFER/STOS *LIBL/REFERENCIA)
+     A                                      COLOR(WHT)
+     A            W0DSOP    R        O 10 24REFFLD(REFER/DSOP *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                 11  3'Localidad..:'
+     A            W0COPO    R        O 11 16REFFLD(REFER/COPO *LIBL/REFERENCIA)
+     A                                      COLOR(WHT)
+     A                                      EDTCDE(Z)
+     A            W0COPS    R        O 11 22REFFLD(REFER/COPS *LIBL/REFERENCIA)
+     A                                      COLOR(WHT)
+     A                                      EDTCDE(Z)
+     A            W0LOCA    R        O 11 24REFFLD(REFER/LOCA *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                  6  3'Estado.....:'
+     A            W0CEST    R        O  6 19REFFLD(REFER/TIOU *LIBL/REFERENCIA)
+     A                                      COLOR(WHT)
+     A            W0CSES    R        O  6 21REFFLD(REFER/STOU *LIBL/REFERENCIA)
+     A                                      COLOR(WHT)
+     A                                      EDTCDE(Z)
+     A            W0DEST    R        O  6 24REFFLD(REFER/DSOP *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                 12  3'Forma Pago.:'
+     A            W0NRPP    R        O 12 20REFFLD(REFER/NRPP *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X0DPPG    R        O 12 24REFFLD(REFER/DPPG *LIBL/REFERENCIA)
+     A                                      DSPATR(BL)
+     A                                      COLOR(BLU)
+     A            W0CFPG    R        O 12 55REFFLD(REFER/CFPG *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            W0DEFP    R        O 12 57REFFLD(REFER/DEFP *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A            X0TIPE    R   +3   O  9 16REFFLD(REFER/CASA *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A            X0NOMB    R        O  4 24REFFLD(REFER/NOMB *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A          R COW000CP1
+     A*%%TS  SD  20160107  112403  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      CF06
+     A                                      OVERLAY
+     A                                 24 70'F3=Salir'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                      COLOR(TRQ)
+     A            XXEMSU    R        O 23  1REFFLD(DENP)
+     A                                      DSPATR(UL)
+     A                                 24  4'F2=Orden'
+     A                                      DSPATR(UL)
+     A                                      COLOR(BLU)
+     A          R COW000CP2
+     A*%%TS  SD  20160202  151700  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      CF06
+     A                                      OVERLAY
+     A            XXEMSU    R        O 23  1REFFLD(DENP)
+     A                                      DSPATR(UL)
+     A                                 24 35'F12=Retornar'
+     A                                      COLOR(BLU)
+     A                                      DSPATR(UL)
+     A          R COW000CNE
+     A*%%TS  SD  20121221  115949  INF1SERG    REL-V5R4M0  5722-WDS
+     A                                      OVERLAY
+     A                                 12 18'No se visualizan registros para es-
+     A                                      ta selección'
+     A          R COW000C03
+     A*%%TS  SD  20160106  143442  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      WINDOW(4 5 12 60 *NOMSGLIN)
+     A                                      OVERLAY
+     A                                  3  1'No posee las autorizaciones necesa-
+     A                                      rias para utilizar este  '
+     A                                  4  1'programa.'
+     A                                  5  1'Gestione dicha autorización con in-
+     A                                      formática, a través de  '
+     A                                  6  1'los medios habituales (pedido de s-
+     A                                      oftware).  '
+     A                                  7  1'En dicho pedido deberá indicar que-
+     A                                       requiere autorización al'
+     A                                  8  1'programa COW000, en el Módulo de T-
+     A                                      ablas Generales para usted'
+     A                                  9  1'indicando permiso de CONSULTAS.'
+     A                                 11 26'ENTER=Salir'
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A                                  1  1'Consulta General de Cotizaciones  -
+     A                                                                '
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)
+     A          R COW000CER
+     A*%%TS  SD  20160201  150043  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      WINDOW(4 5 7 53 *NOMSGLIN)
+     A                                      OVERLAY
+     A                                  7 22'ENTER=Salir'
+     A                                      DSPATR(UL)
+     A                                      COLOR(BLU)
+     A                                  1  1'Consulta General de Cotizaciones  -
+     A                                                         '
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)
+     A            XXMSGS    R   -1   B  3  1REFFLD(R160)
+     A                                      CNTFLD(053)
+     A                                      DSPATR(PR)
+     A                                      DSPATR(HI)

@@ -1,0 +1,15 @@
+STRPGMEXP SIGNATURE('SVPWS00000000001')
+
+ export symbol(SVPWS_parseParmBase)
+ export symbol(SVPWS_getMsgs)
+ export symbol(SVPWS_inz)
+ export symbol(SVPWS_end)
+ export symbol(SVPWS_error)
+ export symbol(SVPWS_chkParmBase)
+ export symbol(SVPWS_chkRoll)
+ export symbol(SVPWS_chkOrde)
+ export symbol(SVPWS_getCant)
+ export symbol(SVPWS_getGrupoRama)
+ export symbol(SVPWS_getGrupoRamaArch)
+
+endpgmexp

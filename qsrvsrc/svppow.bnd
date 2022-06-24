@@ -1,0 +1,8 @@
+STRPGMEXP  SIGNATURE('SVPPOW0000000001')
+
+ export symbol(SVPPOW_Inz)
+ export symbol(SVPPOW_End)
+ export symbol(SVPPOW_Error)
+ export symbol(SVPPOW_getPolizaAsegurado)
+
+endpgmexp

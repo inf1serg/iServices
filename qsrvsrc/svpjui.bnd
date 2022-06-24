@@ -1,0 +1,26 @@
+STRPGMEXP SIGNATURE('SVPJUI0000000001')
+
+ export symbol(SVPJUI_inz)
+ export symbol(SVPJUI_end)
+ export symbol(SVPJUI_error)
+ export symbol(SVPJUI_getPahJc2)
+ export symbol(SVPJUI_setPahJc2)
+ export symbol(SVPJUI_dltPahJc2)
+ export symbol(SVPJUI_updPahJc2)
+ export symbol(SVPJUI_chkPahJc2)
+ export symbol(SVPJUI_getPahJc3)
+ export symbol(SVPJUI_setPahJc3)
+ export symbol(SVPJUI_dltPahJc3)
+ export symbol(SVPJUI_updPahJc3)
+ export symbol(SVPJUI_chkPahJc3)
+ export symbol(SVPJUI_getPahJc4)
+ export symbol(SVPJUI_setPahJc4)
+ export symbol(SVPJUI_dltPahJc4)
+ export symbol(SVPJUI_updPahJc4)
+ export symbol(SVPJUI_chkPahJc4)
+
+ export symbol(SVPJUI_getPahJc22)
+ export symbol(SVPJUI_setPahJc22)
+ export symbol(SVPJUI_updPahJc22)
+
+endpgmexp

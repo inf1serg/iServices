@@ -1,0 +1,14 @@
+STRPGMEXP  SIGNATURE('SVPAXI0000000001')
+
+ export symbol(SVPAXI_Inz)
+ export symbol(SVPAXI_End)
+ export symbol(SVPAXI_Error)
+ export symbol(SVPAXI_chkIndice)
+ export symbol(SVPAXI_getIndice)
+ export symbol(SVPAXI_getCocienteEntreIndices)
+ export symbol(SVPAXI_ajustarPorInflacion)
+ export symbol(SVPAXI_ajusteRamaSecuencia)
+
+ export symbol(SVPAXI_ajusteRamaSecuenciaVida)
+
+endpgmexp

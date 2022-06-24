@@ -1,0 +1,37 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WER4
+                  R4EMPR    R               REFFLD(EMPR)
+                  R4SUCU    R               REFFLD(SUCU)
+                  R4NIVT    R               REFFLD(NIVT)
+                  R4NIVC    R               REFFLD(NIVC)
+                  R4NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  R4RAMA    R               REFFLD(RAMA)
+                  R4ARSE    R               REFFLD(ARSE)
+                  R4POCO    R               REFFLD(POCO)
+                  R4XCOB    R               REFFLD(XCOB)
+                  R4NIVE         1  0       COLHDG('NIVEL DE DESCUENTO')
+                  R4CCBP    R               REFFLD(CCBP)
+                  R4RECA         5  2       COLHDG('% REC.')
+                  R4BONI         5  2       COLHDG('% BON.')
+                  R4MA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R4MA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R4MA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R4MA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  R4MA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                K R4EMPR
+                K R4SUCU
+                K R4NIVT
+                K R4NIVC
+                K R4NCTW
+                K R4RAMA
+                K R4ARSE
+                K R4POCO
+                K R4XCOB
+                K R4NIVE

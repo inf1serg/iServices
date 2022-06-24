@@ -1,0 +1,93 @@
+                                            DYNSLT
+                                            JDFTVAL
+                R C1W00014                  JFILE(CTW000 +
+                                                  SET916)
+                J                           JOIN(1 2)
+                                            JFLD(W0CEST T@CEST)
+                                            JFLD(W0CSES T@CSES)
+
+      * Cotización Web: Cabecera de Cotizaciones
+                  W0EMPR    R
+                  W0SUCU    R
+                  W0NIVT    R
+                  W0NIVC    R
+                  W0NCTW    R
+                  W0NIT1    R
+                  W0NIV1    R
+                  W0FCTW    R
+                  W0NOMB    R
+                  W0SOLN    R
+                  W0FPRO    R
+                  W0MONE    R
+                  W0NOML    R
+                  W0COME    R
+                  W0COPO    R
+                  W0COPS    R
+                  W0LOCA    R
+                  W0ARCD    R
+                  W0ARNO    R
+                  W0SPOL    R
+                  W0SSPO    R
+                  W0TIPE    R
+                  W0CIVA    R
+                  W0NCIL    R
+                  W0TIOU    R
+                  W0STOU    R
+                  W0STOS    R
+                  W0DSOP    R
+                  W0SPO1    R
+                  W0CEST    R
+                  W0CSES    R
+                  W0DEST    R
+                  W0VDES    R
+                  W0VHAS    R
+                  W0CFPG    R
+                  W0DEFP    R
+                  W0NCBU        22  0
+                  W0CTCU    R
+                  W0NRTC    R
+                  W0FVTC    R
+                  W0MP01    R
+                  W0MP02    R
+                  W0MP03    R
+                  W0MP04    R
+                  W0MP05    R
+                  W0MP06    R
+                  W0MP07    R
+                  W0MP08    R
+                  W0MP09    R
+                  W0MP10    R
+                  W0NRPP    R
+                  W0ASEN    R
+
+      * Tabla de estados de cotización web
+
+                  T@CEST    R
+                  T@CSES    R
+                  T@DEST    R
+                  T@MP01    R
+                  T@MP02    R
+                  T@MP03    R
+                  T@MP04    R
+                  T@MP05    R
+                  T@MP06    R
+                  T@MP07    R
+                  T@MP08    R
+                  T@MP09    R
+                  T@MP10    R
+                  T@USER    R
+                  T@DATE    R
+                  T@TIME    R
+
+      * Clave
+
+                K W0EMPR
+                K W0SUCU
+                K W0NIVT
+                K W0NIVC
+                K W0NCTW                    DESCEND
+
+                S T@MP01                    CMP(EQ '1')
+                  W0NOMB                    CMP(NE ' ')
+                  W0NCTW                    CMP(GT 0)
+

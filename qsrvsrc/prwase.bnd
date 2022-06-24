@@ -1,0 +1,26 @@
+STRPGMEXP SIGNATURE('PRWASE000000001')
+
+ export symbol(PRWASE_isValid)
+ export symbol(PRWASE_insertAseguradoTomador)
+ export symbol(PRWASE_deleteAseguradoTomador)
+ export symbol(PRWASE_insertAseguradoAdicional)
+ export symbol(PRWASE_deleteAseguradoAdicional)
+
+ export symbol(PRWASE_insertBeneficiarioV)
+ export symbol(PRWASE_dltBeneficiarioV)
+
+ export symbol(PRWASE_insertAseguradoTomador2)
+ export symbol(PRWASE_insertAseguradoAdicional2)
+
+ export symbol(PRWASE_insertClausulaV)
+ export symbol(PRWASE_deleteClausulaV)
+
+ export symbol(PRWASE_end)
+
+ export symbol(PRWASE_insertBeneficiarioV2)
+
+ export symbol(PRWASE_isValid2)
+
+ export symbol(PRWASE_getAseguradoTomador)
+
+endpgmexp

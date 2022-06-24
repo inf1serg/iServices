@@ -1,0 +1,48 @@
+     A                                      REF(REFERENCIA)
+     A                                      UNIQUE
+     A          R C1WEV2
+     A            V2EMPR    R               REFFLD(EMPR)
+     A            V2SUCU    R               REFFLD(SUCU)
+     A            V2NIVT    R               REFFLD(NIVT)
+     A            V2NIVC    R               REFFLD(NIVC)
+     A            V2NCTW    R               REFFLD(NRES)
+     A                                      COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+     A            V2RAMA    R               REFFLD(RAMA)
+     A            V2ARSE    R               REFFLD(ARSE)
+     A            V2POCO    R    6  0       REFFLD(POCO)
+     A            V2PACO    R               REFFLD(PACO)
+     A            V2SECU    R               REFFLD(RAMA)
+     A                                      COLHDG('SECUENCIA')
+     A            V2RIEC    R               REFFLD(RIEC)
+     A            V2XCOB    R               REFFLD(XCOB)
+     A            V2SACO    R               REFFLD(SACO)
+     A            V2PTCO    R               REFFLD(PTCO)
+     A            V2XPRI    R               REFFLD(XPRI)
+     A            V2PRSA    R               REFFLD(PRSA)
+     A            V2ECOB    R               REFFLD(ECOB)
+     A            V2MAR1    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V2MAR2    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V2MAR3    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V2MAR4    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V2MAR5    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V2STRG    R               REFFLD(STRG)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V2USER    R               REFFLD(USER)
+     A            V2TIME    R               REFFLD(TIME)
+     A            V2DATE    R               REFFLD(DATE)
+     A          K V2EMPR
+     A          K V2SUCU
+     A          K V2NIVT
+     A          K V2NIVC
+     A          K V2NCTW
+     A          K V2RAMA
+     A          K V2ARSE
+     A          K V2POCO
+     A          K V2PACO
+     A          K V2RIEC
+     A          K V2XCOB

@@ -1,0 +1,46 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WERA
+                  RAEMPR    R               REFFLD(EMPR)
+                  RASUCU    R               REFFLD(SUCU)
+                  RANIVT    R               REFFLD(NIVT)
+                  RANIVC    R               REFFLD(NIVC)
+                  RANCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  RARAMA    R               REFFLD(RAMA)
+                  RAARSE    R               REFFLD(ARSE)
+                  RAPOCO    R               REFFLD(POCO)
+                  RARIEC    R               REFFLD(RIEC)
+                  RAXCOB    R               REFFLD(XCOB)
+                  RAMSEC         9  0
+                  RACTMA    R               REFFLD(CTMA)
+                  RACRAZ    R               REFFLD(CRAZ)
+                  RAFNAA    R               REFFLD(FNAA)
+                  RAPVAC    R               REFFLD(MARP)
+                                            COLHDG('PLAN' 'DE' 'VACUNACION')
+                  RACRIA    R               REFFLD(MARP)
+                                            COLHDG('AMPLIACION' 'CRIA' )
+                  RAEXPO    R               REFFLD(MARP)
+                                            COLHDG('MASCOTA' 'PARA' 'EXPO?')
+                  RASUAS        15  2
+                  RAMA01    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  RAMA02    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  RAMA03    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  RAMA04    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                  RAMA05    R               REFFLD(MARP)
+                                            COLHDG('MARCA' 'LIBRE')
+                K RAEMPR
+                K RASUCU
+                K RANIVT
+                K RANIVC
+                K RANCTW
+                K RARAMA
+                K RAARSE
+                K RAPOCO
+                K RARIEC
+                K RAXCOB
+                K RAMSEC

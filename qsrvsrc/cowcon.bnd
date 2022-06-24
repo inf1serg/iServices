@@ -1,0 +1,6 @@
+STRPGMEXP SIGNATURE('COWCON0000000001')
+
+ export symbol(COWCON_cotizarWeb)
+ export symbol(COWCON_chkRenovacion)
+
+endpgmexp

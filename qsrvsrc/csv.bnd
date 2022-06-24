@@ -1,0 +1,8 @@
+strpgmexp signature('CSVSRVPGMV100000')
+   export symbol(csv_open)
+   export symbol(csv_loadrec)
+   export symbol(csv_rewindfile)
+   export symbol(csv_getfld)
+   export symbol(csv_rewindrec)
+   export symbol(csv_close)
+endpgmexp

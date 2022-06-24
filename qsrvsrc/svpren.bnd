@@ -1,0 +1,40 @@
+STRPGMEXP  SIGNATURE('SVPREN0000000001')
+
+ export symbol(SVPREN_chkArticulo)
+ export symbol(SVPREN_chkSuperPoliza)
+ export symbol(SVPREN_chkProductor)
+ export symbol(SVPREN_chkAsegurado)
+ export symbol(SVPREN_chkPolizas)
+ export symbol(SVPREN_chkPolizaAuto)
+ export symbol(SVPREN_chkPolizaHogar)
+ export symbol(SVPREN_chkComponentes)
+ export symbol(SVPREN_chkComponenteAuto)
+ export symbol(SVPREN_chkComponenteHogar)
+ export symbol(SVPREN_chkGeneral)
+ export symbol(SVPREN_chkRenovacion)
+ export symbol(SVPREN_getComponente)
+ export symbol(SVPREN_getSumaAseguradaVehiculo)
+ export symbol(SVPREN_getImporteGnc)
+ export symbol(SVPREN_getClienteIntegral)
+ export symbol(SVPREN_getBuenResultado)
+ export symbol(SVPREN_getTarifa)
+ export symbol(SVPREN_getZona)
+ export symbol(SVPREN_getDescuentosComponente)
+ export symbol(SVPREN_inz)
+ export symbol(SVPREN_End)
+ export symbol(SVPREN_Error)
+ export symbol(SVPREN_getAccesoriosComponente)
+
+ export symbol(SVPREN_chkCobMayorVeh)
+ export symbol(SVPREN_getListaCobMayorVeh)
+
+ export symbol(SVPREN_chkMarcaTecCobRen)
+ export symbol(SVPREN_aumentoSumaAsegurada)
+
+ export symbol(SVPREN_getScoring)
+ export symbol(SVPREN_getPlanDePago)
+
+ export symbol(SVPREN_chkGeneralWeb)
+
+
+endpgmexp

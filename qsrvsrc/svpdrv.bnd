@@ -1,0 +1,18 @@
+STRPGMEXP SIGNATURE('SVPDRV0000000001')
+
+ export symbol(SVPDRV_chkDescuentoCarac)
+ export symbol(SVPDRV_getDescuentoCarac)
+ export symbol(SVPDRV_getCaracDescuento)
+ export symbol(SVPDRV_chkCoberturaDescuento)
+ export symbol(SVPDRV_getCoberturaDescuento)
+ export symbol(SVPDRV_getCoberturaDescuentoCab)
+ export symbol(SVPDRV_getDescuentosCobertura)
+ export symbol(SVPDRV_chkDescuento)
+ export symbol(SVPDRV_getDescuentosCobNiv)
+ export symbol(SVPDRV_chkCobList)
+ export symbol(SVPDRV_Inz)
+ export symbol(SVPDRV_End)
+ export symbol(SVPDRV_Error)
+ export symbol(SVPDRV_getCodBuenResultado)
+
+endpgmexp

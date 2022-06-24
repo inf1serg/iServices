@@ -1,0 +1,59 @@
+STRPGMEXP  SIGNATURE('SVPPOL0000000001')
+
+ export symbol(SVPPOL_Inz)
+ export symbol(SVPPOL_End)
+ export symbol(SVPPOL_Error)
+ export symbol(SVPPOL_getPoliza)
+
+ export symbol(SVPPOL_setSuscripcionPolizaElectronica)
+ export symbol(SVPPOL_isSuscriptaPolizaElectronica)
+
+ export symbol(SVPPOL_setPoliza)
+ export symbol(SVPPOL_updPoliza)
+ export symbol(SVPPOL_getSuperPoliza)
+ export symbol(SVPPOL_getArticulo)
+ export symbol(SVPPOL_getPolizadesdeSuperpoliza)
+
+ export symbol(SVPPOL_chkCondicionesComerciales)
+ export symbol(SVPPOL_getCondicionesComerciales)
+ export symbol(SVPPOL_setCondicionesComerciales)
+ export symbol(SVPPOL_delCondicionesComerciales)
+
+ export symbol(SVPPOL_chkTexto)
+ export symbol(SVPPOL_getTextos)
+ export symbol(SVPPOL_setTextos)
+
+ export symbol(SVPPOL_chkComisionesxInt)
+ export symbol(SVPPOL_getComisionesxInt)
+ export symbol(SVPPOL_setComisionesxInt)
+ export symbol(SVPPOL_updComisionesxInt)
+ export symbol(SVPPOL_delComisionesxInt)
+
+ export symbol(SVPPOL_chkClausula)
+ export symbol(SVPPOL_getClausulas)
+ export symbol(SVPPOL_setClausulas)
+
+ export symbol(SVPPOL_chkAnexo)
+ export symbol(SVPPOL_getAnexos)
+ export symbol(SVPPOL_setAnexos)
+ export symbol(SVPPOL_getVariacionDeComision)
+
+ export symbol(SVPPOL_isNominaExterna)
+
+ export symbol(SVPPOL_tipoAsistencia)
+
+ export symbol(SVPPOL_getPremioAcumulado)
+ export symbol(SVPPOL_getPrimaAcumulada)
+
+ export symbol(SVPPOL_getUltimoSuopFacturacion)
+
+ export symbol(SVPPOL_chkPoliza)
+
+ export symbol(SVPPOL_getDeuda)
+ export symbol(SVPPOL_getProximaCuotaAVencer)
+
+ export symbol(SVPPOL_permiteAnular)
+ export symbol(SVPPOL_permiteArrepentir)
+ export symbol(SVPPOL_anulacionEnProceso)
+
+endpgmexp

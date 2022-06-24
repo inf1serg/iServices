@@ -1,0 +1,12 @@
+strpgmexp signature('CZWREC V1R1M0   ')
+   export symbol(czwrec_inz)
+   export symbol(czwrec_end)
+   export symbol(czwrec_error)
+   export symbol(czwrec_recFinanciero)
+   export symbol(czwrec_recFinancieroProductor)
+   export symbol(czwrec_recFinancieroFormPago)
+   export symbol(czwrec_extraPaFija)
+   export symbol(czwrec_extraPaFijaProductor)
+   export symbol(czwrec_extraPrimaVariable)
+   export symbol(czwrec_extraPrimaVariableProd)
+endpgmexp

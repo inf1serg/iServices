@@ -1,0 +1,11 @@
+                R C1WETC                    PFILE(CTWETC)
+                K T0EMPR
+                K T0SUCU
+                K T0NIVT
+                K T0NIVC
+                K T0NCTW
+                K T0RAMA
+                K T0ARSE
+                K T0POCO
+                K T0COBL
+                S T0COBS                    CMP(EQ '1')

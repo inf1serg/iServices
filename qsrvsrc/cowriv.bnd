@@ -1,0 +1,6 @@
+STRPGMEXP SIGNATURE('COWRIV0000000001')
+
+ export symbol(COWRIV_cotizarWeb)
+ export symbol(COWRIV_chkRenovacion)
+
+endpgmexp

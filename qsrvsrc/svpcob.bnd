@@ -1,0 +1,25 @@
+STRPGMEXP SIGNATURE('SVPCOB0000000001')
+
+ export symbol(SVPCOB_GetListCobExcluyentes)
+ export symbol(SVPCOB_ValListCobExcluyentes)
+ export symbol(SVPCOB_GetListCobReglas)
+ export symbol(SVPCOB_ValListCobReglas)
+ export symbol(SVPCOB_ValReglaCob)
+ export symbol(SVPCOB_ValCoberturasBasicas)
+
+ export symbol(SVPCOB_getListaCoberturasCot)
+ export symbol(SVPCOB_getListaCoberturasSpol)
+
+ export symbol(SVPCOB_ERROR)
+
+ export symbol(SVPCOB_GetListCobDepend)
+
+ export symbol(SVPCOB_getCoberturasAutos)
+
+ export symbol(SVPCOB_getCoberturaEquiva)
+
+ export symbol(SVPCOB_getLimiteCobertura)
+ export symbol(SVPCOB_getLimiteCoberturas)
+ export symbol(SVPCOB_topearCoberturas)
+
+endpgmexp

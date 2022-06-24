@@ -1,0 +1,66 @@
+     A*%%TS  SD  20160108  081823  INF1FER3    REL-V7R1M0  5770-WDS
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A                                      PRINT
+     A                                      CHECK(AB)
+     A                                      CA03
+     A N08                                  CF04
+     A                                      HELP(80)
+     A          R COW00100
+     A*%%TS  SD  20160105  122555  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      TEXT('Cabecera')
+     A                                      KEEP
+     A                                      ASSUME
+     A                                      OVERLAY
+     A                                  1  2' '
+     A*%%GP SCREEN1    01
+     A          R COW00101
+     A*%%TS  SD  20160108  081823  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      WINDOW(2 4 7 70 *NORSTCSR)
+     A                                      VLDCMDKEY(29)
+     A                                      CF05
+     A                                      KEEP
+     A                                      RTNCSRLOC(&@@REGI &@@CAMP)
+     A                                      OVERLAY
+     A                                      WDWBORDER((*DSPATR HI))
+     A                                  1  1'COW001'
+     A                                      COLOR(PNK)
+     A                                  1 53DATE
+     A                                      EDTCDE(Y)
+     A                                      COLOR(PNK)
+     A                                  1 63TIME
+     A                                      COLOR(PNK)
+     A                                  3  3'Artículo:'
+     A                                      DSPATR(UL)
+     A            X1ARCD    R     Y  B  3 13REFFLD(REFER/ARCD *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                      DSPATR(PC)
+     A  50 51                               ERRMSG('Articulo Inexistente')
+     A                                      DSPATR(PR)
+     A            X1ARNO    R        O  3 20REFFLD(REFER/ARNO *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                  3 51'SupPól:'
+     A                                      DSPATR(UL)
+     A            X1SPO1    R     Y  B  3 59REFFLD(REFER/SPOL *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A  52 50                               ERRMSG('SuperPoliza Inexistente')
+     A  53 50                               ERRMSG('SuperPoliza Ya Confirmada')
+     A                                      DSPATR(PR)
+     A  90                              5  3'ENTER=Continuar...'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            XXEMSU        70A  O  6  1DSPATR(UL)
+     A            @@REGI        10A  H
+     A            @@CAMP        10A  H
+     A*%%GP SCREEN1    02
+     A                                  1  9USER
+     A                                      COLOR(PNK)
+     A                                  1 21' Confirmacion de SuperPólizas '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  5 60'F3=Salir'
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)

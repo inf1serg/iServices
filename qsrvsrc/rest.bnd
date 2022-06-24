@@ -1,0 +1,18 @@
+STRPGMEXP  SIGNATURE('REST V1         ')
+   export     symbol(REST_inz)
+   export     symbol(REST_end)
+   export     symbol(REST_error)
+   export     symbol(REST_getEnvVar)
+   export     symbol(REST_getUri)
+   export     symbol(REST_getMethod)
+   export     symbol(REST_write)
+   export     symbol(REST_writeXmlLine)
+   export     symbol(REST_writeHeader)
+   export     symbol(REST_getNextPart)
+   export     symbol(REST_xmlEscape)
+   export     symbol(REST_readStdInput)
+   export     symbol(REST_writeEncoding)
+
+   export     symbol(REST_startArray)
+   export     symbol(REST_endArray)
+ENDPGMEXP

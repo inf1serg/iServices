@@ -1,0 +1,239 @@
+     A*%%TS  SD  20160108  155712  INF1FER3    REL-V7R1M0  5770-WDS
+     A*SLU 16/03/2004 - Este fuente contiene instrucciones para la conversión
+     A*Webfacing marcadas con "*%%WB", rogamos usar CODE Designer para cambiar
+     A*este fuente y no SDA, muchas gracias.
+     A*%%EC
+     A*%%FD ARTICULOS: Vista Prima/Premio PAHED0     AXA.PGMR
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A                                      PRINT
+     A                                      CHECK(AB)
+     A                                      CA03
+     A          R COW00010
+     A*%%TS  SD  19970404  142132  SAHR        REL-V2R3M0  5738-PW1
+     A                                      KEEP
+     A                                      ASSUME
+     A                                  1  3' '
+     A*%%GP SCREEN1    01
+     A          R COW00011
+     A*%%TS  SD  20160108  155712  INF1FER3    REL-V7R1M0  5770-WDS
+     A                                      WINDOW(2 2 20 74)
+     A                                      CF08
+     A                                      VLDCMDKEY(29)
+     A                                      CF09
+     A                                      KEEP
+     A                                      OVERLAY
+     A                                      WDWBORDER((*DSPATR HI))
+     A                                      CF12
+     A            X1OPER         7S 0H
+     A                                  1  1'Detalle de Composición de Prima a -
+     A                                      Premio                     '
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)
+     A                                  3 24'Art:'
+     A                                      DSPATR(UL)
+     A            XXARCD    R        O  3 29REFFLD(REFER/ARCD *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A                                  3 36'SupPol:'
+     A                                      DSPATR(UL)
+     A            XXSPOL    R        O  3 44REFFLD(REFER/SPOL *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A                                  3 61'Enter=Retornar'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  1 63'F12=Retornar'
+     A                                      DSPATR(UL)
+     A                                      COLOR(YLW)
+     A                                  4  1'PRIMA Y RECARGOS                  -
+     A                                       '
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A                                  4 38'IMPUESTOS Y TASAS                 -
+     A                                       '
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A                                  5  1'Pa Tar .'
+     A            X1PRIM    R        O  5 18REFFLD(REFER/PRIM *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                  5 38'SelRie .'
+     A            X1SERI    R        O  5 55REFFLD(REFER/SERI *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                  6  1'Bonif. .'
+     A            X1BPIP    R     Y  B  6 10REFFLD(REFER/BPIP *LIBL/REFERENCIA)
+     A                                      CHECK(RB)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(PR)
+     A                                      COLOR(PNK)
+     A            X1BPRI    R        O  6 18REFFLD(REFER/BPRI *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                  6 38'SelEmp .'
+     A            X1SEEM    R        O  6 55REFFLD(REFER/IMPI *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                  7  1'PRIMA TECN:'
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            X1NETO    R        O  7 18REFFLD(REFER/PRIM *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                  7 38'ImpInt .'
+     A            X1PIMI    R        O  7 47REFFLD(REFER/PIVI *LIBL/REFERENCIA)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      COLOR(PNK)
+     A            X1IMPI    R        O  7 55REFFLD(REFER/IMPI *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A            X1XREA    R     Y  B  8 10REFFLD(REFER/XREA *LIBL/REFERENCIA)
+     A                                      CHECK(RB)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(PR)
+     A                                      COLOR(PNK)
+     A            X1READ    R        O  8 18REFFLD(REFER/READ *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                  8 38'SerSoc .'
+     A            X1PSSO    R        O  8 47REFFLD(REFER/PIVI *LIBL/REFERENCIA)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      COLOR(PNK)
+     A            X1SERS    R        O  8 55REFFLD(REFER/SERS *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                  9  1'RecFin .'
+     A            X1XREF    R        B  9 10REFFLD(REFER/XREF *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(PR)
+     A                                      COLOR(PNK)
+     A            X1REFI    R        O  9 18REFFLD(REFER/REFI *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                  9 38'TasaSSN.'
+     A            X1PSSN    R        O  9 47REFFLD(REFER/PIVI *LIBL/REFERENCIA)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      COLOR(PNK)
+     A            X1TSSN    R        O  9 55REFFLD(REFER/TSSN *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A            X1BPEP    R        B 10 10REFFLD(REFER/XREF *LIBL/REFERENCIA)
+     A                                      DSPATR(HI)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(PR)
+     A                                      COLOR(PNK)
+     A            X1DERE    R     Y  B 10 18REFFLD(REFER/DERE *LIBL/REFERENCIA)
+     A                                      CHECK(RB)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                      DSPATR(PR)
+     A                                 10 38'Iva. . .'
+     A            X1PIVI    R        O 10 47REFFLD(REFER/PIVI *LIBL/REFERENCIA)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      COLOR(PNK)
+     A            X1IPR1    R        O 10 55REFFLD(REFER/IPR1 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 11  1'PRIMA+REC.FIN:'
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A            X1SUBT    R        O 11 18REFFLD(REFER/REFI *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                 11 38'IvaRnI .'
+     A            X1PIVN    R        O 11 47REFFLD(REFER/PIVN *LIBL/REFERENCIA)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      COLOR(PNK)
+     A            X1IPR4    R        O 11 55REFFLD(REFER/IPR1 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 12 38'IvaPer .'
+     A            X1PIVR    R        O 12 47REFFLD(REFER/PIVR *LIBL/REFERENCIA)
+     A                                      EDTWRD('   ,  -')
+     A                                      DSPATR(HI)
+     A                                      COLOR(PNK)
+     A            X1IPR3    R        O 12 55REFFLD(REFER/IPR1 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 12  1'SOCIEDADES COOPERATIVAS           -
+     A                                        '
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A                                 13 38'PerInBr.'
+     A            X1IPR6    R        O 13 55REFFLD(REFER/IPR1 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 13  1'Acciones'
+     A            X1IPR2    R     Y  B 13 18REFFLD(REFER/IPR2 *LIBL/REFERENCIA)
+     A                                      CHECK(RB)
+     A                                      EDTWRD('       .   .   ,  -')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(PR)
+     A                                 14 38'InBrRie.'
+     A            X1IPR7    R        O 14 55REFFLD(REFER/IPR7 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 14  1'Capital.'
+     A            X1PREC    R        B 14 10REFFLD(REFER/PREC *LIBL/REFERENCIA)
+     A                                      EDTWRD('   ,  ')
+     A                                      DSPATR(HI)
+     A                                      DSPATR(PR)
+     A                                      COLOR(PNK)
+     A            X1IPR5    R        O 14 18REFFLD(REFER/IPR5 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 15 38'InBrEmp.'
+     A            X1IPR8    R        O 15 55REFFLD(REFER/IPR8 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 16 38'Confirm:'
+     A            X1IPR9    R        O 16 55REFFLD(REFER/IPR5 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 18  1'CODIGO DE MONEDA       COTIZACION -
+     A                                        '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                 17 38'PREMIO.:'
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A            X1PREM    R        O 17 55REFFLD(REFER/IPR1 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                 16  1'Original . . . .'
+     A            XXPREM    R        O 16 18REFFLD(REFER/IPR5 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                      COLOR(YLW)
+     A                                 18 38'Cobrado:'
+     A            X1PAGA    R        O 18 55REFFLD(REFER/IPR1 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                 17  1'Ajuste . . . . .'
+     A            XXIPR9    R        O 17 18REFFLD(REFER/IPR5 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                      COLOR(YLW)
+     A                                 19 38'SALDO..:'
+     A                                      DSPATR(UL)
+     A                                      DSPATR(HI)
+     A            X1SALD    R        O 19 55REFFLD(REFER/IPR1 *LIBL/REFERENCIA)
+     A                                      EDTWRD('       .   .  0,  -')
+     A                                      DSPATR(RI)
+     A                                      COLOR(BLU)
+     A                                 15  1'AJUSTE CONFIRMACION               -
+     A                                        '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A            XXMONE    R        O 19  7REFFLD(P1HED0/D0MONE *LIBL/PAHED0)
+     A            XXCOME    R        O 19 20REFFLD(P1HED0/D0COME *LIBL/PAHED0)
+     A                                      EDTWRD('         ,      ')
+     A*%%GP SCREEN1    02
+     A*%%WB 9 REC 12=Retornar
+     A                                  8  1'ExPaVa .'
+     A                                 10  1'ExPaFj .'
+     A                                  2  1'Intermediario:'
+     A                                  3  1'Cotizacion...:'
+     A            XXNIVT    R        O  2 16REFFLD(REFER/NIVT *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A            XXNIVC    R        O  2 18REFFLD(REFER/NIVC *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                      EDTCDE(Z)
+     A            XXNOMB    R        O  2 24REFFLD(REFER/NOMB *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A            XXNCTW    R        O  3 16REFFLD(REFER/NRES *LIBL/REFERENCIA)
+     A                                      COLOR(BLU)
+     A                                      EDTCDE(Z)

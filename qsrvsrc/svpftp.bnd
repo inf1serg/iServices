@@ -1,0 +1,7 @@
+ STRPGMEXP  SIGNATURE('SVPFTP0000000001')
+
+ export symbol(SVPFTP_getParametros)
+ export symbol(SVPFTP_inz)
+ export symbol(SVPFTP_end)
+
+endpgmexp

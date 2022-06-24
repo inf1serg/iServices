@@ -1,0 +1,53 @@
+     A                                      REF(REFERENCIA)
+     A                                      UNIQUE
+     A          R C1WEV1
+     A            V1EMPR    R               REFFLD(EMPR)
+     A            V1SUCU    R               REFFLD(SUCU)
+     A            V1NIVT    R               REFFLD(NIVT)
+     A            V1NIVC    R               REFFLD(NIVC)
+     A            V1NCTW    R               REFFLD(NRES)
+     A                                      COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+     A            V1RAMA    R               REFFLD(RAMA)
+     A            V1ARSE    R               REFFLD(ARSE)
+     A            V1POCO    R    6  0       REFFLD(POCO)
+     A            V1PACO    R               REFFLD(PACO)
+     A            V1ACTI    R               REFFLD(ACTA)
+     A                                      COLHDG('ACTIVIDAD')
+     A            V1SECU    R               REFFLD(RAMA)
+     A                                      COLHDG('SECUENCIA')
+     A            V1XPRO    R               REFFLD(XPRO)
+     A            V1NOMB    R               REFFLD(NOMB)
+     A            V1TIDO    R               REFFLD(TIDO)
+     A            V1NRDO    R               REFFLD(NRDO)
+     A            V1FNAC    R               REFFLD(FER8)
+     A                                      COLHDG('FECHA' 'DE' 'NACIMIENTO')
+     A            V1NACI    R               REFFLD(NACI)
+     A            V1CATE    R               REFFLD(RAMA)
+     A                                      COLHDG('CATEGORIA')
+     A            V1MAR1    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V1MAR2    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V1MAR3    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V1MAR4    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V1MAR5    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            V1STRG    R               REFFLD(STRG)
+     A                                      TEXT('1:BAJA POR STRO.')
+     A                                      COLHDG('1=BAJA' 'POR STRO.')
+     A* Identificaciones...
+     A            V1USER    R               REFFLD(USER)
+     A            V1TIME    R               REFFLD(TIME)
+     A            V1DATE    R               REFFLD(DATE)
+     A** - ------------------------------- *
+     A          K V1EMPR
+     A          K V1SUCU
+     A          K V1NIVT
+     A          K V1NIVC
+     A          K V1NCTW
+     A          K V1RAMA
+     A          K V1ARSE
+     A          K V1POCO
+     A          K V1PACO

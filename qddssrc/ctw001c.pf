@@ -1,0 +1,20 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1W001C
+                  W1EMPR    R               REFFLD(EMPR)
+                  W1SUCU    R               REFFLD(SUCU)
+                  W1NIVT    R               REFFLD(NIVT)
+                  W1NIVC    R               REFFLD(NIVC)
+                  W1NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  W1RAMA    R               REFFLD(RAMA)
+                  W1XREA    R               REFFLD(XREA)
+                  W1READ    R               REFFLD(READ)
+                  W1XOPR    R               REFFLD(XOPR)
+                  W1COPR    R               REFFLD(COPR)
+                K W1EMPR
+                K W1SUCU
+                K W1NIVT
+                K W1NIVC
+                K W1NCTW
+                K W1RAMA

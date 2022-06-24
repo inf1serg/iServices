@@ -1,0 +1,8 @@
+strpgmexp signature('SVPVRENO00000001')
+ export symbol('SVPVRENO_INZ')
+ export symbol('SVPVRENO_POLIZARENOVABLE')
+ export symbol('SVPVRENO_SUPERPOLIZARENOVABLE')
+ export symbol('SVPVRENO_FECHA_DE_EMISION')
+ export symbol('SVPVRENO_END')
+ export symbol('SVPVRENO_ERROR')
+endpgmexp

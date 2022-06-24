@@ -1,0 +1,49 @@
+     A                                      REF(REFERENCIA)
+     A                                      UNIQUE
+     A          R C1WER1
+     A            R1EMPR    R               REFFLD(EMPR)
+     A            R1SUCU    R               REFFLD(SUCU)
+     A            R1NIVT    R               REFFLD(NIVT)
+     A            R1NIVC    R               REFFLD(NIVC)
+     A            R1NCTW    R               REFFLD(NRES)
+     A                                      COLHDG('NRO.' 'DE' 'COTIZACION')
+     A            R1RAMA    R               REFFLD(RAMA)
+     A            R1ARSE    R               REFFLD(ARSE)
+     A            R1POCO    R               REFFLD(POCO)
+     A            R1RIEC    R               REFFLD(RIEC)
+     A            R1XCOB    R               REFFLD(XCOB)
+     A            R1SECU         2  0       COLHDG('SECUENCIA')
+     A            R1NOMB    R               REFFLD(NOMB)
+     A            R1TIDO    R               REFFLD(TIDO)
+     A            R1NRDO    R               REFFLD(NRDO)
+     A            R1FNAC         8  0       COLHDG('FECHA' 'DE' 'NACIMIENTO')
+     A            R1SUAS    R               REFFLD(SUAS)
+     A            R1SMUE    R               REFFLD(SUAS)
+     A                                      COLHDG('SUMA' 'ASEGURADA' 'MUERTE')
+     A            R1SINV    R               REFFLD(SUAS)
+     A                                      COLHDG('SUMA' 'ASEGURADA' 'INVALID')
+     A            R1MAR1    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            R1MAR2    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            R1MAR3    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            R1MAR4    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            R1MAR5    R               REFFLD(MARP)
+     A                                      COLHDG('MARCA' 'LIBRE')
+     A            R1USER    R               REFFLD(USER)
+     A            R1TIME    R               REFFLD(TIME)
+     A            R1DATE    R               REFFLD(FER8)
+     A** - ------------------------------- *
+     A          K R1EMPR
+     A          K R1SUCU
+     A          K R1NIVT
+     A          K R1NIVC
+     A          K R1NCTW
+     A          K R1RAMA
+     A          K R1ARSE
+     A          K R1POCO
+     A          K R1RIEC
+     A          K R1XCOB
+     A          K R1SECU

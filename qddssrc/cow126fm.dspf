@@ -1,0 +1,151 @@
+     A*%%TS  SD  20200129  151245  INF1SER1    REL-V7R1M0  5770-WDS
+     A*SLU 16/03/2004 - Este fuente contiene instrucciones para la conversión
+     A*Webfacing marcadas con "*%%WB", rogamos usar CODE Designer para cambiar
+     A*este fuente y no SDA, muchas gracias.
+     A*%%EC
+     A*%%FD ARTICULOS: Vista Prima/Premio PAHED0     AXA.PGMR
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      REF(*LIBL/REFERENCIA REFER)
+     A                                      PRINT
+     A                                      CF04(04 'Drop')
+     A                                      CF12(12 'Volver')
+     A          R COW126CCA
+     A*%%TS  SD  20200129  095758  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                  1  3'COW121'
+     A                                  1 13USER
+     A                                  1 29'   MODULO WEB DE GAUS   '
+     A                                      DSPATR(RI)
+     A                                      COLOR(GRN)
+     A                                  1 60DATE
+     A                                      EDTCDE(Y)
+     A                                  1 72TIME
+     A                                  2  3'                 Consulta Cotizaci-
+     A                                      on Poliza de Vehiculo              -
+     A                                              '
+     A                                      DSPATR(HI)
+     A                                      DSPATR(UL)
+     A                                  3  3'Prod'
+     A            XXNIVT         1S 0O  3  8COLOR(BLU)
+     A            XXNIVC         5Y 0O  3 10EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            XXPROD        40A  O  3 16COLOR(TRQ)
+     A                                  3 57'N.Cot'
+     A            XXNCTW         7S 0O  3 63COLOR(BLU)
+     A                                  4  3'Rama'
+     A            XXRAMA         2Y 0O  4  8EDTCDE(Z)
+     A                                      COLOR(BLU)
+     A            XXDRAM        30A  O  4 11COLOR(TRQ)
+     A                                  4 42'Art'
+     A            XXARCD         6  0O  4 46COLOR(BLU)
+     A            XXARNO        23   O  4 53COLOR(TRQ)
+     A          R COW126CWA                 SFL
+     A*%%TS  SD  20200129  090625  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                  5  2'Ram.Art.'
+     A  40                                  DSPATR(ND)
+     A            X1ARSE         2S 0O  5 11COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  5 14'Comp.'
+     A  40                                  DSPATR(ND)
+     A            X1POCO         4S 0O  5 20COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  5 26'Insp/Rast'
+     A  40                                  DSPATR(ND)
+     A            X1TIPO         1A  O  5 36COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  5 38'Cod.Rast'
+     A  40                                  DSPATR(ND)
+     A            X1RAST         1S 0O  5 47COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  5 49'Fech.Inspec'
+     A  40                                  DSPATR(ND)
+     A            X1FINS         8Y 0O  5 61EDTWRD('    /  /  ')
+     A                                      COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  6  2'Tip.Inspec.'
+     A  40                                  DSPATR(ND)
+     A            X1MARC        40A  O  6 14COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  7  2'Nombre'
+     A  40                                  DSPATR(ND)
+     A            X1NOMB        40A  O  7 12COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  8  2'Domicilio'
+     A  40                                  DSPATR(ND)
+     A            X1DOMI        35A  O  8 12COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  8 49'Nro.Domic'
+     A  40                                  DSPATR(ND)
+     A            X1NDOM         5S 0O  8 59COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  9  2'Nro.Tel 1'
+     A  40                                  DSPATR(ND)
+     A            X1NTEL        20A  O  9 12COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                  9 34'Nro.Tel 2'
+     A  40                                  DSPATR(ND)
+     A            X1NTE1        20A  O  9 44COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                 10  2'Mail'
+     A  40                                  DSPATR(ND)
+     A            X1MAIL        50A  O 10 12COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                 11  2'Desde'
+     A  40                                  DSPATR(ND)
+     A            X1HDES         7S 0O 11 12COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                 11 20'Hasta'
+     A  40                                  DSPATR(ND)
+     A            X1HHAS         7S 0O 11 26COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                 11 34'Nro.Inspec'
+     A  40                                  DSPATR(ND)
+     A            X1NRIN        25A  O 11 45COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                 12  2'Cent.Inspec'
+     A  40                                  DSPATR(ND)
+     A            X1CTRO        50A  O 12 15COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                 13  2'Cod.Rastr.'
+     A  40                                  DSPATR(ND)
+     A            X1CRAS         3S 0O 13 15COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A                                 13 19'Descr.'
+     A  40                                  DSPATR(ND)
+     A            X1DRAS        40A  O 13 26COLOR(RED)
+     A  40                                  DSPATR(ND)
+     A          R COW126CWB                 SFLCTL(COW126CWA)
+     A*%%TS  SD  20200129  151245  INF1SER1    REL-V7R1M0  5770-WDS
+     A                                      SFLSIZ(0100)
+     A                                      SFLPAG(0001)
+     A                                      WINDOW(2 2 15 74)
+     A                                      TEXT('y')
+     A                                      OVERLAY
+     A  30                                  SFLDSP
+     A  30                                  SFLDSPCTL
+     A  31                                  SFLCLR
+     A  32                                  SFLEND(*MORE)
+     A                                      SFLDROP(CF04)
+     A                                      RMVWDW
+     A            NRSFL          4S 0H      SFLRCDNBR(CURSOR)
+     A                                  1  1'Detalle de Inspecciones/Rastreador-
+     A                                      es'
+     A                                      DSPATR(UL)
+     A                                      COLOR(PNK)
+     A                                  1 48'F04=Mas Datos'
+     A                                      COLOR(BLU)
+     A                                  1 65'F12=Volver'
+     A                                      COLOR(BLU)
+     A                                  2  2'Prod'
+     A            XXNIVT         1S 0O  2  7COLOR(PNK)
+     A            XXNIVC         5Y 0O  2  9EDTCDE(Z)
+     A                                      COLOR(PNK)
+     A            XXPROD        40A  O  2 15COLOR(TRQ)
+     A                                  2 56'Cot'
+     A            XXNCTW         7S 0O  2 60COLOR(PNK)
+     A                                  3  2'Rama'
+     A            XXRAMA         2S 0O  3  7COLOR(PNK)
+     A            XXDRAM        30A  O  3 10COLOR(TRQ)
+     A                                  3 41'Art'
+     A            XXARCD         6Y 0O  3 45COLOR(BLU)
+     A                                      EDTCDE(Z)
+     A            XXARNO        23A  O  3 52COLOR(TRQ)

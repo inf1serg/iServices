@@ -1,0 +1,27 @@
+STRPGMEXP SIGNATURE('SVPVLO0000000001')
+
+ export symbol(SVPVLO_inz)
+ export symbol(SVPVLO_end)
+ export symbol(SVPVLO_error)
+ export symbol(SVPVLO_chkTipoDeMovimientos)
+ export symbol(SVPVLO_getTipoDeMovimientos)
+ export symbol(SVPVLO_getRegistroDeControl)
+ export symbol(SVPVLO_chkCaratula)
+ export symbol(SVPVLO_getCaratulas)
+ export symbol(SVPVLO_setCaratula)
+ export symbol(SVPVLO_dltCaratula)
+ export symbol(SVPVLO_chkValor)
+ export symbol(SVPVLO_getValores)
+ export symbol(SVPVLO_setValor)
+ export symbol(SVPVLO_dltValor)
+ export symbol(SVPVLO_chkCaja)
+ export symbol(SVPVLO_chkCajaTerminal)
+ export symbol(SVPVLO_chkCajaTerminal)
+ export symbol(SVPVLO_chkUsuario)
+ export symbol(SVPVLO_chkTipoMovPorUsuario)
+
+ export symbol(SVPVLO_getNumeroOperacion)
+ export symbol(SVPVLO_getNumeroIngreso)
+ export symbol(SVPVLO_getFechaDeIngreso)
+
+endpgmexp

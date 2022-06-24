@@ -1,0 +1,95 @@
+STRPGMEXP  SIGNATURE('SVPRIV0000000001')
+
+ export symbol(SVPRIV_Inz)
+ export symbol(SVPRIV_End)
+ export symbol(SVPRIV_Error)
+
+ export symbol(SVPRIV_chkSuplemento)
+ export symbol(SVPRIV_getSuplementos)
+ export symbol(SVPRIV_setSuplemento)
+ export symbol(SVPRIV_updSuplemento)
+ export symbol(SVPRIV_dltSuplemento)
+
+ export symbol(SVPRIV_chkPersona)
+ export symbol(SVPRIV_getPersonas)
+ export symbol(SVPRIV_setPersona)
+ export symbol(SVPRIV_dltPersona)
+
+ export symbol(SVPRIV_chkBeneficiario)
+ export symbol(SVPRIV_getBeneficiarios)
+ export symbol(SVPRIV_setBeneficiario)
+ export symbol(SVPRIV_dltBeneficiario)
+ export symbol(SVPRIV_dltBeneficiarios)
+
+ export symbol(SVPRIV_chkCobertura)
+ export symbol(SVPRIV_getCoberturas)
+ export symbol(SVPRIV_setCobertura)
+ export symbol(SVPRIV_updCobertura)
+ export symbol(SVPRIV_dltCobertura)
+
+ export symbol(SVPRIV_chkTexto)
+ export symbol(SVPRIV_getTextos)
+ export symbol(SVPRIV_setTexto)
+ export symbol(SVPRIV_dltTexto)
+ export symbol(SVPRIV_dltTextos)
+
+ export symbol(SVPRIV_chkDescuento)
+ export symbol(SVPRIV_getDescuentos)
+ export symbol(SVPRIV_setDescuento)
+ export symbol(SVPRIV_dltDescuento)
+
+ export symbol(SVPRIV_chkMejora)
+ export symbol(SVPRIV_getMejoras)
+ export symbol(SVPRIV_setMejora)
+ export symbol(SVPRIV_dltMejora)
+
+ export symbol(SVPRIV_chkCaracteristica)
+ export symbol(SVPRIV_getCaracteristicas)
+ export symbol(SVPRIV_setCaracteristica)
+ export symbol(SVPRIV_dltCaracteristica)
+
+ export symbol(SVPRIV_chkObjeto)
+ export symbol(SVPRIV_getObjetos)
+ export symbol(SVPRIV_setObjeto)
+ export symbol(SVPRIV_dltObjeto)
+ export symbol(SVPRIV_dltObjetos)
+
+ export symbol(SVPRIV_chkFranquicia)
+ export symbol(SVPRIV_getFranquicias)
+ export symbol(SVPRIV_setFranquicia)
+ export symbol(SVPRIV_dltFranquicia)
+ export symbol(SVPRIV_dltFranquicias)
+
+ export symbol(SVPRIV_chkComponente)
+ export symbol(SVPRIV_getComponentes)
+ export symbol(SVPRIV_setComponente)
+ export symbol(SVPRIV_dltComponente)
+ export symbol(SVPRIV_updComponente)
+
+ export symbol(SVPRIV_calcPremio)
+
+ export symbol(SVPRIV_chkCasco)
+ export symbol(SVPRIV_getCascos)
+ export symbol(SVPRIV_setCasco)
+ export symbol(SVPRIV_dltCasco)
+ export symbol(SVPRIV_updCasco)
+
+ export symbol(SVPRIV_chkCascoComponente)
+ export symbol(SVPRIV_getCascoComponentes)
+ export symbol(SVPRIV_setCascoComponente)
+ export symbol(SVPRIV_dltCascoComponente)
+ export symbol(SVPRIV_updCascoComponente)
+
+ export symbol(SVPRIV_getCantComponentesActivos)
+ export symbol(SVPRIV_getPorcSumaMaxRiesCobe)
+
+ export symbol(SVPRIV_getMascotas)
+
+ export symbol(SVPRIV_isCoberturaBaja)
+
+ export symbol(SVPRIV_getUltimoEstadoComponente)
+
+ export symbol(SVPRIV_getCtwer2)
+ export symbol(SVPRIV_updCtwer2)
+
+endpgmexp

@@ -1,0 +1,154 @@
+     H actgrp(*caller) dftactgrp(*no)
+     H option(*nodebugio:*srcstmt:*noshowcpy)
+      * ************************************************************ *
+      * COW310Y: QUOM Web                                            *
+      *          Rechazar propuesta web                              *
+      * ------------------------------------------------------------ *
+      * Sergio Fernandez                     *18-Ene-2016            *
+      * ************************************************************ *
+      * SGF 06/08/2016: Recompilo por ASEN en CTW000.                *
+      * LRG 15/08/2017: Se recompila por cambios en CTW000:          *
+      *                          º Número de Cotización API          *
+      *                          º Nombre de Sistema Remoto          *
+      *                          º CUIT del productor                *
+      * LRG 13/10/2017: Se recompila por cambios en CTW000:          *
+      *                          º Nombre de Usuario                 *
+      *                                                              *
+      *                                                              *
+      * ************************************************************ *
+     Fctw000    uf   e           k disk
+     Fctwmsg    if a e           k disk
+     Fsehni201  if   e           k disk
+     Fset916    if   e           k disk
+     Fcow310vm  cf   e             workstn
+
+     D COW310V         pr                  extpgm('COW310V')
+     D  peEmpr                        1a   const
+     D  peSucu                        2a   const
+     D  peNivt                        1  0 const
+     D  peNivc                        5  0 const
+     D  peNctw                        7  0 const
+
+     D COW310V         pi
+     D  peEmpr                        1a   const
+     D  peSucu                        2a   const
+     D  peNivt                        1  0 const
+     D  peNivc                        5  0 const
+     D  peNctw                        7  0 const
+
+     D PsDs           sds                  qualified
+     D  CurUsr                       10a   overlay(PsDs:358)
+
+     C                   eval      *inlr = *on
+     C                   exsr      carg00
+     C                   dow       not *inkl
+     C                   exsr      pant01
+     C                   enddo
+     C                   return
+
+     C     carg00        begsr
+     C     k1w000        setll     ctw000
+     C                   if        not %equal
+     C                   eval      *inkl = *on
+     C                   leavesr
+     C                   endif
+
+     C     k1hni2        chain     sehni201                           20
+     C   20              eval      x1nomb = *all'*'
+     C  n20              eval      x1nomb = dfnomb
+
+     C                   eval      x1nctw = peNctw
+     C                   eval      x1nivt = peNivt
+     C                   eval      x1nivc = peNivt
+
+     C                   endsr
+
+     C     pant01        begsr
+     C                   exfmt     cow31001
+     C                   exsr      apagar
+     C                   select
+     C                   when      *inka
+     C                   exsr      vali01
+     C                   if        not *in50
+     C                   exsr      grab01
+     C                   exsr      grabmg
+     C                   eval      *inkl = *on
+     C                   endif
+     C                   when      *inkl
+     C                   other
+     C                   exsr      vali01
+     C                   endsl
+     C                   endsr
+
+     C     apagar        begsr
+     C                   setoff                                       5051
+     C                   endsr
+
+     C     vali01        begsr
+     C                   if        %len(%trim(x1txmg)) < 3
+     C                   eval      *in50 = *on
+     C                   eval      *in51 = *on
+     C                   endif
+     C                   endsr
+
+     C     grab01        begsr
+     C     k1w000        chain     ctw000
+     C                   if        %found
+     C                   eval      w0cest = 1
+     C                   eval      w0cses = 9
+     C     k1t916        chain     set916                             20
+     C   20              eval      t@dest = 'VENCIDA'
+     C                   eval      w0dest = t@dest
+     C                   update    c1w000
+     C                   endif
+     C                   endsr
+
+     C     grabmg        begsr
+     C     k1wmsg        setgt     ctwmsg
+     C     k1wmsg        readpe    ctwmsg
+     C                   if        %eof
+     C                   eval      msivse  = 1
+     C                   else
+     C                   eval      msivse += 1
+     C                   endif
+     C                   eval      msempr = peEmpr
+     C                   eval      mssucu = peSucu
+     C                   eval      msnivt = peNivt
+     C                   eval      msnivc = peNivc
+     C                   eval      msnctw = peNctw
+     C                   eval      mscpgm = 'COW000'
+     C                   eval      mstxmg = x1txmg
+     C                   eval      msmar1 = '0'
+     C                   eval      msmar2 = '0'
+     C                   eval      msmar3 = '0'
+     C                   eval      msmar4 = '0'
+     C                   eval      msmar5 = '0'
+     C                   eval      msuser = PsDs.CurUsr
+     C                   eval      msdate = %dec(%date():*iso)
+     C                   eval      mstime = %dec(%time():*iso)
+     C                   write     c1wmsg
+     C                   endsr
+
+     C     *inzsr        begsr
+     C     k1w000        klist
+     C                   kfld                    peEmpr
+     C                   kfld                    peSucu
+     C                   kfld                    peNivt
+     C                   kfld                    peNivc
+     C                   kfld                    peNctw
+     C     k1hni2        klist
+     C                   kfld                    peEmpr
+     C                   kfld                    peSucu
+     C                   kfld                    peNivt
+     C                   kfld                    peNivc
+     C     k1wmsg        klist
+     C                   kfld                    peEmpr
+     C                   kfld                    peSucu
+     C                   kfld                    peNivt
+     C                   kfld                    peNivc
+     C                   kfld                    peNctw
+     C     k1t916        klist
+     C                   kfld                    w0cest
+     C                   kfld                    w0cses
+     C                   endsr
+

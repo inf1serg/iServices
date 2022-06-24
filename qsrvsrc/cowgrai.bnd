@@ -1,0 +1,200 @@
+STRPGMEXP SIGNATURE('COWGRAI000000001')
+
+ export symbol(COWGRAI_getNroCotizacion)
+ export symbol(COWGRAI_ChkCotizacion)
+ export symbol(COWGRAI_deleteCabecera)
+ export symbol(COWGRAI_deleteAsegurados)
+ export symbol(COWGRAI_deleteAseguradosMails)
+ export symbol(COWGRAI_getNuevaCotizacion)
+ export symbol(COWGRAI_deleteCotizacion)
+ export symbol(COWGRAI_saveCotizacion)
+ export symbol(COWGRAI_deleteBienAsegurado)
+ export symbol(COWGRAI_getPolizasDeSuperPoliza)
+ export symbol(COWGRAI_personaIsValid)
+ export symbol(COWGRAI_monedaCotizacion)
+ export symbol(COWGRAI_chkComponente)
+ export symbol(COWGRAI_inz)
+ export symbol(COWGRAI_end)
+ export symbol(COWGRAI_error)
+
+ export symbol(COWGRAI_saveImpuestos)
+ export symbol(COWGRAI_getSelladosprovinciales)
+ export symbol(COWGRAI_getSelladodelaEmpresa)
+ export symbol(COWGRAI_getIngBrutosConvMultilateral)
+ export symbol(COWGRAI_getDerechoEmision)
+ export symbol(COWGRAI_getRecargoFinanc)
+ export symbol(COWGRAI_getImpuestosInte)
+ export symbol(COWGRAI_getServiciosSoci)
+ export symbol(COWGRAI_getTasaSsn)
+ export symbol(COWGRAI_getIvaInscripto)
+ export symbol(COWGRAI_GetIvaRes)
+ export symbol(COWGRAI_GetCodProInd)
+ export symbol(COWGRAI_getIvaNoInscripto)
+ export symbol(COWGRAI_cotizaMoneda)
+
+ export symbol(COWGRAI_getimporteiins)
+ export symbol(COWGRAI_getimporteimpi)
+ export symbol(COWGRAI_getimporteinoi)
+ export symbol(COWGRAI_getimporteires)
+ export symbol(COWGRAI_getimporterefi)
+ export symbol(COWGRAI_getimportesers)
+ export symbol(COWGRAI_getimportetssn)
+ export symbol(COWGRAI_getprimasubtot)
+
+ export symbol(COWGRAI_getArticulo)
+ export symbol(COWGRAI_deletePoco)
+ export symbol(COWGRAI_deleteCabePoco)
+ export symbol(COWGRAI_deleteCoberturas)
+ export symbol(COWGRAI_deleteBonificaciones)
+
+ export symbol(COWGRAI_getCalculosimpuestos)
+ export symbol(COWGRAI_GetPremioBruto)
+ export symbol(COWGRAI_UpdCotizacion)
+
+ export symbol(COWGRAI_chkEstCotizacion)
+
+ export symbol(COWGRAI_getImportestot)
+ export symbol(COWGRAI_saveImportes)
+
+ export symbol(COWGRAI_deleteImportes)
+ export symbol(COWGRAI_deleteImpuestos)
+ export symbol(COWGRAI_getImpuestos)
+
+ export symbol(COWGRAI_getTipoPersona)
+ export symbol(COWGRAI_getSumaAseguradaRamaArse)
+ export symbol(COWGRAI_getSumaAsSiniRamaArse)
+ export symbol(COWGRAI_getPrimaRamaArse)
+ export symbol(COWGRAI_SavePrimasPorProvincia)
+ export symbol(COWGRAI_DeletePrimasPorProvincia)
+ export symbol(COWGRAI_GetCopoCops)
+
+ export symbol(COWGRAI_getPrimaSPoliza)
+
+ export symbol(COWGRAI_setDerechoEmi)
+
+ export symbol(COWGRAI_deleteCarac)
+ export symbol(COWGRAI_deleteImpImpu)
+
+ export symbol(COWGRAI_getPremioFinal)
+
+ export symbol(COWGRAI_getSuperPoliza)
+
+ export symbol(COWGRAI_getXref)
+
+ export symbol(COWGRAI_getTipodeOperacion)
+ export symbol(COWGRAI_sumaDeAccesorios)
+ export symbol(COWGRAI_SumaInfoPro)
+
+ export symbol(COWGRAI_bloqueoProd)
+
+ export symbol(COWGRAI_getSumaAseguradaCobertura)
+ export symbol(COWGRAI_getSumaAsegAsegurados)
+
+ export symbol(COWGRAI_getDatosCapituloHogar)
+
+ export symbol(COWGRAI_getFormaDePagoPdP)
+
+ export symbol(COWGRAI_updFormaDePagoCot)
+
+ export symbol(COWGRAI_getCondComerciales)
+ export symbol(COWGRAI_setImpConcComer)
+ export symbol(COWGRAI_getRead)
+ export symbol(COWGRAI_setImportesImpuestos)
+ export symbol(COWGRAI_getCondComercialesA)
+ export symbol(COWGRAI_ValPlanCerradoUnico)
+
+ export symbol(COWGRAI_getCategoria)
+ export symbol(COWGRAI_deleteCategoria)
+ export symbol(COWGRAI_deleteSecuAct)
+
+ export symbol(COWGRAI_updImpConcComer)
+ export symbol(COWGRAI_getTopesEpv)
+
+ export symbol(COWGRAI_getSuperPolizaReno)
+
+ export symbol(COWGRAI_deleteImpuesto)
+
+ export symbol(COWGRAI_deleteAccesorios)
+
+ export symbol(COWGRAI_chkTarjCredito)
+
+ export symbol(COWGRAI_getMinimoRes3125)
+
+ export symbol(COWGRAI_setSellados)
+ export symbol(COWGRAI_updTablaDeImpuestos)
+
+ export symbol(COWGRAI_getCtw000)
+ export symbol(COWGRAI_getSumaAseguradaPorvInd)
+
+ export symbol(COWGRAI_deleteCompVida)
+
+ export symbol(COWGRAI_getImpPrimaMinima)
+ export symbol(COWGRAI_setCondComerciales)
+ export symbol(COWGRAI_updCondComerciales)
+ export symbol(COWGRAI_delCondComerciales)
+ export symbol(COWGRAI_SaveImpuestos2)
+
+ export symbol(COWGRAI_getAuditoria)
+ export symbol(COWGRAI_setAuditoria)
+
+ export symbol(COWGRAI_getPolizasxPropuesta)
+ export symbol(COWGRAI_setNroCotizacionAPI)
+ export symbol(COWGRAI_updCabecera)
+
+ export symbol(COWGRAI_chkCotizacionApi)
+
+ export symbol(COWGRAI_chkRenovProcGuarEm)
+ export symbol(COWGRAI_chkPlandePagoHabWeb)
+
+ export symbol(COWGRAI_updEstado)
+ export symbol(COWGRAI_updCtw000)
+ export symbol(COWGRAI_setCtw000)
+
+ export symbol(COWGRAI_vencerCotizacion)
+ export symbol(COWGRAI_getCotizacionDeMoneda)
+
+ export symbol(COWGRAI_setFlota)
+ export symbol(COWGRAI_isFlota)
+ export symbol(COWGRAI_setExtraComision)
+ export symbol(COWGRAI_getVacc)
+ export symbol(COWGRAI_getFechaCotizacion)
+ export symbol(COWGRAI_getComision)
+
+ export symbol(COWGRAI_deletePocoScoring)
+
+ export symbol(COWGRAI_getDatosCapituloRGV)
+ export symbol(COWGRAI_getEstadoCotizacion)
+ export symbol(COWGRAI_getNroPropuesta)
+ export symbol(COWGRAI_setNroPropuesta)
+ export symbol(COWGRAI_chkCotizacionEnviada)
+ export symbol(COWGRAI_chkCotizacionVencida)
+ export symbol(COWGRAI_chkTieneAseguradoPrincipal)
+ export symbol(COWGRAI_chktodasLasRamasCotizadas)
+
+ export symbol(COWGRAI_getCtwEg3)
+ export symbol(COWGRAI_chkCtwEg3)
+ export symbol(COWGRAI_setCtwEg3)
+ export symbol(COWGRAI_updCtwEg3)
+ export symbol(COWGRAI_getCtw001)
+ export symbol(COWGRAI_chkCtw001)
+ export symbol(COWGRAI_setCtw001)
+ export symbol(COWGRAI_getCtw001C)
+ export symbol(COWGRAI_chkCtw001C)
+ export symbol(COWGRAI_setCtw001C)
+
+ export symbol(COWGRAI_getImpuestosCotizacion)
+
+ export symbol(COWGRAI_getPendientes)
+
+ export symbol(COWGRAI_getPremio)
+ export symbol(COWGRAI_getCliente)
+ export symbol(COWGRAI_setRelacion)
+ export symbol(COWGRAI_chkRelacionAP)
+ export symbol(COWGRAI_chkRelacionRC)
+ export symbol(COWGRAI_getNroCotiXSpol)
+
+ export symbol(COWGRAI_getNroCotiAPRC)
+
+ export symbol(COWGRAI_deletePocoFactores)
+
+endpgmexp

@@ -1,0 +1,16 @@
+strpgmexp signature('SVPIAU    V1R0M0')
+ export symbol(svpiau_inz)
+ export symbol(svpiau_end)
+ export symbol(svpiau_error)
+ export symbol(svpiau_chkvehiculo)
+ export symbol(svpiau_chkmarca)
+ export symbol(svpiau_getmarca)
+ export symbol(svpiau_getvehiculo)
+ export symbol(svpiau_setvehiculo)
+
+ export symbol(svpiau_getvehicul2)
+ export symbol(svpiau_setvehicul2)
+
+ export symbol(SVPIAU_getDescModelo)
+
+endpgmexp

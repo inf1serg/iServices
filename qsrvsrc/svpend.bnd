@@ -1,0 +1,22 @@
+STRPGMEXP  SIGNATURE('SVPEND0000000001')
+
+ export symbol(SVPEND_Inz)
+ export symbol(SVPEND_End)
+ export symbol(SVPEND_Error)
+ export symbol(SVPEND_chkEndoso)
+
+ export symbol(SVPEND_permitirEndoso)
+ export symbol(SVPEND_setPahea1)
+ export symbol(SVPEND_getPaheas)
+
+ export symbol(SVPEND_updPaheas)
+ export symbol(SVPEND_getPaheac)
+ export symbol(SVPEND_chkPaheac)
+ export symbol(SVPEND_setPaheac)
+ export symbol(SVPEND_updPaheac)
+ export symbol(SVPEND_dltPaheac)
+
+ export symbol(SVPEND_getSet174)
+
+ export symbol(SVPEND_setPaheacXInt)
+endpgmexp

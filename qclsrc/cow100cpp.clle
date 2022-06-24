@@ -1,0 +1,124 @@
+             PGM        PARM(&TIPO &CONF &FECT &SUBMIT)
+
+             DCL        VAR(&TIPO) TYPE(*CHAR) LEN(1)
+             DCL        VAR(&CONF) TYPE(*CHAR) LEN(1)
+             DCL        VAR(&FECT) TYPE(*CHAR) LEN(8)
+             DCL        VAR(&SUBMIT) TYPE(*LGL)
+
+             DCL        VAR(&LIB) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&TYPE) TYPE(*CHAR) LEN(1)
+             DCL        VAR(&FECD) TYPE(*DEC) LEN(8 0)
+             DCL        VAR(&FECH) TYPE(*DEC) LEN(8 0)
+             DCL        VAR(&EMPR) TYPE(*CHAR) LEN(1)
+             DCL        VAR(&FEMA) TYPE(*DEC) LEN(4 0)
+             DCL        VAR(&FEMM) TYPE(*DEC) LEN(2 0)
+             DCL        VAR(&FEMD) TYPE(*DEC) LEN(2 0)
+             DCL        VAR(&FEMI) TYPE(*DEC) LEN(8 0)
+             DCL        VAR(&SEMA) TYPE(*DEC) LEN(1 0)
+             DCL        VAR(&AÑOH) TYPE(*DEC) LEN(4 0)
+             DCL        VAR(&MESH) TYPE(*DEC) LEN(2 0)
+             DCL        VAR(&DIAH) TYPE(*DEC) LEN(2 0)
+
+             DCL        VAR(&MSG) TYPE(*CHAR) LEN(100)
+             DCL        VAR(&ERRORSW) TYPE(*LGL)
+             DCL        VAR(&MSGID) TYPE(*CHAR) LEN(7)
+             DCL        VAR(&MSGDTA) TYPE(*CHAR) LEN(100)
+             DCL        VAR(&MSGF) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&MSGFLIB) TYPE(*CHAR) LEN(10)
+             DCL        VAR(&KEYVAR) TYPE(*CHAR) LEN(4)
+
+             MONMSG     MSGID(CPF0000) EXEC(GOTO CMDLBL(STDERR1))
+             RTVJOBA    TYPE(&TYPE)
+             IF         COND(&TYPE = '1' *AND &SUBMIT) THEN(DO)
+             SBMJOB     CMD(CALL PGM(COW100CPP) PARM(&TIPO &CONF +
+                          &FECT &SUBMIT))
+ RCVMSG:     RCVMSG     RMV(*NO) MSG(&MSG) MSGID(&MSGID)
+             IF         COND(&MSGID *NE 'CPC1221') THEN(GOTO +
+                          CMDLBL(RCVMSG))
+             SNDPGMMSG  MSG(&MSG) MSGTYPE(*COMP)
+             RETURN
+             ENDDO
+
+             CALL       PGM(TAATOOL/ADDCPATH)
+
+             DLTF       FILE(QTEMP/PAWE01)
+             MONMSG     MSGID(CPF2105 CPF2125)
+             DLTF       FILE(QTEMP/PAWEC1)
+             MONMSG     MSGID(CPF2105 CPF2125)
+             DLTF       FILE(QTEMP/PAWED0)
+             MONMSG     MSGID(CPF2105 CPF2125)
+
+             RTVOBJD    OBJ(PAWE01) OBJTYPE(*FILE) RTNLIB(&LIB)
+             CRTDUPOBJ  OBJ(PAWE01) FROMLIB(&LIB) OBJTYPE(*FILE) +
+                          TOLIB(QTEMP)
+             CRTDUPOBJ  OBJ(PAWEC1) FROMLIB(&LIB) OBJTYPE(*FILE) +
+                          TOLIB(QTEMP)
+             CRTDUPOBJ  OBJ(PAWED0) FROMLIB(&LIB) OBJTYPE(*FILE) +
+                          TOLIB(QTEMP)
+
+             OVRDBF     FILE(PAWE01) TOFILE(QTEMP/PAWE01) SHARE(*YES)
+             OVRDBF     FILE(PAWEC1) TOFILE(QTEMP/PAWEC1) SHARE(*YES)
+             OVRDBF     FILE(PAWED0) TOFILE(QTEMP/PAWED0) SHARE(*YES)
+
+             RTVDTAARA  DTAARA(*LDA (401 1)) RTNVAR(&EMPR)
+             CALL       PGM(PAR310X3) PARM(&EMPR &FEMA &FEMM &FEMD)
+             /* Dia de hoy en desde y hasta */
+             IF         COND(&FECT *EQ '00000000') THEN(DO)
+             CHGVAR     VAR(&FECD) VALUE((&FEMD * 1000000) + (&FEMM * +
+                          10000) + &FEMA)
+             CHGVAR     VAR(&FECH) VALUE((&FEMD * 1000000) + (&FEMM * +
+                          10000) + &FEMA)
+             ENDDO
+             /* En la semana. Desde Sabado a Viernes */
+             IF         COND(&FECT *EQ '11111111') THEN(DO)
+             CHGVAR     VAR(&FEMI) VALUE((&FEMD * 1000000) + (&FEMM +
+                          * 10000) + &FEMA)
+             CALL       PGM(SPSEMA) PARM(&FEMI &SEMA &FECD &FECH)
+             ENDDO
+             /* En el mes. Desde 01 hasta ultimo dia del mes */
+             IF         COND(&FECT *EQ '99999999') THEN(DO)
+             CALL       PGM(SPLSTDAY) PARM(&FEMM &FEMA &DIAH)
+             CHGVAR     VAR(&FECD) VALUE((01 * 1000000) + (&FEMM * +
+                          10000) + &FEMA)
+             CHGVAR     VAR(&FECH) VALUE((&DIAH * 1000000) + (&FEMM +
+                          * 10000) + &FEMA)
+             ENDDO
+             CALL       PGM(PAR718R) PARM(&FECD &FECH)
+             CALL       PGM(PAR718Q)
+
+             IF         COND(&CONF *EQ 'C') THEN(CALL PGM(COW100X) +
+                          PARM(&TIPO))
+             IF         COND(&CONF *EQ 'S') THEN(CALL PGM(COW100Y) +
+                          PARM(&TIPO))
+
+ FINAL:      DLTOVR     FILE(*ALL)
+             DLTF       FILE(QTEMP/PAWE01)
+             MONMSG     MSGID(CPF2105 CPF2125)
+             DLTF       FILE(QTEMP/PAWEC1)
+             MONMSG     MSGID(CPF2105 CPF2125)
+             DLTF       FILE(QTEMP/PAWED0)
+             MONMSG     MSGID(CPF2105 CPF2125)
+             RETURN
+
+ STDERR1:       /* Subrutina estándar de manejo de errores */
+             IF         COND(&ERRORSW) THEN(SNDPGMMSG MSGID(CPF9999) +
+                          MSGF(QCPFMSG) MSGTYPE(*ESCAPE)) /* +
+                          Chequeo de función. */
+             CHGVAR     VAR(&ERRORSW) VALUE('1') /* Setea como falla +
+                          si ocurrió un error. */
+ STDERR2:    RCVMSG     MSGTYPE(*DIAG) RMV(*NO) KEYVAR(&KEYVAR) +
+                          MSGDTA(&MSGDTA) MSGID(&MSGID) MSGF(&MSGF) +
+                          SNDMSGFLIB(&MSGFLIB)
+             IF         COND(&KEYVAR *EQ '    ') THEN(GOTO +
+                          CMDLBL(STDERR3))
+             RMVMSG     MSGKEY(&KEYVAR)
+             SNDPGMMSG  MSGID(&MSGID) MSGF(&MSGFLIB/&MSGF) +
+                          MSGDTA(&MSGDTA) MSGTYPE(*DIAG)
+             GOTO       CMDLBL(STDERR2) /* Loop atrás por +
+                          diagnósticos adicionales. */
+ STDERR3:    RCVMSG     MSGTYPE(*EXCP) MSGDTA(&MSGDTA) MSGID(&MSGID) +
+                          MSGF(&MSGF) SNDMSGFLIB(&MSGFLIB)
+             SNDPGMMSG  MSGID(&MSGID) MSGF(&MSGFLIB/&MSGF) +
+                          MSGDTA(&MSGDTA) MSGTYPE(*ESCAPE)
+
+             ENDPGM

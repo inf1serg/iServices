@@ -1,0 +1,21 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1W099
+                  W9EMPR    R               REFFLD(EMPR)
+                  W9SUCU    R               REFFLD(SUCU)
+                  W9NIVT    R               REFFLD(NIVT)
+                  W9NIVC    R               REFFLD(NIVC)
+                  W9ARCD    R               REFFLD(ARCD)
+                  W9NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  W9NCTX    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN AP')
+                  W9NCTY    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN RC')
+
+                K W9EMPR
+                K W9SUCU
+                K W9NIVT
+                K W9NIVC
+                K W9NCTW
+                K W9ARCD

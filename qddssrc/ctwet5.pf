@@ -1,0 +1,45 @@
+                                            REF(REFERENCIA)
+                                            UNIQUE
+                R C1WET5
+                  T5EMPR    R               REFFLD(EMPR)
+                  T5SUCU    R               REFFLD(SUCU)
+                  T5NIVT    R               REFFLD(NIVT)
+                  T5NIVC    R               REFFLD(NIVC)
+                  T5NCTW    R               REFFLD(NRES)
+                                            COLHDG('NRO.' 'DE' 'COTIZACIÓN')
+                  T5RAMA    R               REFFLD(RAMA)
+                  T5ARSE    R               REFFLD(ARSE)
+                  T5POCO    R               REFFLD(POCO)
+                  T5SUOP    R               REFFLD(SUOP)
+                  T5CERT    R               REFFLD(CERT)
+                  T5POLI    R               REFFLD(POLI)
+                  T5CDAÑ    R               REFFLD(DAÑC)
+                  T5DAÑL       200A         COLHDG('DESC.' 'LARGA' 'DEL DAÑO')
+      * Estado del daño
+      * 0 = No reparado
+      * 1 = Reparado
+      * 9 = Dado de Baja
+                  T5EDAÑ    R               REFFLD(DAÑE)
+                  T5MAR1    R               REFFLD(MARP)
+                  T5MAR2    R               REFFLD(MARP)
+                  T5MAR3    R               REFFLD(MARP)
+                  T5MAR4    R               REFFLD(MARP)
+                  T5MAR5    R               REFFLD(MARP)
+                  T5MAR6    R               REFFLD(MARP)
+                  T5MAR7    R               REFFLD(MARP)
+                  T5MAR8    R               REFFLD(MARP)
+                  T5MAR9    R               REFFLD(MARP)
+                  T5MAR0    R               REFFLD(MARP)
+                  T5USER    R               REFFLD(USER)
+                  T5DATE    R               REFFLD(FER8)
+                  T5TIME    R               REFFLD(TIME)
+
+                K T5EMPR
+                K T5SUCU
+                K T5NIVT
+                K T5NIVC
+                K T5NCTW
+                K T5RAMA
+                K T5ARSE
+                K T5POCO
+                K T5CDAÑ
